@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/select2.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
+</head>
+<body>
+<!--sidebar-->
+<div class="sidebar">
+    <div class="brand">
+        <img src="images/logo.png" class="navbar-brand-logo">
+        <div class="public-name">
+            <span class="navbar-brand-text">西瓜公众号助手</span>
+            <span class="navbar-brand-url">www.xiguaji.com</span>
+        </div>
+    </div>
+
+        <ul>
+            <li>
+                <a href="#" title="工作台"><i class="iconfont">&#xe60d;</i> <span class="menu-item-parent">工作台</span></a>
+            </li>
+            <li class="active has-sub open">
+                <a href="#" title="图文同步"><i class="iconfont">&#xe61d;</i> <span class="menu-item-parent">图文同步</span><b class="collapse-sign"><em class="fa fa-angle-up fa-right fa-up"></em></b></a>
+                <ul style="display: block;">
+                    <li class="active"><a href="/Material/List">我的图文</a></li>
+                    <li><a href="/MArticleUse/ArticleUseListNew">我的素材库</a></li>
+                    <li><a href="/UserBiz/UserBizListNew">我运营的公众号</a></li>
+                </ul>
+            </li>
+            <li class="has-sub open">
+                <a href="#" title="素材收集"><i class="iconfont">&#xe61d;</i> <span class="menu-item-parent">素材收集</span><b class="collapse-sign"><em class="fa fa-angle-down fa-right"></em></b></a>
+                <ul style="display: none;">
+                    <li><a href="/MArticle/Explore">全网优质素材</a></li>
+                    <li><a href="/MArticle/Subscription">我关注的</a></li>
+                    <li><a href="/MArticleCollect/PopularArticle">黑马爆文</a></li>
+                    <li><a href="/UserBiz/List">专享素材</a></li>
+                    <li><a href="/Original/ArticleList">原创优选</a></li> 
+                </ul>
+            </li>
+            <li class="has-sub open">
+                <a href="#" title="高级功能"><i class="iconfont">&#xe61d;</i> <span class="menu-item-parent">高级功能</span><b class="collapse-sign"></i><em class="fa fa-angle-down fa-right"></em></b></a>
+                <ul>
+                    <li><a href="/AgainsRulesArticle/Index">违规文章曝光台</a></li>
+                    <li><a href="/Diagnosis/Index">公众号诊断</a></li>
+                    <li><a href="/HotKeyword/Index">热点风向标</a></li>
+                    <li><a href="/MyMBiz/MBizSearch">全网公众号搜索</a></li>
+                    <li><a href="/MBiz/Rank">热门公众号榜单</a></li>
+                </ul>
+            </li>
+            <li><a href="/Purchase" title="购买升级" target="_blank"><i class="iconfont">&#xe62b;</i> <span class="menu-item-parent">购买升级</span> <span class="badge inbox-badge bg-color-red font-weight-400">新春开门红</span></a></li>
+            <li><a href="/App" title="西瓜集App" target="_blank"><i class="iconfont">&#xe62a;</i> <span class="menu-item-parent">西瓜集App</span></a></li>
+            <li><a href="/Knowledge" title="帮助中心" target="_blank"><i class="iconfont">&#xe606;</i> <span class="menu-item-parent">帮助中心</span></a></li>
+        </ul>
+
+</div>
+<!--/sidebar-->
+<!--main-->
+<div class="main">
+    <div class="main-content">
+    	<!--topbar-->
+		<div class="topbar">
+            <div class="pull-left nav-area">
+                <a href="#" data-original-title="所有类型内容" rel="tooltip"><i class="fa fa-bars"></i></a>
+				<a href="#" data-original-title="所有类型内容" rel="tooltip"><i class="iconfont">&#xe62f;</i></a>
+                <a href="#" data-original-title="所有类型内容" rel="tooltip"><i class="iconfont">&#xe634;</i><i class="fa fa-circle ico-new-msg"></i></a>
+                <a href="#" data-original-title="所有类型内容" rel="tooltip"><i class="iconfont">&#xe632;</i></a>
+            </div>
+            <div class="pull-right">
+                <div class="pull-left user-area">
+                    <div class="pull-left icon-user"><i class="fa fa-user"></i></div>
+                    <a href="javascript:;">ckkdm@gmail.com</a>
+                </div>
+                <a class="pull-right btn-exit" href="javascript:;">
+                    <i class="fa fa-sign-out ico-exit"></i>
+                </a>
+            </div>
+        </div>
+        <!--/topbar-->
+        <!--wrapper-->
+        <div class="wrapper">
+            
+            <div class="container-fluid subscribe-article-list">
+                 <div class="mp-user-article-timer mp-article-list-timer clearfix">
+                    <div class="control-select-with-nav">
+                        <a href="javascript:;" class="select-nav select-nav-left"><i class="fa fa-caret-left"></i></a>
+                        <select class="time-select" data-select>
+                            <option>最近24小时</option>
+                            <option>最近3天</option>
+                            <option>最近7天</option>
+                            <option>最近30天</option>
+                        </select>
+                        <a href="javascript:;" class="select-nav select-nav-right"><i class="fa fa-caret-right"></i></a>
+                    </div>
+					<div class="what-popular-article pull-right">
+                    公众号榜单根据每个公众号当天发文的阅读转发情况进行排名，如此才能更加真实反应公众号的每天发文质量
+                    </div>
+                </div>
+            </div>
+
+            <div class="mp-article-list">
+                <table class="table table1">
+                    <colgroup>
+                        <col width="100">
+                        <col width="100">
+                        <col>
+                        <col width="100">
+                        <col width="100">
+                        <col width="100">
+                        <col width="100">
+                        <col width="100">
+                        <col width="100">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                        	<th>分类</th>
+                            <th class="text-align-center">排行</th>
+                            <th>公众号</th>
+                            <th class="text-align-center">预估粉丝</th>
+                            <th class="text-align-center">首小时阅读</th>
+                            <th class="text-align-center">24小时阅读</th>
+                            <th class="text-align-center">24小时点赞</th>
+                            <th class="text-align-center">文章数</th>
+                            <th class="text-align-center">关注</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        	<td rowspan="9">
+                            	<div class="mp-classify-list">
+                            	<ul>
+                                	<li><a href="#" class="active">情感励志</a></li>
+                                    <li><a href="#">女人时尚</a></li>
+                                    <li><a href="#">搞笑趣闻</a></li>
+                                    <li><a href="#">资讯</a></li>
+                                    <li><a href="#">财经</a></li>
+                                    <li><a href="#">运动</a></li>
+                                    <li><a href="#">旅游</a></li>
+                                    <li><a href="#">汽车</a></li>
+                                    <li><a href="#">健康</a></li>
+                                    <li><a href="#">美食餐饮</a></li>
+                                    <li><a href="#">职场教育</a></li>
+                                    <li><a href="#">数码科技</a></li>
+                                    <li><a href="#">影音娱乐</a></li>
+                                    <li><a href="#">母婴</a></li>
+                                    <li><a href="#">生活</a></li>
+                                    <li><a href="#">家居房产</a></li>
+                                    <li><a href="#">地方</a></li>
+                                </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="label label-danger risk-index cyclo-ranking">1</span>
+                            </td>
+                            <td>
+                                <a href="#" target="_blank" class="my-article-cover">
+                                    <img src="images/avatars/1.jpg">
+                                </a>
+                                <div class="mp-public-name">
+                                    <a href="#" target="_blank" class="my-article-cover">Alex大叔</a>
+                                    <br>
+                                    asytro_alex
+                                </div>
+                            </td>
+                            <td class="text-align-center">161万</td>
+                            <td class="text-align-center">66297</td>
+                            <td class="text-align-center">100000+</td>
+                            <td class="text-align-center">2320</td>
+                            <td class="text-align-center">1</td>
+                            <td class="text-align-center">关注</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-warning risk-index cyclo-ranking">2</span>
+                            </td>
+                            <td>
+                                <a href="#" target="_blank" class="my-article-cover">
+                                    <img src="images/avatars/1.jpg">
+                                </a>
+                                <div class="mp-public-name">
+                                    <a href="#" target="_blank" class="my-article-cover">Alex大叔</a>
+                                    <br>
+                                    asytro_alex
+                                </div>
+                            </td>
+                            <td class="text-align-center">161万</td>
+                            <td class="text-align-center">66297</td>
+                            <td class="text-align-center">100000+</td>
+                            <td class="text-align-center">2320</td>
+                            <td class="text-align-center">1</td>
+                            <td class="text-align-center">关注</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-success risk-index cyclo-ranking">3</span>
+                            </td>
+                            <td>
+                                <a href="#" target="_blank" class="my-article-cover">
+                                    <img src="images/avatars/1.jpg">
+                                </a>
+                                <div class="mp-public-name">
+                                    <a href="#" target="_blank" class="my-article-cover">Alex大叔</a>
+                                    <br>
+                                    asytro_alex
+                                </div>
+                            </td>
+                            <td class="text-align-center">161万</td>
+                            <td class="text-align-center">66297</td>
+                            <td class="text-align-center">100000+</td>
+                            <td class="text-align-center">2320</td>
+                            <td class="text-align-center">1</td>
+                            <td class="text-align-center">关注</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-default risk-index cyclo-ranking">4</span>
+                            </td>
+                            <td>
+                                <a href="#" target="_blank" class="my-article-cover">
+                                    <img src="images/avatars/1.jpg">
+                                </a>
+                                <div class="mp-public-name">
+                                    <a href="#" target="_blank" class="my-article-cover">Alex大叔</a>
+                                    <br>
+                                    asytro_alex
+                                </div>
+                            </td>
+                            <td class="text-align-center">161万</td>
+                            <td class="text-align-center">66297</td>
+                            <td class="text-align-center">100000+</td>
+                            <td class="text-align-center">2320</td>
+                            <td class="text-align-center">1</td>
+                            <td class="text-align-center">关注</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-default risk-index cyclo-ranking">5</span>
+                            </td>
+                            <td>
+                                <a href="#" target="_blank" class="my-article-cover">
+                                    <img src="images/avatars/1.jpg">
+                                </a>
+                                <div class="mp-public-name">
+                                    <a href="#" target="_blank" class="my-article-cover">Alex大叔</a>
+                                    <br>
+                                    asytro_alex
+                                </div>
+                            </td>
+                            <td class="text-align-center">161万</td>
+                            <td class="text-align-center">66297</td>
+                            <td class="text-align-center">100000+</td>
+                            <td class="text-align-center">2320</td>
+                            <td class="text-align-center">1</td>
+                            <td class="text-align-center">关注</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-default risk-index cyclo-ranking">6</span>
+                            </td>
+                            <td>
+                                <a href="#" target="_blank" class="my-article-cover">
+                                    <img src="images/avatars/1.jpg">
+                                </a>
+                                <div class="mp-public-name">
+                                    <a href="#" target="_blank" class="my-article-cover">Alex大叔</a>
+                                    <br>
+                                    asytro_alex
+                                </div>
+                            </td>
+                            <td class="text-align-center">161万</td>
+                            <td class="text-align-center">66297</td>
+                            <td class="text-align-center">100000+</td>
+                            <td class="text-align-center">2320</td>
+                            <td class="text-align-center">1</td>
+                            <td class="text-align-center">关注</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-default risk-index cyclo-ranking">7</span>
+                            </td>
+                            <td>
+                                <a href="#" target="_blank" class="my-article-cover">
+                                    <img src="images/avatars/1.jpg">
+                                </a>
+                                <div class="mp-public-name">
+                                    <a href="#" target="_blank" class="my-article-cover">Alex大叔</a>
+                                    <br>
+                                    asytro_alex
+                                </div>
+                            </td>
+                            <td class="text-align-center">161万</td>
+                            <td class="text-align-center">66297</td>
+                            <td class="text-align-center">100000+</td>
+                            <td class="text-align-center">2320</td>
+                            <td class="text-align-center">1</td>
+                            <td class="text-align-center">关注</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-default risk-index cyclo-ranking">8</span>
+                            </td>
+                            <td>
+                                <a href="#" target="_blank" class="my-article-cover">
+                                    <img src="images/avatars/1.jpg">
+                                </a>
+                                <div class="mp-public-name">
+                                    <a href="#" target="_blank" class="my-article-cover">Alex大叔</a>
+                                    <br>
+                                    asytro_alex
+                                </div>
+                            </td>
+                            <td class="text-align-center">161万</td>
+                            <td class="text-align-center">66297</td>
+                            <td class="text-align-center">100000+</td>
+                            <td class="text-align-center">2320</td>
+                            <td class="text-align-center">1</td>
+                            <td class="text-align-center">关注</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+        </div>
+            
+         </div>
+		<!--/wrapper-->
+
+    </div>
+</div>
+<!--/main-->
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/icheck.min.js"></script>
+<script src="js/easypiechart.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
