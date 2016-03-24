@@ -186,7 +186,7 @@ body { background: #edf0f5; font-family: "Microsoft YaHei", Arial, Helvetica, sa
 .material-tag-check { min-height: 120px; width: 140px; padding:20px 0 0 40px; }
 .material-tag-check input { margin-right: 10px; }
 .mp-user-article-timer { padding:20px 0;}
-.mp-article-list-timer{ padding:0 0 20px 0;}
+.mp-article-list-timer{ padding:0 0 20px 5px;}
 .text-align-center{ text-align:center !important;}
 
 /*全网素材列表*/
@@ -221,9 +221,9 @@ body { background: #edf0f5; font-family: "Microsoft YaHei", Arial, Helvetica, sa
 .material-search { width: 500px; }
 .material-search-2 { width: 500px; }
 .mp-article-title{ padding:0 10px;}
-.mp-article-title a:link, .mp-article-title a:visited, .my-article-cover:link, .my-article-cover:visited { color: #345; text-decoration: none; }
+/*.mp-article-title a:link, .mp-article-title a:visited, .my-article-cover:link, .my-article-cover:visited { color: #345; text-decoration: none; }
 .mp-article-title a:hover, .my-article-cover:hover { color: #3498db; text-decoration: none; }
-.mp-article-title a:active, .my-article-cover:active { color: #145bc7; text-decoration: none; }
+.mp-article-title a:active, .my-article-cover:active { color: #145bc7; text-decoration: none; }*/
 .mp-article-title .tooltip-inner { background: #4a4a4a !important; height: 30px; font-size: 14px; line-height: 24px;}
 .mp-article-title .tooltip-arrow { border-top-color: #4a4a4a !important; }
 
@@ -243,8 +243,65 @@ body { background: #edf0f5; font-family: "Microsoft YaHei", Arial, Helvetica, sa
 .mp-article-list .table1 td {border-bottom: 1px solid #e5e9ed; height:60px;}
 .mp-public-name{vertical-align: middle !important; line-height: 1.4;}
 .cyclo-ranking{ border-radius:50%;}
+
+/*图文*/
+.subscribeKeywords{ border-bottom: 1px solid #e5e9ed;  background: #fff; padding: 20px 40px 8px; margin:0;}
+.subscribeKeywords a{ display: inline-block; border: 1px solid #e5e9ed; border-radius: 5px; padding: 6px; min-width:250px; color: #89a; font-size: 14px; font-weight: bold; height: 42px; line-height: 28px; overflow: hidden;  float: left; margin:0 12px 12px 0;}
+.subscribeKeywords a img{ margin-right:6px; float: left; width:28px; height:28px;}
+.subscribeKeywords a i{margin-right:6px; float: left;}
+.subscribeKeywords a span{ background:#89a; color:#fff; width:22px; height:22px; line-height:22px; text-align:center; vertical-align:middle; border-radius:50%; margin-top:3px;}
+.subscribeKeywords a:hover,
+.subscribeKeywords .active{ background: #46be68; border: 1px solid #46be68; color: #fff; text-decoration: none;}
+.subscribeKeywords a:hover,
+.subscribeKeywords .active span{ background:#fff; color:#46be68;}
+
+.appmsg-list section{ margin:0 5px 20px; display:inline-block;}
+.appmsg-list{ padding:0 15px;}
+.material-list{ padding:11px 11px 0 11px; width:384px; background:#fff; border:1px solid #e5e9ed;}
+.add-appmsg-item{ height:96px; text-align:center;}
+.appmsg-list-info{ height:36px; border-bottom:1px solid #e5e9ed;}
+.appmsg-list-info img{ width:28px; height:28px; border-radius:50%; margin-right:10px;}
+
+.appmsg-top{ position:relative;}
+.appmsg-top img{ width:360px; height:224px; margin:0 auto; z-index:1;}
+.appmsg-item-title{ position:absolute; left:0; bottom:0; background:#2a3542; height:36px; width:100%; z-index:2; line-height:36px; padding:0 15px; filter:alpha(opacity=90); -moz-opacity:0.9;   -khtml-opacity:0.9; opacity:0.9; color:#fff; font-size:16px;}
+.appmsg-item ul{-webkit-padding-start: 0; list-style:none; color:#345;}
+.appmsg-item ul li{vertical-align:middle; border-bottom:1px solid #f2f2f2; height:80px; vertical-align:middle; padding:15px 0; line-height:1.8;}
+.appmsg-item ul li img{ float:right; margin-left:20px; width:48px; height:48px;}
+.appmsg-item ul li:last-child{ border-bottom:none;}
+/*.appmsg-item ul li a:link,.appmsg-item ul li a:visited{ color:#334455;}
+.appmsg-item ul li a:hover,.appmsg-item ul li a:active{ color:#49a0dd;}*/
+.appmsg-list-opr{ height:62px; background:#f8f9fb; margin:-10px -11px 0 -11px; border-top:1px solid #f2f2f2;}
+.appmsg-list-opr ul{ list-style:none; padding-left:0;}
+.appmsg-list-opr ul li{ width:33.3%; float:left; line-height:62px; text-align:center; color:#89a;}
+.appmsg-list-opr ul li a{ display:block;}
+.appmsg-list-opr ul li a:hover{ background:#cdd1d7; color:#fff;}
+
+.appmsg-tag{ color:#fff; padding:4px 10px; border-radius:5px;}
+.appmsg-tag:link, .appmsg-tag:visited{ color: #fff; text-decoration: none; }
+.appmsg-tag:hover{ color: #fff; text-decoration: none; }
+.appmsg-tag:active{ color: #fff; text-decoration: none; }
+.appmsg-send{ background:#46be68;}
+.appmsg-no-send{ background:#89a;}
+.waiting-mass{ background:#f8b209;}
+
+.editor-wrapper{ background:#f8f9fb; position: absolute; top: 88px; left: 240px; right: 0; bottom: 0; }
+.editor-view{ max-width:400px; border-right:1px solid #e5e9ed; float:left;}
+.editor-view .editor-appmsg-top{ padding:16px; position:relative;}
+.editor-view .editor-appmsg-top img{ max-width:368px; width:100%;}
+.editor-view .editor-appmsg-top .editor-title{background:#2a3542; height:36px; width:100%; z-index:2; line-height:36px; padding:0 15px; filter:alpha(opacity=90); -moz-opacity:0.9;   -khtml-opacity:0.9; opacity:0.9; color:#fff; font-size:16px; margin-top:-36px;}
+.editor-appmsg-list{ padding:0 16px;}
+.editor-appmsg-list ul{ list-style:none;}
+.editor-appmsg-list ul li{ border-bottom:1px solid #e5e9ed;}
+
+.editor-style{ float:left;}
+.editor-heading{ height:50px; vertical-align:middle;}
 /* ==控件== */
 
+/*链接*/
+a:link, a:visited{ color: #345; text-decoration: none; }
+a:hover{ color: #3498db; text-decoration: none; }
+a:active{ color: #145bc7; text-decoration: none; }
 /* 下拉菜单带箭头 */
 .control-select-with-nav .select-nav { display: inline-block; width: 34px; height: 34px; border: 1px solid #e5e9ed; background: #fff; float: left; text-align: center; line-height: 34px; font-size: 14px; color: #7a838f; }
 .control-select-with-nav .select-nav:hover { background: #edf0f5; }
@@ -311,6 +368,5 @@ body { background: #edf0f5; font-family: "Microsoft YaHei", Arial, Helvetica, sa
 .pagination-btn-go:active{background: #46be68 !important; color:#fff;text-decoration:none;}
 
 /*消息*/
-.
 
 

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/select2.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
+</head>
+<body>
+<!--sidebar-->
+<div class="sidebar">
+    <div class="brand">
+        <img src="images/logo.png" class="navbar-brand-logo">
+        <div class="public-name">
+            <span class="navbar-brand-text">西瓜公众号助手</span>
+            <span class="navbar-brand-url">www.xiguaji.com</span>
+        </div>
+    </div>
+
+        <ul>
+            <li>
+                <a href="#" title="工作台"><i class="iconfont">&#xe60d;</i> <span class="menu-item-parent">工作台</span></a>
+            </li>
+            <li class="active has-sub open">
+                <a href="#" title="图文同步"><i class="iconfont">&#xe61d;</i> <span class="menu-item-parent">图文同步</span><b class="collapse-sign"><em class="fa fa-angle-up fa-right fa-up"></em></b></a>
+                <ul style="display: block;">
+                    <li class="active"><a href="/Material/List">我的图文</a></li>
+                    <li><a href="/MArticleUse/ArticleUseListNew">我的素材库</a></li>
+                    <li><a href="/UserBiz/UserBizListNew">我运营的公众号</a></li>
+                </ul>
+            </li>
+            <li class="has-sub open">
+                <a href="#" title="素材收集"><i class="iconfont">&#xe61d;</i> <span class="menu-item-parent">素材收集</span><b class="collapse-sign"><em class="fa fa-angle-down fa-right"></em></b></a>
+                <ul style="display: none;">
+                    <li><a href="/MArticle/Explore">全网优质素材</a></li>
+                    <li><a href="/MArticle/Subscription">我关注的</a></li>
+                    <li><a href="/MArticleCollect/PopularArticle">黑马爆文</a></li>
+                    <li><a href="/UserBiz/List">专享素材</a></li>
+                    <li><a href="/Original/ArticleList">原创优选</a></li> 
+                </ul>
+            </li>
+            <li class="has-sub open">
+                <a href="#" title="高级功能"><i class="iconfont">&#xe61d;</i> <span class="menu-item-parent">高级功能</span><b class="collapse-sign"></i><em class="fa fa-angle-down fa-right"></em></b></a>
+                <ul>
+                    <li><a href="/AgainsRulesArticle/Index">违规文章曝光台</a></li>
+                    <li><a href="/Diagnosis/Index">公众号诊断</a></li>
+                    <li><a href="/HotKeyword/Index">热点风向标</a></li>
+                    <li><a href="/MyMBiz/MBizSearch">全网公众号搜索</a></li>
+                    <li><a href="/MBiz/Rank">热门公众号榜单</a></li>
+                </ul>
+            </li>
+            <li><a href="/Purchase" title="购买升级" target="_blank"><i class="iconfont">&#xe62b;</i> <span class="menu-item-parent">购买升级</span> <span class="badge inbox-badge bg-color-red font-weight-400">新春开门红</span></a></li>
+            <li><a href="/App" title="西瓜集App" target="_blank"><i class="iconfont">&#xe62a;</i> <span class="menu-item-parent">西瓜集App</span></a></li>
+            <li><a href="/Knowledge" title="帮助中心" target="_blank"><i class="iconfont">&#xe606;</i> <span class="menu-item-parent">帮助中心</span></a></li>
+        </ul>
+
+</div>
+<!--/sidebar-->
+<!--main-->
+<div class="main">
+    <div class="main-content">
+    	<!--topbar-->
+		<div class="topbar">
+            <div class="pull-left nav-area">
+                <a href="#" data-original-title="所有类型内容" rel="tooltip"><i class="fa fa-bars"></i></a>
+				<a href="#" data-original-title="所有类型内容" rel="tooltip"><i class="iconfont">&#xe62f;</i></a>
+                <a href="#" data-original-title="所有类型内容" rel="tooltip"><i class="iconfont">&#xe634;</i><i class="fa fa-circle ico-new-msg"></i></a>
+                <a href="#" data-original-title="所有类型内容" rel="tooltip"><i class="iconfont">&#xe632;</i></a>
+            </div>
+            <div class="nav-right-area">
+                <div class="pull-left user-area">
+                    <div class="pull-left icon-user"><i class="fa fa-user"></i></div>
+                    <a href="javascript:;">ckkdm@gmail.com</a>
+                </div>
+                <a class="pull-right btn-exit" href="javascript:;">
+                    <i class="fa fa-sign-out ico-exit"></i>
+                </a>
+            </div>
+        </div>
+        <!--/topbar-->
+        
+        <div class="row subscribeKeywords">
+            <a href="javascript:;" class="active"><i class="iconfont">&#xe638;</i>全部图文<span class="pull-right">1</span></a>
+            <a href="javascript:;"><img src="images/avatars/1.jpg">巴拉巴拉小魔仙<span class="pull-right">2</span></a>
+            <a href="javascript:;"><img src="images/avatars/1.jpg">巴拉小魔仙<span class="pull-right">3</span></a>
+            <a href="javascript:;"><img src="images/avatars/1.jpg">巴拉仙<span class="pull-right">4</span></a>
+            <a href="javascript:;"><img src="images/avatars/1.jpg">巴仙<span class="pull-right">4</span></a>
+            <a href="javascript:;" class="text-align-center">+ 添加公众号</a>
+        </div>
+        
+        <!--wrapper-->
+        <div class="page">
+        	<!--subscribe-article-list-->
+        	<div class="container-fluid subscribe-article-list">
+                 <div class="mp-user-article-timer mp-article-list-timer clearfix">
+                    <select class="control-select" data-select>
+                        <option>全部</option>
+                        <option>蝙蝠侠vs超人</option>
+                        <option>巴拉巴拉小魔仙</option>
+                        <option>巴拉巴拉</option>
+                    </select>
+					<div class="what-popular-article pull-right">
+                    <a href="#">如何同步图文到微信后台</a>
+                    </div>
+                </div>
+            </div>
+            <!--/subscribe-article-list-->
+            <!--material-list-body-->
+            <div class="material-list-body">
+            	<div class="appmsg-list">
+                	<section class="add-appmsg-item material-list"><i class="fa fa-plus"></i><br>新建图文</section>
+                    <div class="masonr-container">
+                        <section>
+                            <div class="material-list">
+                                <div class="appmsg-list-info"><img src="images/avatars/1.jpg" >10月14号 <a href="#" class="pull-right appmsg-tag appmsg-send" data-toggle="tooltip" data-placement="top" title="已同步到微信后台">已同步</a></div>
+                                <div class="appmsg-top">
+                                    <img src="images/avatars/3.jpg" >
+                                    <div class="appmsg-item-title">显然已经是冬天了.</div>
+                                </div>
+                                <div class="appmsg-item">
+                                    <ul>
+                                        <li><img src="images/avatars/4.png" ><a href="#">NASA黑历史：他们把阿波罗11号登月计划磁带的内容给删了</a></li>
+                                        <li><img src="images/avatars/4.png" ><a href="#">异性相处时，你会如何调情？</a></li>
+                                        <li><img src="images/avatars/4.png" ><a href="#">孙俪：一个女演员的“成精”之路</a></li>
+                                        <li><img src="images/avatars/4.png" ><a href="#">NASA黑历史：他们把阿波罗11号登月计划磁带的内容给删了</a></li>
+                                        <li><img src="images/avatars/4.png" ><a href="#">这首歌唱哭全场，伴舞的竟然是……</a></li>
+                                        <li><img src="images/avatars/4.png" ><a href="#">NASA黑历史：他们把阿波罗11号登月计</a></li>
+                                        <li><img src="images/avatars/4.png" ><a href="#">NASA黑历史：他们把阿波罗11号登月计划磁带的内容给删了</a></li>
+                                    </ul>
+                                </div>
+                                <div class="appmsg-list-opr">
+                                    <ul>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="编辑文章及调整文章顺序"><i class="fa fa-pencil"></i></a></li>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="将该图文复制到其他公众号"><i class="fa fa-clipboard"></i></a></li>
+                                        <li><a href="#" ><i class="fa fa-trash-o"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section>
+                            <div class="material-list">
+                                <div class="appmsg-list-info"><img src="images/avatars/1.jpg" >10月14号 <a href="#" class="pull-right appmsg-tag appmsg-no-send" data-toggle="tooltip" data-placement="top" title="点击后将直接同步到微信后台">未同步</a></div>
+                                <div class="appmsg-top">
+                                    <img src="images/avatars/3.jpg" >
+                                    <div class="appmsg-item-title">显然已经是冬天了.</div>
+                                </div>
+                                <div class="appmsg-item">
+                                    <ul>
+                                        <li><img src="images/avatars/4.png" ><a href="#">NASA黑历史：他们把阿波罗11号登月计划磁带的内容给删了</a></li>
+                                        <li><img src="images/avatars/4.png" ><a href="#">异性相处时，你会如何调情？</a></li>
+                                        <li><img src="images/avatars/4.png" ><a href="#">孙俪：一个女演员的“成精”之路</a></li>
+                                        <li><img src="images/avatars/4.png" ><a href="#">NASA黑历史：他们把阿波罗11号登月计划磁带的内容给删了</a></li>
+                                        <li><img src="images/avatars/4.png" ><a href="#">这首歌唱哭全场，伴舞的竟然是……</a></li>
+                                        <li><img src="images/avatars/4.png" ><a href="#">NASA黑历史：他们把阿波罗11号登月计</a></li>
+                                        <li><img src="images/avatars/4.png" ><a href="#">NASA黑历史：他们把阿波罗11号登月计划磁带的内容给删了</a></li>
+                                    </ul>
+                                </div>
+                                <div class="appmsg-list-opr">
+                                    <ul>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="编辑文章及调整文章顺序"><i class="fa fa-pencil"></i></a></li>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="将该图文复制到其他公众号"><i class="fa fa-clipboard"></i></a></li>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="将该图文删除"><i class="fa fa-trash-o"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section>
+                            <div class="material-list">
+                                <div class="appmsg-list-info"><img src="images/avatars/1.jpg" >10月14号  <a href="#" class="pull-right appmsg-tag waiting-mass" data-toggle="tooltip" data-placement="top" title="点击后将直接同步到微信后台"><i class="fa fa-clock-o"></i> 等待群发</a></div>
+                                <div class="appmsg-top">
+                                    <img src="images/avatars/3.jpg" >
+                                    <div class="appmsg-item-title">显然已经是冬天了.</div>
+                                </div>
+                                <div class="appmsg-item">
+                                    <ul>
+                                        <li><img src="images/avatars/4.png" ><a href="#">NASA黑历史：他们把阿波罗11号登月计划磁带的内容给删了</a></li>
+                                        <li><img src="images/avatars/4.png" ><a href="#">异性相处时，你会如何调情？</a></li>
+                                        <li><img src="images/avatars/4.png" ><a href="#">孙俪：一个女演员的“成精”之路</a></li>
+                                        <li><img src="images/avatars/4.png" ><a href="#">NASA黑历史：他们把阿波罗11号登月计划磁带的内容给删了</a></li>
+                                        <li><img src="images/avatars/4.png" ><a href="#">这首歌唱哭全场，伴舞的竟然是……</a></li>
+                                        <li><img src="images/avatars/4.png" ><a href="#">NASA黑历史：他们把阿波罗11号登月计</a></li>
+                                        <li><img src="images/avatars/4.png" ><a href="#">NASA黑历史：他们把阿波罗11号登月计划磁带的内容给删了</a></li>
+                                    </ul>
+                                </div>
+                                <div class="appmsg-list-opr">
+                                    <ul>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="编辑文章及调整文章顺序"><i class="fa fa-pencil"></i></a></li>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="将该图文复制到其他公众号"><i class="fa fa-clipboard"></i></a></li>
+                                        <li><a href="#" ><i class="fa fa-trash-o"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section>
+                            <div class="material-list">
+                                <div class="appmsg-list-info"><img src="images/avatars/1.jpg" >10月14号 <a href="#" class="pull-right appmsg-tag appmsg-send" data-toggle="tooltip" data-placement="top" title="点击后将直接同步到微信后台"><i class="fa fa-clock-o"></i> 已群发</a></div>
+                                <div class="appmsg-top">
+                                    <img src="images/avatars/3.jpg" >
+                                    <div class="appmsg-item-title">显然已经是冬天了.</div>
+                                </div>
+                                <div class="appmsg-item">
+                                    <ul>
+                                        <li><img src="images/avatars/4.png" ><a href="#">NASA黑历史：他们把阿波罗11号登月计划磁带的内容给删了</a></li>
+                                        <li><img src="images/avatars/4.png" ><a href="#">异性相处时，你会如何调情？</a></li>
+                                        <li><img src="images/avatars/4.png" ><a href="#">孙俪：一个女演员的“成精”之路</a></li>
+                                        <li><img src="images/avatars/4.png" ><a href="#">NASA黑历史：他们把阿波罗11号登月计划磁带的内容给删了</a></li>
+                                        <li><img src="images/avatars/4.png" ><a href="#">这首歌唱哭全场，伴舞的竟然是……</a></li>
+                                        <li><img src="images/avatars/4.png" ><a href="#">NASA黑历史：他们把阿波罗11号登月计</a></li>
+                                        <li><img src="images/avatars/4.png" ><a href="#">NASA黑历史：他们把阿波罗11号登月计划磁带的内容给删了</a></li>
+                                    </ul>
+                                </div>
+                                <div class="appmsg-list-opr">
+                                    <ul>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="编辑文章及调整文章顺序"><i class="fa fa-pencil"></i></a></li>
+                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="将该图文复制到其他公众号"><i class="fa fa-clipboard"></i></a></li>
+                                        <li><a href="#" ><i class="fa fa-trash-o"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        
+                    </div>
+            	</div>
+            </div>
+            <!--/material-list-body-->
+      	</div>
+		<!--/wrapper-->
+
+    </div>
+</div>
+<!--/main-->
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/icheck.min.js"></script>
+<script src="js/easypiechart.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
