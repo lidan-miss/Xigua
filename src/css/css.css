@@ -303,11 +303,11 @@ body { background: #edf0f5; font-family: "Microsoft YaHei", Arial, Helvetica, sa
 /*图文*/
 .subscribeKeywords { border-bottom: 1px solid #e5e9ed; background: #fff; padding: 20px 40px 8px; margin: 0; }
 .subscribeKeywords a { display: inline-block; border: 1px solid #e5e9ed; border-radius: 5px; padding: 6px; min-width: 250px; color: #89a; font-size: 14px; font-weight: bold; height: 42px; line-height: 28px; overflow: hidden; float: left; margin: 0 12px 12px 0; }
-.subscribeKeywords a img { margin-right: 6px; float: left; width: 28px; height: 28px; }
-.subscribeKeywords a i { margin-right: 6px; float: left; }
+.subscribeKeywords a img { margin-right: 6px; float: left; width: 28px; height: 28px; border-radius:2px;}
+.subscribeKeywords a i { margin-right: 6px; float: left; font-weight:normal;}
 .subscribeKeywords .amount { background: #89a; color: #fff; width: 22px; height: 22px; line-height: 22px; text-align: center; vertical-align: middle; border-radius: 50%; margin-top: 3px; display: block; }
 .subscribeKeywords a:hover, .subscribeKeywords .active { background: #46be68; border: 1px solid #46be68; color: #fff; text-decoration: none; }
-.subscribeKeywords a:hover, .subscribeKeywords .active .amount { background: #fff; color: #46be68; }
+.subscribeKeywords a:hover .amount,.subscribeKeywords .active .amount { background: #fff; color: #46be68; }
 .add-appmsg-area { line-height: 1.6; padding: 10px 0; vertical-align: middle; font-size: 16px; border: 1px solid #fff;}
 .add-appmsg-area i { font-size: 18px; }
 .add-appmsg-area a { display: block; color: #89a; }
@@ -315,7 +315,7 @@ body { background: #edf0f5; font-family: "Microsoft YaHei", Arial, Helvetica, sa
 .add-appmsg-item-btns { height: 84px; line-height: 70px; font-size: 16px; color: #89a; }
 .add-appmsg-item-btns a { margin: 0 24px; }
 .appmsg-list .col{ padding: 0;}
-.appmsg-list section { margin: 0 5px 20px; }
+.appmsg-list section { margin: 0 5px 15px; }
 .appmsg-list { padding: 0 15px; }
 .material-list { padding: 11px 11px 0 11px; background: #fff; border: 1px solid #e5e9ed; }
 .add-appmsg-item { height: 96px; text-align: center; }
@@ -373,6 +373,8 @@ body { background: #edf0f5; font-family: "Microsoft YaHei", Arial, Helvetica, sa
 
 /*我的素材库*/
 .material-folder { margin-left: 80px; }
+/*边距和背景*/
+.wrapper-endless{ padding:0;}
 
 /* ==控件== */
 
@@ -486,3 +488,30 @@ a:active{ color: #145bc7; text-decoration: none; }*/
 }
 .flipInY { -webkit-animation-name: flipInY; -moz-animation-name: flipInY; -o-animation-name: flipInY; animation-name: flipInY; -webkit-animation-duration: .7s; -moz-animation-duration: .7s; -o-animation-duration: .7s; animation-duration: .7s; -webkit-animation-fill-mode: both; -moz-animation-fill-mode: both; -o-animation-fill-mode: both; animation-fill-mode: both; }
 .animated.flipInY { -webkit-backface-visibility: visible !important; -webkit-animation-name: flipInY; -moz-backface-visibility: visible !important; -moz-animation-name: flipInY; -o-backface-visibility: visible !important; -o-animation-name: flipInY; backface-visibility: visible !important; animation-name: flipInY }
+
+/*个人信息*/
+.left-message-list{ background:#f8f9fb; width:200px; float:left; border-right:1px solid #e5e9ed; height:100%;}
+.left-message-list ul{ list-style:none; padding:0; margin:0;}
+.left-message-list li{ height:47px; border-bottom:1px solid #e5e9ed; line-height:46px;}
+.left-message-list li:hover a,
+.left-message-list li.active a{ background:#46be68; color:#fff; display:block; text-decoration:none;}
+.left-message-list li a:link{padding-left:40px; color:89a;}
+
+.right-message-content{ margin-left:200px; padding:40px;}
+.right-message-content section{ margin-bottom:40px;}
+.right-message-content h4{ background:url(../images/sprites_icon.png) no-repeat left -168px; font-size:14px; padding-left:13px; font-size:16px; font-weight:bold;}
+.basic-information{ margin:20px 0; min-height:80px;}
+.basic-information dl{ padding:20px; height:80px; vertical-align:middle;}
+.basic-information dt{ background:url(../images/sprites_icon.png) no-repeat left -60px; width:80px; height:80px; float:left;}
+.basic-information dd{ padding-left:100px; line-height:1.8;}
+.basic-information dd span{ color:#345;}
+.basic-information dd .premium{ background:#46be68; padding:2px 5px; font-size:10px; margin-left:10px; color:#fff; border-radius:3px;}
+.account-security dl{ padding:20px; border-bottom:1px solid #e5e9ed; margin:0; color:#345;}
+.account-security dt{ float:left;width:52px; height:52px; margin-right:20px;}
+.account-security dd{ vertical-align:middle; line-height:1.6;}
+.account-security p{ color:#91a0b0;}
+.account-security .ico-phone{ background:url(../images/sprites_icon.png) no-repeat 0 0; }
+.account-security .ico-clok{ background:url(../images/sprites_icon.png) no-repeat -52px 0; }
+.set-public-type{ padding:10px 0;}
+.btn-setting{ margin-left:35px;}
+.account-security-title{ font-size:16px; color:#345;}
