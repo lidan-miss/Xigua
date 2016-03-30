@@ -498,7 +498,8 @@ a:active{ color: #145bc7; text-decoration: none; }*/
 .left-message-list li a:link{padding-left:40px; color:89a;}
 
 .right-message-content{ margin-left:200px; padding:40px;}
-.right-message-content section{ margin-bottom:40px;}
+.right-message-content section{ margin-bottom:30px;}
+.right-message-content .diagnose-nav{ margin-bottom:0;}
 .right-message-content h4{ background:url(../images/sprites_icon.png) no-repeat left -168px; font-size:14px; padding-left:13px; font-size:16px; font-weight:bold;}
 .basic-information{ margin:20px 0; min-height:80px;}
 .basic-information dl{ padding:20px; height:80px; vertical-align:middle;}
@@ -509,9 +510,16 @@ a:active{ color: #145bc7; text-decoration: none; }*/
 .account-security dl{ padding:20px; border-bottom:1px solid #e5e9ed; margin:0; color:#345;}
 .account-security dt{ float:left;width:52px; height:52px; margin-right:20px;}
 .account-security dd{ vertical-align:middle; line-height:1.6;}
+.account-security .right-btns{ margin-top:11px;}
 .account-security p{ color:#91a0b0;}
 .account-security .ico-phone{ background:url(../images/sprites_icon.png) no-repeat 0 0; }
 .account-security .ico-clok{ background:url(../images/sprites_icon.png) no-repeat -52px 0; }
 .set-public-type{ padding:10px 0;}
 .btn-setting{ margin-left:35px;}
 .account-security-title{ font-size:16px; color:#345;}
+/*索取发票*/
+.invoice-nav{ padding:0 !important;}
+.invoice-nav .col-md-3{ padding:0;}
+.violation-statistics{ text-align:center; height:150px; border-bottom:1px solid #e5e9ed; padding:30px 0;}
+.violation-statistics span{ font-size:36px; color:#345; font-weight:bold}
+.invite-link{}
