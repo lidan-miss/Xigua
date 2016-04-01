@@ -499,6 +499,7 @@ a:active{ color: #145bc7; text-decoration: none; }*/
 
 .right-message-content{ margin-left:200px; padding:40px;}
 .right-message-content section{ margin-bottom:30px;}
+.right-message-content ul, .right-message-content li{ list-style:none;}
 .right-message-content .diagnose-nav{ margin-bottom:0;}
 .right-message-content h4{ background:url(../images/sprites_icon.png) no-repeat left -168px; font-size:14px; padding-left:13px; font-size:16px; font-weight:bold;}
 .basic-information{ margin:20px 0; min-height:80px;}
@@ -521,5 +522,19 @@ a:active{ color: #145bc7; text-decoration: none; }*/
 .invoice-nav{ padding:0 !important;}
 .invoice-nav .col-md-3{ padding:0;}
 .violation-statistics{ text-align:center; height:150px; border-bottom:1px solid #e5e9ed; padding:30px 0;}
+.violation-statistics li{ width:25%; float:left;}
 .violation-statistics span{ font-size:36px; color:#345; font-weight:bold}
-.invite-link{}
+
+.invite-link{ height:48px; color:#485664;}
+.my-invitation-link{ background:#f8f9fb; color:#89a;}
+.invite-link .copylink{ text-align:left !important;}
+.invite-link .btn-copy{ background:#46be68;}
+.invite-link .btn-copy a{ color:#fff; text-decoration:none; font-size:16px; display:block;}
+
+.violation-table{ padding:40px; text-align:center;}
+.violation-table-list .table { border: 1px solid #e5e9ed; background-color: #fff; }
+.violation-table-list th, .violation-table-list td { font-size: 14px !important; vertical-align: middle !important; }
+.violation-table-list .table th { background-color: #f8f9fb; color: #696969; padding: 12px 10px !important; border-bottom: 1px solid #e5e9ed; text-align: center;}
+.violation-table-list .table td { border-bottom: 1px solid #e5e9ed;border-right: 1px solid #e5e9ed; line-height:1.8;}
+.violation-table-list .table td span{ color:#46be68; font-weight:bold;}
+.has-change{ color:#e74c3c;}
