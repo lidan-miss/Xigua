@@ -1,3 +1,4 @@
+// ====控件====
 $('[data-select]').select2({
     minimumResultsForSearch: Infinity
 });
@@ -8,3 +9,6 @@ $('[data-checkbox]').iCheck({
     increaseArea: '20%'
 });
 $('[data-toggle="tooltip"]').tooltip();
+
+
+

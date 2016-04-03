@@ -7,6 +7,8 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="css/select2.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/controls.css" rel="stylesheet">
     <link href="css/css.css" rel="stylesheet">
 </head>
 <body>
@@ -82,8 +84,8 @@
         </div>
         <!--/topbar-->
         <!--wrapper-->
-        <div class="wrapper wrapper-endless">
-            <div class="left-message-list">
+        <div class="wrapper wrapper-no-gap">
+            <div class="wrapper-col-left left-message-list">
             	<ul>
                 	<li class="active"><a href="#">个人信息</a></li>
                     <li><a href="#">索取发票</a></li>
@@ -91,76 +93,41 @@
                     <li><a href="#">系统消息</a></li>
                 </ul>
             </div>
-            <div class="right-message-content invoice-nav">
+            <div class="wrapper-col-right right-message-content invoice-nav">
             	<ul class="diagnose-nav clearfix">
-                    <li><a href="#">邀请规则</a></li>
-                    <li class="current"><a href="#">西瓜币记录</a></li>
-                    <li><a href="#">西瓜币兑换</a></li>
+                    <li class="current"><a href="#">全部</a></li>
+                    <li><a href="#">未读</a></li>
                 </ul>
-                
-                <div class="violation-table">
-                    
-                    <div class="violation-table-list">
-                        <colgroup>
-                            <col width="33%">
-                            <col width="33%">
-                            <col width="33%">
-                        </colgroup>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>规则</th>
-                                    <th>西瓜币</th>
-                                    <th>说明</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="has-change">
-                                    <td>12-16 20:18</td>
-                                    <td>-50</td>
-                                    <td>兑换1张西瓜公众号助手50元代金券</td>
-                                </tr>
-                                <tr>
-                                    <td>12-16 20:18</td>
-                                    <td>+50</td>
-                                    <td>兑换1张西瓜公众号助手50元代金券</td>
-                                </tr>
-                                <tr>
-                                    <td>12-16 20:18</td>
-                                    <td>+50</td>
-                                    <td>兑换1张西瓜公众号助手50元代金券</td>
-                                </tr>
-                                <tr>
-                                    <td>12-16 20:18</td>
-                                    <td>+50</td>
-                                    <td>兑换1张西瓜公众号助手50元代金券</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    
-                    <div class="control-pagination">
-                        <ul class="pagination">
-                            <li>
-                              <a href="#" aria-label="Previous">
-                                <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
-                              </a>
-                            </li>
-                            <li><a href="#" class="active">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li>
-                              <a href="#" aria-label="Next">
-                                <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
-                              </a>
-                            </li>
-                        </ul>
-                        共20页，到  <input name="" type="text" class="pagination-text-input">页 <a href="#" class="pagination-btn-go">GO</a>
-                    </div>
-                    
+
+                <div class="system-message">
+                    <ul>
+                        <li>
+                            <i class="fa fa-circle ico-new-msg"></i>
+                            <h3>新增图文编辑功能 <span class="pull-right">2016-01-06  12:36</span></h3>
+                            <p>生成图文后，在编辑文章时经常需要删除一整段内容，如文章里原有的关注引导等内容，或者编辑时会不小心删除到不想删除的段落。为了让大家能够轻松的修改删除内容，全新推出快速编辑功能，可一键删除段落。在图文编辑界面点击“切换到快速编辑模式”开始愉快的玩耍吧。</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-circle ico-new-msg"></i>
+                            <h3>新增图文编辑功能 <span class="pull-right">2016-01-06  12:36</span></h3>
+                            <p>生成图文后，在编辑文章时经常需要删除一整段内容，如文章里原有的关注引导等内容，或者编辑时会不小心删除到不想删除的段落。为了让大家能够轻松的修改删除内容，全新推出快速编辑功能，可一键删除段落。在图文编辑界面点击“切换到快速编辑模式”开始愉快的玩耍吧。</p>
+                        </li>
+                        <li>
+                            <h3>新增图文编辑功能 <span class="pull-right">2016-01-06  12:36</span></h3>
+                            <p>生成图文后，在编辑文章时经常需要删除一整段内容，如文章里原有的关注引导等内容，或者编辑时会不小心删除到不想删除的段落。为了让大家能够轻松的修改删除内容，全新推出快速编辑功能，可一键删除段落。在图文编辑界面点击“切换到快速编辑模式”开始愉快的玩耍吧。</p>
+                        </li> 
+                        <li>
+                            <h3>新增图文编辑功能 <span class="pull-right">2016-01-06  12:36</span></h3>
+                            <p>生成图文后，在编辑文章时经常需要删除一整段内容，如文章里原有的关注引导等内容，或者编辑时会不小心删除到不想删除的段落。为了让大家能够轻松的修改删除内容，全新推出快速编辑功能，可一键删除段落。在图文编辑界面点击“切换到快速编辑模式”开始愉快的玩耍吧。</p>
+                        </li> 
+                        <li>
+                            <h3>新增图文编辑功能 <span class="pull-right">2016-01-06  12:36</span></h3>
+                            <p>生成图文后，在编辑文章时经常需要删除一整段内容，如文章里原有的关注引导等内容，或者编辑时会不小心删除到不想删除的段落。为了让大家能够轻松的修改删除内容，全新推出快速编辑功能，可一键删除段落。在图文编辑界面点击“切换到快速编辑模式”开始愉快的玩耍吧。</p>
+                        </li>
+                    </ul>
+                    <div class="message-loading"><img src="images/loading.gif"> 正在加载更多</div>
+
                 </div>
+
                 
             </div>
         </div>

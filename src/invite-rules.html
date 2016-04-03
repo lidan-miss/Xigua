@@ -7,6 +7,8 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="css/select2.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/controls.css" rel="stylesheet">
     <link href="css/css.css" rel="stylesheet">
 </head>
 <body>
@@ -81,9 +83,11 @@
             </div>
         </div>
         <!--/topbar-->
+
         <!--wrapper-->
-        <div class="wrapper wrapper-endless">
-            <div class="left-message-list">
+        <div class="wrapper wrapper-no-gap">
+
+            <div class="wrapper-col-left left-message-list">
             	<ul>
                 	<li class="active"><a href="#">个人信息</a></li>
                     <li><a href="#">索取发票</a></li>
@@ -91,73 +95,73 @@
                     <li><a href="#">系统消息</a></li>
                 </ul>
             </div>
-            <div class="right-message-content invoice-nav">
+
+            <div class="wrapper-col-right right-message-content invoice-nav">
             	<ul class="diagnose-nav clearfix">
                     <li class="current"><a href="#">邀请规则</a></li>
                     <li><a href="#">西瓜币记录</a></li>
                     <li><a href="#">西瓜币兑换</a></li>
                 </ul>
                 
-                <ul class="violation-statistics">
+                <ul class="invitation-statistics">
                 	<li><span>6</span><br>邀请注册人数</li>
                     <li><span>3</span><br>邀请付费人数</li>
                     <li><span>35</span><br>已赚取西瓜币</li>
                     <li><span>37</span><br>可用西瓜币</li>
                 </ul>
                 
-                <div class="violation-table">
+                <div class="invitation-table">
                     
-                    <div class="violation-table-list">
+                    <table class="table info-table invite-link-table">
                         <colgroup>
-                            <col width="10%">
+                            <col width="180">
                             <col>
-                            <col width="10%">
+                            <col width="110">
                         </colgroup>
-                        <table class="table invite-link">
-                            <tbody>
-                                <tr>
-                                    <td class="my-invitation-link">我的邀请链接</td>
-                                    <td class="copylink">http://www.xiguaji.com/?chl=in7ef24a943144ffdf</td>
-                                    <td class="btn-copy"><a href="#">复制</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                        <tbody>
+                            <tr>
+                                <td class="my-invitation-link">我的邀请链接</td>
+                                <td class="copylink">
+                                    <input type="text" readonly value="http://www.xiguaji.com/?chl=in7ef24a943144ffdf">
+                                </td>
+                                <td class="btn-copy"><a href="javascript:;" id="btn_copy_promote" data-clipboard-text="http://www.xiguaji.com/?chl=in7ef24a943144ffdf">复制</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
                     
-                    <div class="violation-table-list">
+                    <table class="table info-table">
                         <colgroup>
                             <col width="33%">
                             <col width="33%">
                             <col width="33%">
                         </colgroup>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>规则</th>
-                                    <th>西瓜币</th>
-                                    <th>说明</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>暂无可开票订单</td>
-                                    <td>获得<span>5</span>西瓜币</td>
-                                    <td>获得<span>5</span>西瓜币</td>
-                                </tr>
-                                <tr>
-                                    <td>邀请的好友注册并付费购买注册</td>
-                                    <td>购买1个月基础版获得<span>10</span>西瓜币<br>
-                                        购买3个月基础版获得<span>25</span>西瓜币<br>
-                                        购买6个月基础版获得<span>50</span>西瓜币<br>
-                                        购买1个月高级版获得<span>40</span>西瓜币<br>
-                                        购买3个月高级版获得<span>120</span>西瓜币<br>
-                                        购买6个月高级版获得<span>200</span>西瓜币
-                                    </td>
-                                    <td>仅限邀请的好友首次付费时可按相应版本获取奖励</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                        <thead>
+                            <tr>
+                                <th>规则</th>
+                                <th>西瓜币</th>
+                                <th>说明</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>暂无可开票订单</td>
+                                <td>获得<span>5</span>西瓜币</td>
+                                <td>获得<span>5</span>西瓜币</td>
+                            </tr>
+                            <tr>
+                                <td>邀请的好友注册并付费购买注册</td>
+                                <td>购买1个月基础版获得<span>10</span>西瓜币<br>
+                                    购买3个月基础版获得<span>25</span>西瓜币<br>
+                                    购买6个月基础版获得<span>50</span>西瓜币<br>
+                                    购买1个月高级版获得<span>40</span>西瓜币<br>
+                                    购买3个月高级版获得<span>120</span>西瓜币<br>
+                                    购买6个月高级版获得<span>200</span>西瓜币
+                                </td>
+                                <td>仅限邀请的好友首次付费时可按相应版本获取奖励</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
                 </div>
                 
             </div>
@@ -174,6 +178,21 @@
 <script src="js/select2.min.js"></script>
 <script src="js/icheck.min.js"></script>
 <script src="js/easypiechart.js"></script>
+<script src="js/zeroclipboard/ZeroClipboard.min.js"></script>
 <script src="js/site.js"></script>
+<script>
+    if(window.clipboardData){
+        window.clipboardData.clearData();  
+        window.clipboardData.setData("Text", $('#btn_copy_promote').data('clipboard-text')); 
+        alert("<strong>复制</strong>成功！")
+    } else{
+        var client = new ZeroClipboard($("#btn_copy_promote")[0]);
+        client.on("ready", function(readyEvent){
+            client.on("aftercopy", function(e){
+                alert("已复制到剪贴板: " + e.data["text/plain"]);
+            });
+        });
+    }
+</script>
 </body>
 </html>
