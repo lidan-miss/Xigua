@@ -60,6 +60,7 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
     .col-xlg-offset-1 { margin-left: 8.33333333% }
     .col-xlg-offset-0 { margin-left: 0 }
 }
+.body-w{ background: #fff;}
 .sidebar { width: 240px; height: 100%; background: #2a3542; float: left; margin-right: -100%; position: fixed; color: #7a8a9a; z-index: 9999;}
 .main { width: 100%; float: left; }
 .main .main-content { margin-left: 240px; padding-top: 88px; }
@@ -100,7 +101,7 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .btn-exit:active { background: #d81f1b; color: #fff; }
 .btn-exit:hover .ico-exit, .btn-exit:active .ico-exit { color: #fff; }
 .ico-exit { font-size: 18px; color: #7a8a9a; }
-.ico-new-msg { color: #e74c3c !important; font-size: 6px; position: absolute; right: -7px; top: -4px; }
+.ico-new-msg { color: #e74c3c !important; font-size: 10px; position: absolute; right: -7px; top: -4px; }
 
 /* 工作台 */
 .page-dashboard .col-md-6, .page-dashboard .col-md-4 { padding: 0; }
@@ -371,7 +372,7 @@ a:active{ color: #145bc7; text-decoration: none; }*/
 
 
 /*消息*/
-.message-panel { border: 1px solid #e5e9ed; background: #fff; width: 368px; box-shadow: 0 0 6px rgba(30, 30, 100, .3); position: absolute; top: 70px; left: 300px; color: #8899aa; }
+.message-panel { display: none; border: 1px solid #e5e9ed; background: #fff; width: 368px; box-shadow: 0 0 6px rgba(30, 30, 100, .3); position: absolute; top: 70px; left: 300px; color: #8899aa; }
 .message-panel-head, .message-panel-foot { height: 42px; line-height: 42px; text-align: center; color: #345; font-size: 14px; font-weight: bold; border-bottom: 1px solid #e5e9ed; background: #e5e9ed; border: 0; }
 .message-panel-foot { font-weight: normal; }
 .message-panel-foot a:link, .message-panel-foot a:visited { color: #89a; }

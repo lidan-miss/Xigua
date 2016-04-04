@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="css/select2.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
+    <!--[if lt IE 8]>
+        <link href="css/bootstrap-ie7.css" rel="stylesheet">
+    <![endif]-->
     <link href="css/controls.css" rel="stylesheet">
     <link href="css/css.css" rel="stylesheet">
+    <script src="js/respond.min.js"></script>
 </head>
 <body>
 <!--sidebar-->
@@ -67,10 +71,10 @@
     	<!--topbar-->
 		<div class="topbar">
             <div class="pull-left nav-area">
-                <a href="#" data-original-title="所有类型内容" rel="tooltip"><i class="fa fa-bars"></i></a>
-				<a href="#" data-original-title="所有类型内容" rel="tooltip"><i class="iconfont">&#xe62f;</i></a>
-                <a href="#" data-original-title="所有类型内容" rel="tooltip"><i class="iconfont">&#xe634;</i><i class="fa fa-circle ico-new-msg"></i></a>
-                <a href="#" data-original-title="所有类型内容" rel="tooltip"><i class="iconfont">&#xe632;</i></a>
+                <a href="#" id="topbar_menu"><i class="fa fa-bars"></i></a>
+				<a href="#" id="topbar_fullscreen"><i class="iconfont">&#xe62f;</i></a>
+                <a href="#" id="topbar_message"><i class="iconfont">&#xe634;</i><i class="fa fa-circle ico-new-msg"></i></a>
+                <a href="#" id="topbar_talk"><i class="iconfont">&#xe632;</i></a>
             </div>
             <div class="nav-right-area">
                 <div class="pull-left user-area">
