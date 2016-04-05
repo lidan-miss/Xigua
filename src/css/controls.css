@@ -43,7 +43,7 @@
 .iradio_square-green.checked.disabled { background-position: -216px 0; }
 
 /*按钮*/
-.btn-unify a { text-decoration: none; border-radius: 5px; padding: 10px 22px; color: #6d8092; margin: 5px; }
+.btn-unify a { text-decoration: none; border-radius:4px; padding:7px 22px; color: #6d8092; margin: 5px; }
 .btn-unify a:link, .btn-unify a:visited { background: none; display: inline-block; border: 1px solid #e5e9ed; }
 .btn-unify a:hover { background: #edf0f5; }
 .btn-unify a:active { background: #46be68; color: #fff; }
