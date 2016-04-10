@@ -312,22 +312,20 @@
 <script src="js/easypiechart.js"></script>
 <script src="js/site.js"></script>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-	var chart = window.totalChart = new EasyPieChart(document.querySelector('.totalScore span'), {
-		easing: 'easeOutElastic',
-		delay: 3000,
-		barColor: '#46be68',
-		trackColor: '#e5e9ed',
-		scaleColor: false,
-		lineWidth: 4,
-		trackWidth: 4,
-		size: 88,
-		lineCap: 'butt',
-		onStep: function(from, to, percent) {
-			this.el.children[0].innerHTML = Math.round(percent);
-		}
-	});
-});
+    var chart = window.totalChart = new EasyPieChart(document.querySelector('.totalScore span'), {
+        easing: 'easeOutElastic',
+        delay: 3000,
+        barColor: '#46be68',
+        trackColor: '#e5e9ed',
+        scaleColor: false,
+        lineWidth: 4,
+        trackWidth: 4,
+        size: 88,
+        lineCap: 'butt',
+        onStep: function(from, to, percent) {
+            this.el.children[0].innerHTML = Math.round(percent);
+        }
+    });
 </script>
 </body>
 </html>
