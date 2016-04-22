@@ -148,7 +148,7 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .mp-article-list .mp-violation-label{background: #e74c3c; color: #fff; display: inline-block; font-size: 12px; padding:3px 10px; border-radius: 5px;}
 
 /* 公众号列表 */
-.mp-account-list .table{ border: 1px solid #e5e9ed;}
+.mp-account-list .table{ border: 1px solid #e5e9ed; background:#fff;}
 .mp-account-list .table>thead>tr>th{ border-bottom: 1px solid #e5e9ed; height: 52px; line-height: 52px; padding: 0;  background: #f8f9fb; color: #696969; font-weight: bold; text-align: center;}
 .mp-account-list .table td{ padding: 9px 0; height: 40px;  text-align: center; line-height: 40px;}
 .mp-account-list .media-list{ line-height: 20px;}
@@ -159,8 +159,14 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .mp-account-list .btn-followed{ background: #edf0f5; border: 1px solid #e5e9ed; color: #7a8a9a;}
 .mp-account-list .btn-followed:hover{ background: #e0e4eb;}
 .mp-account-list .icon-info{ color: #89a; font-size: 16px;}
-
-
+.mp-account-list .article-title{ text-align:left;}
+.mp-account-list .article-title a:link, .mp-account-list .article-title a:visited{ color: #345; text-decoration: none; }
+.mp-account-list .article-title a:hover{ color: #3498db; text-decoration: none; }
+.mp-account-list .article-title a:active{ color: #145bc7; text-decoration: none; }
+.mp-account-list .mp-label{color: #fff; display: inline-block; font-size: 12px; padding:0 5px; height:22px; line-height:22px; border-radius:3px; margin:0 3px;}
+.mp-account-list .mp-read-label{background: #46be68;}
+.mp-account-list .mp-like-label{background: #3c9ad9;}
+.mp-account-list .post-public{ padding-left:20px; text-align:left;}
 /* 工作台 */
 .page-dashboard .col-md-6, .page-dashboard .col-md-4 { padding: 0; }
 .page-dashboard .row { margin-bottom: 20px; }
@@ -305,13 +311,13 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .txt-color-gray{ color:#89a !important;}
 
 /*全网素材*/
-.general-deduction { margin: -20px -20px 0 -20px; }
-.material-tag { border-bottom: 1px solid #e5e9ed; }
+.material-tag { border-bottom: 1px solid #e5e9ed;}
 .material-tag-list { padding: 15px 20px; }
 .material-tag-list span { width: 100px; float: left; }
 .material-tag-check { min-height: 120px; width: 140px; padding: 20px 0 0 40px; }
 .material-tag-check input { margin-right: 10px; }
 
+.mp-user-article-timer{ padding:20px 40px;}
 
 /*文章详情*/
 .modal-dialog-wide{ width:auto !important; max-width:960px;}
@@ -469,7 +475,7 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 
 
 /*全网素材列表*/
-.subscribe-article-list { padding: 20px 40px;}
+.subscribe-article-list { padding:0 20px 20px 15px;}
 .list-ico-violations{ color: #e74c3c; }
 .list-ico-graphic { color: #3c9ad9; }
 .list-ico-text { color: #46be68; }
@@ -481,6 +487,7 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .ico-danger{ background:#e74c3c;}
 .ico-warning{ background:#fe7d00;}
 .ico-success { background:#46be68;}
+.ico-default{ background:#7a8a9a;}
 
 /*黑马爆文*/
 .mp-classify-list { width: 200px; height: 100%; left: 0; bottom: 0; top: 0; background-color: #f8f9fb; color: #8899aa; float: left; font-weight: bold; border-right: 1px solid #e5e9ed; }
@@ -519,7 +526,7 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .add-appmsg-item-btns a { margin: 0 24px; }
 .appmsg-list .col { padding: 0; }
 .appmsg-list section { margin: 0 5px 15px; }
-.appmsg-list { padding: 0 15px; }
+.appmsg-list { padding: 0 10px; }
 .material-list { padding: 11px 11px 0 11px; background: #fff; border: 1px solid #e5e9ed; }
 .add-appmsg-item { height: 96px; text-align: center; }
 .appmsg-list-info { height: 36px; border-bottom: 1px solid #e5e9ed; }
@@ -536,8 +543,8 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .appmsg-list-opr { height: 62px; background: #f8f9fb; margin: -10px -11px 0 -11px; border-top: 1px solid #f2f2f2; }
 .appmsg-list-opr ul { list-style: none; padding-left: 0; }
 .appmsg-list-opr ul li { width: 33.3%; float: left; line-height: 62px; text-align: center; color: #89a; }
-.appmsg-list-opr ul li a { display: block; }
-.appmsg-list-opr ul li a:hover { background: #cdd1d7; color: #fff; }
+.appmsg-list-opr ul li a { display: block;color: #89a;}
+.appmsg-list-opr ul li a:hover { background: #8899aa; color: #fff; }
 .appmsg-tag { color: #fff; padding: 4px 10px; border-radius: 5px; }
 .appmsg-tag:link, .appmsg-tag:visited { color: #fff; text-decoration: none; }
 .appmsg-tag:hover { color: #fff; text-decoration: none; }
@@ -578,7 +585,7 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .material-folder { margin-left: 80px; }
 
 /*边距和背景*/
-.wrapper-no-gap { padding: 0; }
+.wrapper-no-gap { padding: 0;  background:#fff; }
 .wrapper-col-left{ background: #f8f9fb; width: 200px; float: left; border-right: 1px solid #e5e9ed; height: 100%; position: fixed;}
 .wrapper-col-right{ margin-left: 200px; padding: 40px; } 
 
