@@ -10,7 +10,7 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .text-center{ text-align: center !important;}
 
 @media (min-width:1600px) {
-    .col-xlg-1, .col-xlg-10, .col-xlg-11, .col-xlg-12, .col-xlg-2, .col-xlg-3, .col-xlg-4, .col-xlg-5, .col-xlg-6, .col-xlg-7, .col-xlg-8, .col-xlg-9 { float: left }
+.col-xlg-1, .col-xlg-10, .col-xlg-11, .col-xlg-12, .col-xlg-2, .col-xlg-3, .col-xlg-4, .col-xlg-5, .col-xlg-6, .col-xlg-7, .col-xlg-8, .col-xlg-9 { float: left }
     .col-xlg-12 { width: 100% }
     .col-xlg-11 { width: 91.66666667% }
     .col-xlg-10 { width: 83.33333333% }
@@ -116,7 +116,7 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .table-rank2{ background: #fe7d00;}
 .table-rank3{ background: #46be68;}
 /* 文章列表 */
-.mp-article-list .table { border: 1px solid #e5e9ed; background-color: #fff; }
+.mp-article-list .table { border: 1px solid #e5e9ed; border-width:1px 0; background-color: #fff; }
 .mp-article-list th{ font-size: 14px !important; vertical-align: middle !important; }
 .mp-article-list td{ font-size: 16px !important; vertical-align: middle !important; }
 .mp-article-list .table th { text-align: center; background-color: #f8f9fb; color: #696969; height:52px; line-height: 52px; padding: 0; border-bottom: 1px solid #e5e9ed; }
@@ -312,12 +312,12 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 
 /*全网素材*/
 .material-tag { border-bottom: 1px solid #e5e9ed;}
-.material-tag-list { padding: 15px 20px; }
+.material-tag-list { padding: 15px 40px; }
 .material-tag-list span { width: 100px; float: left; }
 .material-tag-check { min-height: 120px; width: 140px; padding: 20px 0 0 40px; }
 .material-tag-check input { margin-right: 10px; }
 
-.mp-user-article-timer{ padding:20px 40px;}
+.mp-user-article-timer{ padding:20px;}
 
 /*文章详情*/
 .modal-dialog-wide{ width:auto !important; max-width:960px;}
@@ -334,7 +334,7 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .mpArticleHeader .mpArticleTitle{ margin:0 0 0 100px; font-size:18px; font-weight:bold; color:#334455; padding:8px 0;}
 .mpArticleHeader .mpArticleTime{ margin:8px 0 0 100px; font-size:14px; color:#7a8a9a; overflow:hidden;}
 .mpArticleHeader .mpArticleTime span{ float:left; padding-right:25px;}
-.mpArticleInfo{ margin:10px -15px; font-size:14px; color:#666; min-height:85px; border:1px solid #e5e9ed; border-width:1px 0; text-align:center;}
+.mpArticleInfo{ margin:10px -15px; font-size:14px; color:#666; min-height:85px; border:1px solid #e5e9ed; text-align:center;}
 .mpArticleInfo strong{ font-size:24px; padding:10px 0; color:#345;}
 .mpArticleInfo section{ padding-top:12px;}
 .mpArticleTab{ height:48px; margin:0 -15px; padding:0 20px; border-bottom:1px solid #d9dde2;}
@@ -349,7 +349,7 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .mpArticleRate .fa{ margin:0; color:#F90;}
 .mpArticleRate .fa-star-o{ color:#CCC;}
 .mpArticleColTitle{ font-size:14px; font-weight:bold; margin:20px 0; color:#345;}
-.mpArticleRelated{ border:1px solid #e5e9ed;}
+.mpArticleRelated{ border:1px solid #e5e9ed; margin:0 -15px;}
 .mpArticleRelated .table{ margin-bottom:0;}
 .mpArticleRelated .table>thead>tr>th{ background:#f8f9fb; border-bottom:none; color:#696969; height:55px; font-size:14px; font-weight:bold;}
 .mpArticleRelated .table>tbody>tr>td{ height:67px;}
@@ -484,7 +484,7 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .time-select, .type-select { width: 150px; }
 .material-search { width: 500px; }
 .material-search-2 { width: 500px; }
-.ico-danger{ background:#e74c3c;}
+.ico-danger{ background:#e74c3c !important;}
 .ico-warning{ background:#fe7d00;}
 .ico-success { background:#46be68;}
 .ico-default{ background:#7a8a9a;}
@@ -506,9 +506,10 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .page-popular-list .wrapper-col-right{ padding: 0;}
 
 /*热门公众号榜单*/
-.mp-article-list .table1 td { border-bottom: 1px solid #e5e9ed; height: 60px; }
-.mp-public-name { vertical-align: middle !important; line-height: 1.4; }
-.cyclo-ranking { border-radius: 50%; }
+.popular-public-list .wrapper-col-left{ border-right:none; position:absolute;}
+.popular-public-list .wrapper-col-right{ padding:0;}
+.popular-public-list .mp-account-list .table{ border-width:1px 0;}
+.popular-public-list .mp-classify-title{ border: 1px solid #e5e9ed; border-width:1px 0; height: 54px; line-height: 54px; background: #f8f9fb; color: #696969; font-weight: bold; text-align: center;}
 
 /*图文*/
 .subscribeKeywords { border-bottom: 1px solid #e5e9ed; background: #fff; padding: 20px 40px 8px; margin: 0; }
@@ -582,8 +583,16 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .editor-area-footer a:hover, .editor-area-footer a:active { background: #46be68; color: #fff; }
 
 /*我的素材库*/
-.material-folder { margin-left: 80px; }
+.my-material .wrapper-col-left{ width:400px;display:-webkit-box; display:-webkit-flex; display:flex; flex-flow:column; position:inherit;}
+.my-material .wrapper-col-right{ padding:0; margin-left:400px; height:100%; overflow:auto; overflow-x:hidden;}
+.my-selected-graphic{ height:50px; line-height:50px; border-bottom:1px solid #f2f2f2; font-size:16px; font-weight:bold; color:#345; padding:0 20px; vertical-align:middle;}
+.my-selected-graphic a{ color:#1592ff; font-size:14px; font-weight:normal; float:right; }
+.new-graphic{ color:#7a8a9a; text-align:center; -webkit-box-flex:1; -webkit-flex:1; flex:1; position:relative;}
+.new-graphic-main{ height:100px; top:50%; margin-top:-50px; position:absolute; text-align:center; width:100%;}
+.new-graphic-btns{padding:20px; border-top:1px solid #f2f2f2;}
 
+.btns-gray{ background:#edf0f5; color:#89a; border:1px solid #e5e9ed; }
+.btns-green{ background:#44b549; font-size:14px; color:#fff; text-align:center; border:none; width:120px; margin:40px auto;}
 /*边距和背景*/
 .wrapper-no-gap { padding: 0;  background:#fff; }
 .wrapper-col-left{ background: #f8f9fb; width: 200px; float: left; border-right: 1px solid #e5e9ed; height: 100%; position: fixed;}

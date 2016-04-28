@@ -89,12 +89,20 @@
         <!--/topbar-->
         
         <!--wrapper-->
-        <div class="wrapper">
-        	<div class="">导入微信后台 <a href="#">导入微信文章</a></div>
-            <div class="">
+        <div class="wrapper wrapper-no-gap my-material">
+        	<div class="wrapper-col-left">
+                <div class="my-selected-graphic">已选图文 <a href="#">返回</a></div>
+                <div class="new-graphic">
+                	<div class="new-graphic-main">不从素材库挑选文图文章，直接新建空白图文<br><a class="btn btn-default btns-green" href="#" role="button">新建空白图文</a></div>
+                </div>
+                <div class="new-graphic-btns"><a class="btn btn-default btns-gray" href="#" role="button">保存并编辑</a></div>
+            </div>
+            
+            <div class="wrapper-col-right">
             	<div class="material-tag-list btn-unify">
-                	<div class="material-folder">素材文件夹：</div>
-               		<a href="#" class="active">情感励志</a>
+                <div class="">导入微信素材：<a href="#">导入微信文章</a></div>
+                <div class="">素材文件夹：
+                    <a href="#" class="active">情感励志</a>
                     <a href="#">女人时尚</a>
                     <a href="#">搞笑趣闻</a>
                     <a href="#">财经</a>
@@ -125,15 +133,15 @@
                     <thead>
                         <tr>
                             <th>传播指数</th>
-                            <th>文章标题</th>
-                            <th>封面/来源</th>
+                            <th class="text-left">文章标题</th>
+                            <th class="text-left">封面/来源</th>
                             <th>操作</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>
-                                <span class="label label-danger risk-index">96.98</span>
+                                <span class="label label-danger risk-index ico-danger">96.98</span>
                             </td>
                             <td>
                                 <div class="mp-article-title">
@@ -146,13 +154,16 @@
                                 </div>
                             </td>
                             <td>
-                                <a href="#" target="_blank" class="my-article-cover">
-                                    <img src="images/avatars/2.jpg">
-                                </a>
-                                <div class="mp-public-source">
-                                    <a href="#" target="_blank" class="my-article-cover">新华网-思客</a>
-                                    <br>
-                                    22 小时前
+                                <div class="media-list">
+                                    <div class="item-media">
+                                        <a href="#" target="_blank">
+                                            <img src="images/avatars/2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title"><a href="#" target="_blank" class="">新华网-思客</a></div>
+                                        <div class="item-sub-title">22 小时前</div>
+                                    </div>
                                 </div>
                             </td>
                             <td>
@@ -165,7 +176,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <span class="label label-warning risk-index">96.98</span>
+                                <span class="label label-warning risk-index ico-warning">96.98</span>
                             </td>
                             <td>
                                 <div class="mp-article-title">
@@ -178,13 +189,16 @@
                                 </div>
                             </td>
                             <td>
-                                <a href="#" target="_blank" class="my-article-cover">
-                                    <img src="images/avatars/2.jpg">
-                                </a>
-                                <div class="mp-public-source">
-                                    <a href="#" target="_blank" class="my-article-cover">新华网-思客</a>
-                                    <br>
-                                    22 小时前
+                                <div class="media-list">
+                                    <div class="item-media">
+                                        <a href="#" target="_blank">
+                                            <img src="images/avatars/2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title"><a href="#" target="_blank" class="">新华网-思客</a></div>
+                                        <div class="item-sub-title">22 小时前</div>
+                                    </div>
                                 </div>
                             </td>
                             <td>
@@ -197,7 +211,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <span class="label label-success risk-index">96.98</span>
+                                <span class="label label-success risk-index ico-success">96.98</span>
                             </td>
                             <td>
                                 <div class="mp-article-title">
@@ -210,13 +224,16 @@
                                 </div>
                             </td>
                             <td>
-                                <a href="#" target="_blank" class="my-article-cover">
-                                    <img src="images/avatars/2.jpg">
-                                </a>
-                                <div class="mp-public-source">
-                                    <a href="#" target="_blank" class="my-article-cover">新华网-思客</a>
-                                    <br>
-                                    22 小时前
+                                <div class="media-list">
+                                    <div class="item-media">
+                                        <a href="#" target="_blank">
+                                            <img src="images/avatars/2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title"><a href="#" target="_blank" class="">新华网-思客</a></div>
+                                        <div class="item-sub-title">22 小时前</div>
+                                    </div>
                                 </div>
                             </td>
                             <td>
@@ -226,7 +243,7 @@
                                     <a href="#" class="source-analyze" data-toggle="tooltip" data-placement="top" title="指数分析"><i class="iconfont">&#xe60b;</i></a>
                                 </div>
                             </td>
-
+            
                         </tr>
                         <tr>
                             <td>
@@ -243,13 +260,16 @@
                                 </div>
                             </td>
                             <td>
-                                <a href="#" target="_blank" class="my-article-cover">
-                                    <img src="images/avatars/2.jpg">
-                                </a>
-                                <div class="mp-public-source">
-                                    <a href="#" target="_blank" class="my-article-cover">新华网-思客</a>
-                                    <br>
-                                    22 小时前
+                                <div class="media-list">
+                                    <div class="item-media">
+                                        <a href="#" target="_blank">
+                                            <img src="images/avatars/2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title"><a href="#" target="_blank" class="">新华网-思客</a></div>
+                                        <div class="item-sub-title">22 小时前</div>
+                                    </div>
                                 </div>
                             </td>
                             <td>
@@ -259,11 +279,605 @@
                                     <a href="#" class="source-analyze" data-toggle="tooltip" data-placement="top" title="指数分析"><i class="iconfont">&#xe60b;</i></a>
                                 </div>
                             </td>
-
-
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-default risk-index">96.98</span>
+                            </td>
+                            <td>
+                                <div class="mp-article-title">
+                                    <a href="#">年纪与梦想无关，80岁依然可以做自己喜欢的事 | 晨读359期 </a>
+                                    <a href="#"><i class="iconfont list-ico-violations" data-toggle="tooltip" data-placement="top" title="违规">&#xe627;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-graphic" data-toggle="tooltip" data-placement="top" title="图文">&#xe638;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-text" data-toggle="tooltip" data-placement="top" title="纯文本">&#xe609;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-video" data-toggle="tooltip" data-placement="top" title="视频">&#xe619;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-original" data-toggle="tooltip" data-placement="top" title="原创">&#xe62d;</i></a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="media-list">
+                                    <div class="item-media">
+                                        <a href="#" target="_blank">
+                                            <img src="images/avatars/2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title"><a href="#" target="_blank" class="">新华网-思客</a></div>
+                                        <div class="item-sub-title">22 小时前</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                               <div class="mp-article-source">
+                                    <a href="#" class="source-collect" data-toggle="tooltip" data-placement="top" title="加入素材库"><i class="iconfont">&#xe61a;</i></a>
+                                    <a href="#" class="source-absence" data-toggle="tooltip" data-placement="top" title="不在出现"><i class="iconfont">&#xe62c;</i></a>
+                                    <a href="#" class="source-analyze" data-toggle="tooltip" data-placement="top" title="指数分析"><i class="iconfont">&#xe60b;</i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-default risk-index">96.98</span>
+                            </td>
+                            <td>
+                                <div class="mp-article-title">
+                                    <a href="#">年纪与梦想无关，80岁依然可以做自己喜欢的事 | 晨读359期 </a>
+                                    <a href="#"><i class="iconfont list-ico-violations" data-toggle="tooltip" data-placement="top" title="违规">&#xe627;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-graphic" data-toggle="tooltip" data-placement="top" title="图文">&#xe638;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-text" data-toggle="tooltip" data-placement="top" title="纯文本">&#xe609;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-video" data-toggle="tooltip" data-placement="top" title="视频">&#xe619;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-original" data-toggle="tooltip" data-placement="top" title="原创">&#xe62d;</i></a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="media-list">
+                                    <div class="item-media">
+                                        <a href="#" target="_blank">
+                                            <img src="images/avatars/2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title"><a href="#" target="_blank" class="">新华网-思客</a></div>
+                                        <div class="item-sub-title">22 小时前</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                               <div class="mp-article-source">
+                                    <a href="#" class="source-collect" data-toggle="tooltip" data-placement="top" title="加入素材库"><i class="iconfont">&#xe61a;</i></a>
+                                    <a href="#" class="source-absence" data-toggle="tooltip" data-placement="top" title="不在出现"><i class="iconfont">&#xe62c;</i></a>
+                                    <a href="#" class="source-analyze" data-toggle="tooltip" data-placement="top" title="指数分析"><i class="iconfont">&#xe60b;</i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-default risk-index">96.98</span>
+                            </td>
+                            <td>
+                                <div class="mp-article-title">
+                                    <a href="#">年纪与梦想无关，80岁依然可以做自己喜欢的事 | 晨读359期 </a>
+                                    <a href="#"><i class="iconfont list-ico-violations" data-toggle="tooltip" data-placement="top" title="违规">&#xe627;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-graphic" data-toggle="tooltip" data-placement="top" title="图文">&#xe638;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-text" data-toggle="tooltip" data-placement="top" title="纯文本">&#xe609;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-video" data-toggle="tooltip" data-placement="top" title="视频">&#xe619;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-original" data-toggle="tooltip" data-placement="top" title="原创">&#xe62d;</i></a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="media-list">
+                                    <div class="item-media">
+                                        <a href="#" target="_blank">
+                                            <img src="images/avatars/2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title"><a href="#" target="_blank" class="">新华网-思客</a></div>
+                                        <div class="item-sub-title">22 小时前</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                               <div class="mp-article-source">
+                                    <a href="#" class="source-collect" data-toggle="tooltip" data-placement="top" title="加入素材库"><i class="iconfont">&#xe61a;</i></a>
+                                    <a href="#" class="source-absence" data-toggle="tooltip" data-placement="top" title="不在出现"><i class="iconfont">&#xe62c;</i></a>
+                                    <a href="#" class="source-analyze" data-toggle="tooltip" data-placement="top" title="指数分析"><i class="iconfont">&#xe60b;</i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-default risk-index">96.98</span>
+                            </td>
+                            <td>
+                                <div class="mp-article-title">
+                                    <a href="#">年纪与梦想无关，80岁依然可以做自己喜欢的事 | 晨读359期 </a>
+                                    <a href="#"><i class="iconfont list-ico-violations" data-toggle="tooltip" data-placement="top" title="违规">&#xe627;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-graphic" data-toggle="tooltip" data-placement="top" title="图文">&#xe638;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-text" data-toggle="tooltip" data-placement="top" title="纯文本">&#xe609;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-video" data-toggle="tooltip" data-placement="top" title="视频">&#xe619;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-original" data-toggle="tooltip" data-placement="top" title="原创">&#xe62d;</i></a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="media-list">
+                                    <div class="item-media">
+                                        <a href="#" target="_blank">
+                                            <img src="images/avatars/2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title"><a href="#" target="_blank" class="">新华网-思客</a></div>
+                                        <div class="item-sub-title">22 小时前</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                               <div class="mp-article-source">
+                                    <a href="#" class="source-collect" data-toggle="tooltip" data-placement="top" title="加入素材库"><i class="iconfont">&#xe61a;</i></a>
+                                    <a href="#" class="source-absence" data-toggle="tooltip" data-placement="top" title="不在出现"><i class="iconfont">&#xe62c;</i></a>
+                                    <a href="#" class="source-analyze" data-toggle="tooltip" data-placement="top" title="指数分析"><i class="iconfont">&#xe60b;</i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-default risk-index">96.98</span>
+                            </td>
+                            <td>
+                                <div class="mp-article-title">
+                                    <a href="#">年纪与梦想无关，80岁依然可以做自己喜欢的事 | 晨读359期 </a>
+                                    <a href="#"><i class="iconfont list-ico-violations" data-toggle="tooltip" data-placement="top" title="违规">&#xe627;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-graphic" data-toggle="tooltip" data-placement="top" title="图文">&#xe638;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-text" data-toggle="tooltip" data-placement="top" title="纯文本">&#xe609;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-video" data-toggle="tooltip" data-placement="top" title="视频">&#xe619;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-original" data-toggle="tooltip" data-placement="top" title="原创">&#xe62d;</i></a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="media-list">
+                                    <div class="item-media">
+                                        <a href="#" target="_blank">
+                                            <img src="images/avatars/2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title"><a href="#" target="_blank" class="">新华网-思客</a></div>
+                                        <div class="item-sub-title">22 小时前</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                               <div class="mp-article-source">
+                                    <a href="#" class="source-collect" data-toggle="tooltip" data-placement="top" title="加入素材库"><i class="iconfont">&#xe61a;</i></a>
+                                    <a href="#" class="source-absence" data-toggle="tooltip" data-placement="top" title="不在出现"><i class="iconfont">&#xe62c;</i></a>
+                                    <a href="#" class="source-analyze" data-toggle="tooltip" data-placement="top" title="指数分析"><i class="iconfont">&#xe60b;</i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-default risk-index">96.98</span>
+                            </td>
+                            <td>
+                                <div class="mp-article-title">
+                                    <a href="#">年纪与梦想无关，80岁依然可以做自己喜欢的事 | 晨读359期 </a>
+                                    <a href="#"><i class="iconfont list-ico-violations" data-toggle="tooltip" data-placement="top" title="违规">&#xe627;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-graphic" data-toggle="tooltip" data-placement="top" title="图文">&#xe638;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-text" data-toggle="tooltip" data-placement="top" title="纯文本">&#xe609;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-video" data-toggle="tooltip" data-placement="top" title="视频">&#xe619;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-original" data-toggle="tooltip" data-placement="top" title="原创">&#xe62d;</i></a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="media-list">
+                                    <div class="item-media">
+                                        <a href="#" target="_blank">
+                                            <img src="images/avatars/2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title"><a href="#" target="_blank" class="">新华网-思客</a></div>
+                                        <div class="item-sub-title">22 小时前</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                               <div class="mp-article-source">
+                                    <a href="#" class="source-collect" data-toggle="tooltip" data-placement="top" title="加入素材库"><i class="iconfont">&#xe61a;</i></a>
+                                    <a href="#" class="source-absence" data-toggle="tooltip" data-placement="top" title="不在出现"><i class="iconfont">&#xe62c;</i></a>
+                                    <a href="#" class="source-analyze" data-toggle="tooltip" data-placement="top" title="指数分析"><i class="iconfont">&#xe60b;</i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-default risk-index">96.98</span>
+                            </td>
+                            <td>
+                                <div class="mp-article-title">
+                                    <a href="#">年纪与梦想无关，80岁依然可以做自己喜欢的事 | 晨读359期 </a>
+                                    <a href="#"><i class="iconfont list-ico-violations" data-toggle="tooltip" data-placement="top" title="违规">&#xe627;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-graphic" data-toggle="tooltip" data-placement="top" title="图文">&#xe638;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-text" data-toggle="tooltip" data-placement="top" title="纯文本">&#xe609;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-video" data-toggle="tooltip" data-placement="top" title="视频">&#xe619;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-original" data-toggle="tooltip" data-placement="top" title="原创">&#xe62d;</i></a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="media-list">
+                                    <div class="item-media">
+                                        <a href="#" target="_blank">
+                                            <img src="images/avatars/2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title"><a href="#" target="_blank" class="">新华网-思客</a></div>
+                                        <div class="item-sub-title">22 小时前</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                               <div class="mp-article-source">
+                                    <a href="#" class="source-collect" data-toggle="tooltip" data-placement="top" title="加入素材库"><i class="iconfont">&#xe61a;</i></a>
+                                    <a href="#" class="source-absence" data-toggle="tooltip" data-placement="top" title="不在出现"><i class="iconfont">&#xe62c;</i></a>
+                                    <a href="#" class="source-analyze" data-toggle="tooltip" data-placement="top" title="指数分析"><i class="iconfont">&#xe60b;</i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-default risk-index">96.98</span>
+                            </td>
+                            <td>
+                                <div class="mp-article-title">
+                                    <a href="#">年纪与梦想无关，80岁依然可以做自己喜欢的事 | 晨读359期 </a>
+                                    <a href="#"><i class="iconfont list-ico-violations" data-toggle="tooltip" data-placement="top" title="违规">&#xe627;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-graphic" data-toggle="tooltip" data-placement="top" title="图文">&#xe638;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-text" data-toggle="tooltip" data-placement="top" title="纯文本">&#xe609;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-video" data-toggle="tooltip" data-placement="top" title="视频">&#xe619;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-original" data-toggle="tooltip" data-placement="top" title="原创">&#xe62d;</i></a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="media-list">
+                                    <div class="item-media">
+                                        <a href="#" target="_blank">
+                                            <img src="images/avatars/2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title"><a href="#" target="_blank" class="">新华网-思客</a></div>
+                                        <div class="item-sub-title">22 小时前</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                               <div class="mp-article-source">
+                                    <a href="#" class="source-collect" data-toggle="tooltip" data-placement="top" title="加入素材库"><i class="iconfont">&#xe61a;</i></a>
+                                    <a href="#" class="source-absence" data-toggle="tooltip" data-placement="top" title="不在出现"><i class="iconfont">&#xe62c;</i></a>
+                                    <a href="#" class="source-analyze" data-toggle="tooltip" data-placement="top" title="指数分析"><i class="iconfont">&#xe60b;</i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-default risk-index">96.98</span>
+                            </td>
+                            <td>
+                                <div class="mp-article-title">
+                                    <a href="#">年纪与梦想无关，80岁依然可以做自己喜欢的事 | 晨读359期 </a>
+                                    <a href="#"><i class="iconfont list-ico-violations" data-toggle="tooltip" data-placement="top" title="违规">&#xe627;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-graphic" data-toggle="tooltip" data-placement="top" title="图文">&#xe638;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-text" data-toggle="tooltip" data-placement="top" title="纯文本">&#xe609;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-video" data-toggle="tooltip" data-placement="top" title="视频">&#xe619;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-original" data-toggle="tooltip" data-placement="top" title="原创">&#xe62d;</i></a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="media-list">
+                                    <div class="item-media">
+                                        <a href="#" target="_blank">
+                                            <img src="images/avatars/2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title"><a href="#" target="_blank" class="">新华网-思客</a></div>
+                                        <div class="item-sub-title">22 小时前</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                               <div class="mp-article-source">
+                                    <a href="#" class="source-collect" data-toggle="tooltip" data-placement="top" title="加入素材库"><i class="iconfont">&#xe61a;</i></a>
+                                    <a href="#" class="source-absence" data-toggle="tooltip" data-placement="top" title="不在出现"><i class="iconfont">&#xe62c;</i></a>
+                                    <a href="#" class="source-analyze" data-toggle="tooltip" data-placement="top" title="指数分析"><i class="iconfont">&#xe60b;</i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-default risk-index">96.98</span>
+                            </td>
+                            <td>
+                                <div class="mp-article-title">
+                                    <a href="#">年纪与梦想无关，80岁依然可以做自己喜欢的事 | 晨读359期 </a>
+                                    <a href="#"><i class="iconfont list-ico-violations" data-toggle="tooltip" data-placement="top" title="违规">&#xe627;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-graphic" data-toggle="tooltip" data-placement="top" title="图文">&#xe638;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-text" data-toggle="tooltip" data-placement="top" title="纯文本">&#xe609;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-video" data-toggle="tooltip" data-placement="top" title="视频">&#xe619;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-original" data-toggle="tooltip" data-placement="top" title="原创">&#xe62d;</i></a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="media-list">
+                                    <div class="item-media">
+                                        <a href="#" target="_blank">
+                                            <img src="images/avatars/2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title"><a href="#" target="_blank" class="">新华网-思客</a></div>
+                                        <div class="item-sub-title">22 小时前</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                               <div class="mp-article-source">
+                                    <a href="#" class="source-collect" data-toggle="tooltip" data-placement="top" title="加入素材库"><i class="iconfont">&#xe61a;</i></a>
+                                    <a href="#" class="source-absence" data-toggle="tooltip" data-placement="top" title="不在出现"><i class="iconfont">&#xe62c;</i></a>
+                                    <a href="#" class="source-analyze" data-toggle="tooltip" data-placement="top" title="指数分析"><i class="iconfont">&#xe60b;</i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-default risk-index">96.98</span>
+                            </td>
+                            <td>
+                                <div class="mp-article-title">
+                                    <a href="#">年纪与梦想无关，80岁依然可以做自己喜欢的事 | 晨读359期 </a>
+                                    <a href="#"><i class="iconfont list-ico-violations" data-toggle="tooltip" data-placement="top" title="违规">&#xe627;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-graphic" data-toggle="tooltip" data-placement="top" title="图文">&#xe638;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-text" data-toggle="tooltip" data-placement="top" title="纯文本">&#xe609;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-video" data-toggle="tooltip" data-placement="top" title="视频">&#xe619;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-original" data-toggle="tooltip" data-placement="top" title="原创">&#xe62d;</i></a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="media-list">
+                                    <div class="item-media">
+                                        <a href="#" target="_blank">
+                                            <img src="images/avatars/2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title"><a href="#" target="_blank" class="">新华网-思客</a></div>
+                                        <div class="item-sub-title">22 小时前</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                               <div class="mp-article-source">
+                                    <a href="#" class="source-collect" data-toggle="tooltip" data-placement="top" title="加入素材库"><i class="iconfont">&#xe61a;</i></a>
+                                    <a href="#" class="source-absence" data-toggle="tooltip" data-placement="top" title="不在出现"><i class="iconfont">&#xe62c;</i></a>
+                                    <a href="#" class="source-analyze" data-toggle="tooltip" data-placement="top" title="指数分析"><i class="iconfont">&#xe60b;</i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-default risk-index">96.98</span>
+                            </td>
+                            <td>
+                                <div class="mp-article-title">
+                                    <a href="#">年纪与梦想无关，80岁依然可以做自己喜欢的事 | 晨读359期 </a>
+                                    <a href="#"><i class="iconfont list-ico-violations" data-toggle="tooltip" data-placement="top" title="违规">&#xe627;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-graphic" data-toggle="tooltip" data-placement="top" title="图文">&#xe638;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-text" data-toggle="tooltip" data-placement="top" title="纯文本">&#xe609;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-video" data-toggle="tooltip" data-placement="top" title="视频">&#xe619;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-original" data-toggle="tooltip" data-placement="top" title="原创">&#xe62d;</i></a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="media-list">
+                                    <div class="item-media">
+                                        <a href="#" target="_blank">
+                                            <img src="images/avatars/2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title"><a href="#" target="_blank" class="">新华网-思客</a></div>
+                                        <div class="item-sub-title">22 小时前</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                               <div class="mp-article-source">
+                                    <a href="#" class="source-collect" data-toggle="tooltip" data-placement="top" title="加入素材库"><i class="iconfont">&#xe61a;</i></a>
+                                    <a href="#" class="source-absence" data-toggle="tooltip" data-placement="top" title="不在出现"><i class="iconfont">&#xe62c;</i></a>
+                                    <a href="#" class="source-analyze" data-toggle="tooltip" data-placement="top" title="指数分析"><i class="iconfont">&#xe60b;</i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-default risk-index">96.98</span>
+                            </td>
+                            <td>
+                                <div class="mp-article-title">
+                                    <a href="#">年纪与梦想无关，80岁依然可以做自己喜欢的事 | 晨读359期 </a>
+                                    <a href="#"><i class="iconfont list-ico-violations" data-toggle="tooltip" data-placement="top" title="违规">&#xe627;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-graphic" data-toggle="tooltip" data-placement="top" title="图文">&#xe638;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-text" data-toggle="tooltip" data-placement="top" title="纯文本">&#xe609;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-video" data-toggle="tooltip" data-placement="top" title="视频">&#xe619;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-original" data-toggle="tooltip" data-placement="top" title="原创">&#xe62d;</i></a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="media-list">
+                                    <div class="item-media">
+                                        <a href="#" target="_blank">
+                                            <img src="images/avatars/2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title"><a href="#" target="_blank" class="">新华网-思客</a></div>
+                                        <div class="item-sub-title">22 小时前</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                               <div class="mp-article-source">
+                                    <a href="#" class="source-collect" data-toggle="tooltip" data-placement="top" title="加入素材库"><i class="iconfont">&#xe61a;</i></a>
+                                    <a href="#" class="source-absence" data-toggle="tooltip" data-placement="top" title="不在出现"><i class="iconfont">&#xe62c;</i></a>
+                                    <a href="#" class="source-analyze" data-toggle="tooltip" data-placement="top" title="指数分析"><i class="iconfont">&#xe60b;</i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-default risk-index">96.98</span>
+                            </td>
+                            <td>
+                                <div class="mp-article-title">
+                                    <a href="#">年纪与梦想无关，80岁依然可以做自己喜欢的事 | 晨读359期 </a>
+                                    <a href="#"><i class="iconfont list-ico-violations" data-toggle="tooltip" data-placement="top" title="违规">&#xe627;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-graphic" data-toggle="tooltip" data-placement="top" title="图文">&#xe638;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-text" data-toggle="tooltip" data-placement="top" title="纯文本">&#xe609;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-video" data-toggle="tooltip" data-placement="top" title="视频">&#xe619;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-original" data-toggle="tooltip" data-placement="top" title="原创">&#xe62d;</i></a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="media-list">
+                                    <div class="item-media">
+                                        <a href="#" target="_blank">
+                                            <img src="images/avatars/2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title"><a href="#" target="_blank" class="">新华网-思客</a></div>
+                                        <div class="item-sub-title">22 小时前</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                               <div class="mp-article-source">
+                                    <a href="#" class="source-collect" data-toggle="tooltip" data-placement="top" title="加入素材库"><i class="iconfont">&#xe61a;</i></a>
+                                    <a href="#" class="source-absence" data-toggle="tooltip" data-placement="top" title="不在出现"><i class="iconfont">&#xe62c;</i></a>
+                                    <a href="#" class="source-analyze" data-toggle="tooltip" data-placement="top" title="指数分析"><i class="iconfont">&#xe60b;</i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-default risk-index">96.98</span>
+                            </td>
+                            <td>
+                                <div class="mp-article-title">
+                                    <a href="#">年纪与梦想无关，80岁依然可以做自己喜欢的事 | 晨读359期 </a>
+                                    <a href="#"><i class="iconfont list-ico-violations" data-toggle="tooltip" data-placement="top" title="违规">&#xe627;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-graphic" data-toggle="tooltip" data-placement="top" title="图文">&#xe638;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-text" data-toggle="tooltip" data-placement="top" title="纯文本">&#xe609;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-video" data-toggle="tooltip" data-placement="top" title="视频">&#xe619;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-original" data-toggle="tooltip" data-placement="top" title="原创">&#xe62d;</i></a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="media-list">
+                                    <div class="item-media">
+                                        <a href="#" target="_blank">
+                                            <img src="images/avatars/2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title"><a href="#" target="_blank" class="">新华网-思客</a></div>
+                                        <div class="item-sub-title">22 小时前</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                               <div class="mp-article-source">
+                                    <a href="#" class="source-collect" data-toggle="tooltip" data-placement="top" title="加入素材库"><i class="iconfont">&#xe61a;</i></a>
+                                    <a href="#" class="source-absence" data-toggle="tooltip" data-placement="top" title="不在出现"><i class="iconfont">&#xe62c;</i></a>
+                                    <a href="#" class="source-analyze" data-toggle="tooltip" data-placement="top" title="指数分析"><i class="iconfont">&#xe60b;</i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-default risk-index">96.98</span>
+                            </td>
+                            <td>
+                                <div class="mp-article-title">
+                                    <a href="#">年纪与梦想无关，80岁依然可以做自己喜欢的事 | 晨读359期 </a>
+                                    <a href="#"><i class="iconfont list-ico-violations" data-toggle="tooltip" data-placement="top" title="违规">&#xe627;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-graphic" data-toggle="tooltip" data-placement="top" title="图文">&#xe638;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-text" data-toggle="tooltip" data-placement="top" title="纯文本">&#xe609;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-video" data-toggle="tooltip" data-placement="top" title="视频">&#xe619;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-original" data-toggle="tooltip" data-placement="top" title="原创">&#xe62d;</i></a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="media-list">
+                                    <div class="item-media">
+                                        <a href="#" target="_blank">
+                                            <img src="images/avatars/2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title"><a href="#" target="_blank" class="">新华网-思客</a></div>
+                                        <div class="item-sub-title">22 小时前</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                               <div class="mp-article-source">
+                                    <a href="#" class="source-collect" data-toggle="tooltip" data-placement="top" title="加入素材库"><i class="iconfont">&#xe61a;</i></a>
+                                    <a href="#" class="source-absence" data-toggle="tooltip" data-placement="top" title="不在出现"><i class="iconfont">&#xe62c;</i></a>
+                                    <a href="#" class="source-analyze" data-toggle="tooltip" data-placement="top" title="指数分析"><i class="iconfont">&#xe60b;</i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-default risk-index">96.98</span>
+                            </td>
+                            <td>
+                                <div class="mp-article-title">
+                                    <a href="#">年纪与梦想无关，80岁依然可以做自己喜欢的事 | 晨读359期 </a>
+                                    <a href="#"><i class="iconfont list-ico-violations" data-toggle="tooltip" data-placement="top" title="违规">&#xe627;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-graphic" data-toggle="tooltip" data-placement="top" title="图文">&#xe638;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-text" data-toggle="tooltip" data-placement="top" title="纯文本">&#xe609;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-video" data-toggle="tooltip" data-placement="top" title="视频">&#xe619;</i></a>
+                                    <a href="#"><i class="iconfont list-ico-original" data-toggle="tooltip" data-placement="top" title="原创">&#xe62d;</i></a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="media-list">
+                                    <div class="item-media">
+                                        <a href="#" target="_blank">
+                                            <img src="images/avatars/2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title"><a href="#" target="_blank" class="">新华网-思客</a></div>
+                                        <div class="item-sub-title">22 小时前</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                               <div class="mp-article-source">
+                                    <a href="#" class="source-collect" data-toggle="tooltip" data-placement="top" title="加入素材库"><i class="iconfont">&#xe61a;</i></a>
+                                    <a href="#" class="source-absence" data-toggle="tooltip" data-placement="top" title="不在出现"><i class="iconfont">&#xe62c;</i></a>
+                                    <a href="#" class="source-analyze" data-toggle="tooltip" data-placement="top" title="指数分析"><i class="iconfont">&#xe60b;</i></a>
+                                </div>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
+            </div>
             </div>
       	</div>
 		<!--/wrapper-->
