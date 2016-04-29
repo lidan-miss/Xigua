@@ -148,7 +148,7 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .mp-article-list .mp-violation-label{background: #e74c3c; color: #fff; display: inline-block; font-size: 12px; padding:3px 10px; border-radius: 5px;}
 
 /* 公众号列表 */
-.mp-account-list .table{ border: 1px solid #e5e9ed; background:#fff;}
+.mp-account-list .table{ border: 1px solid #e5e9ed; border-width:1px 0; background:#fff;}
 .mp-account-list .table>thead>tr>th{ border-bottom: 1px solid #e5e9ed; height: 52px; line-height: 52px; padding: 0;  background: #f8f9fb; color: #696969; font-weight: bold; text-align: center;}
 .mp-account-list .table td{ padding: 9px 0; height: 40px;  text-align: center; line-height: 40px;}
 .mp-account-list .media-list{ line-height: 20px;}
@@ -591,8 +591,23 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .new-graphic-main{ height:100px; top:50%; margin-top:-50px; position:absolute; text-align:center; width:100%;}
 .new-graphic-btns{padding:20px; border-top:1px solid #f2f2f2;}
 
-.btns-gray{ background:#edf0f5; color:#89a; border:1px solid #e5e9ed; }
+.btns-gray{ background:#edf0f5; color:#89a; border:1px solid #e5e9ed; width:100%; margin:0 auto; }
 .btns-green{ background:#44b549; font-size:14px; color:#fff; text-align:center; border:none; width:120px; margin:40px auto;}
+/*我关注的公众号*/
+.public-attention{}
+.search-focused-public{ height:57px; line-height:57px; border-bottom:1px solid #e5e9ed; color:#a5afb7; font-size:14px; padding:0 40px;}
+.search-focused-public i{ padding-right:10px; color:#7a8a9a; font-size:16px;}
+.all-public-list{ font-size:16px;-webkit-box-flex:1; -webkit-flex:1; flex:1;}
+.all-public-list li{ height:57px; line-height:57px; padding-left:40px; border-bottom:1px solid #e5e9ed; color:#89a; font-weight:bold;}
+.all-public-list li:hover,.all-public-list li.active{ background:#edf0f5;}
+.all-public-list li .i-left{ margin-right:10px;}
+.all-public-list li .i-right{ float:right; margin-right:40px; line-height:57px; font-size:16px;  font-weight:bold;}
+.public-management{ height:58px; line-height:58px; border-top:1px solid #e5e9ed; padding:0 40px; font-size:16px;}
+.public-management i{ padding-right:10px;}
+.public-management a{ color:#89a;}
+/*我关注的公众号详情*/
+.title-public-classify{ height:60px; line-height:60px;}
+.public-list-classify li{ height:60px;}
 /*边距和背景*/
 .wrapper-no-gap { padding: 0;  background:#fff; }
 .wrapper-col-left{ background: #f8f9fb; width: 200px; float: left; border-right: 1px solid #e5e9ed; height: 100%; position: fixed;}
