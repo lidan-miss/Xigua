@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>公众号搜素</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/select2.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <!--[if lt IE 8]>
+        <link href="css/bootstrap-ie7.css" rel="stylesheet">
+    <![endif]-->
+    <link href="css/controls.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
+    <script src="js/respond.min.js"></script>
+</head>
+<body>
+<!--sidebar-->
+<div class="sidebar">
+    <div class="brand">
+        <img src="images/logo.png" class="navbar-brand-logo">
+        <div class="public-name">
+            <span class="navbar-brand-text">西瓜公众号助手</span>
+            <span class="navbar-brand-url">www.xiguaji.com</span>
+        </div>
+    </div>
+
+        <ul>
+            <li>
+                <a href="#" title="工作台"><i class="iconfont">&#xe60d;</i> <span class="menu-item-parent">工作台</span></a>
+            </li>
+            <li class="active has-sub open">
+                <a href="#" title="图文同步"><i class="iconfont">&#xe61d;</i> <span class="menu-item-parent">图文同步</span><b class="collapse-sign"><em class="fa fa-angle-up fa-right fa-up"></em></b></a>
+                <ul style="display: block;">
+                    <li class="active"><a href="/Material/List">我的图文</a></li>
+                    <li><a href="/MArticleUse/ArticleUseListNew">我的素材库</a></li>
+                    <li><a href="/UserBiz/UserBizListNew">我运营的公众号</a></li>
+                </ul>
+            </li>
+            <li class="has-sub open">
+                <a href="#" title="素材收集"><i class="iconfont">&#xe61d;</i> <span class="menu-item-parent">素材收集</span><b class="collapse-sign"><em class="fa fa-angle-down fa-right"></em></b></a>
+                <ul style="display: none;">
+                    <li><a href="/MArticle/Explore">全网优质素材</a></li>
+                    <li><a href="/MArticle/Subscription">我关注的</a></li>
+                    <li><a href="/MArticleCollect/PopularArticle">黑马爆文</a></li>
+                    <li><a href="/UserBiz/List">专享素材</a></li>
+                    <li><a href="/Original/ArticleList">原创优选</a></li> 
+                </ul>
+            </li>
+            <li class="has-sub open">
+                <a href="#" title="高级功能"><i class="iconfont">&#xe61d;</i> <span class="menu-item-parent">高级功能</span><b class="collapse-sign"></i><em class="fa fa-angle-down fa-right"></em></b></a>
+                <ul>
+                    <li><a href="/AgainsRulesArticle/Index">违规文章曝光台</a></li>
+                    <li><a href="/Diagnosis/Index">公众号诊断</a></li>
+                    <li><a href="/HotKeyword/Index">热点风向标</a></li>
+                    <li><a href="/MyMBiz/MBizSearch">全网公众号搜索</a></li>
+                    <li><a href="/MBiz/Rank">热门公众号榜单</a></li>
+                </ul>
+            </li>
+            <li><a href="/Purchase" title="购买升级" target="_blank"><i class="iconfont">&#xe62b;</i> <span class="menu-item-parent">购买升级</span> <span class="badge inbox-badge bg-color-red font-weight-400">新春开门红</span></a></li>
+            <li><a href="/App" title="西瓜集App" target="_blank"><i class="iconfont">&#xe62a;</i> <span class="menu-item-parent">西瓜集App</span></a></li>
+            <li><a href="/Knowledge" title="帮助中心" target="_blank"><i class="iconfont">&#xe606;</i> <span class="menu-item-parent">帮助中心</span></a></li>
+        </ul>
+
+</div>
+<!--/sidebar-->
+<!--main-->
+<div class="main">
+    <div class="main-content">
+    	<!--topbar-->
+		<div class="topbar">
+            <div class="pull-left nav-area">
+                <a href="#" id="topbar_menu"><i class="fa fa-bars"></i></a>
+				<a href="#" id="topbar_fullscreen"><i class="iconfont">&#xe62f;</i></a>
+                <a href="#" id="topbar_message"><i class="iconfont">&#xe634;</i><i class="fa fa-circle ico-new-msg"></i></a>
+                <a href="#" id="topbar_talk"><i class="iconfont">&#xe632;</i></a>
+            </div>
+            <div class="pull-right">
+                <div class="pull-left user-area">
+                    <div class="pull-left icon-user"><i class="fa fa-user"></i></div>
+                    <a href="javascript:;">ckkdm@gmail.com</a>
+                </div>
+                <a class="pull-right btn-exit" href="javascript:;">
+                    <i class="fa fa-sign-out ico-exit"></i>
+                </a>
+            </div>
+        </div>
+        <!--/topbar-->
+        <!--wrapper-->
+        <div class="wrapper wrapper-no-gap page-popular-list">
+ 			
+			<div class="row subscribeKeywords graphic-keywords">
+                <a href="javascript:;" class="active"><img src="images/subscribe/temp_avatar.jpg">巴拉巴拉小魔仙</a>
+                <a href="javascript:;"><img src="images/subscribe/temp_avatar.jpg">巴拉巴拉小魔仙</a>
+                <a href="javascript:;"><img src="images/subscribe/temp_avatar.jpg">巴拉小魔仙</a>
+                <a href="javascript:;"><img src="images/subscribe/temp_avatar.jpg">巴拉仙</a>
+                <a href="javascript:;"><img src="images/subscribe/temp_avatar.jpg">巴仙</a>
+                <a href="javascript:;"><img src="images/subscribe/temp_avatar.jpg">巴拉巴拉小魔仙</a>
+            </div>
+			<div class="row mpKeywords">
+				<a>修改关键词 <i class="fa fa-gear"></i></a>
+				<a class="selectedKey">全部关键词</a>
+				<a>白富美</a>
+				<a>女神</a>
+			</div>
+            
+            <!--subscribe-article-list-->
+        	<div class="container-fluid subscribe-control-list">
+                 <div class="mp-article-list-timer clearfix">
+                 	<div class="pull-left control-list">
+                    <select class="control-select" data-select>
+                        <option>全部</option>
+                        <option>蝙蝠侠vs超人</option>
+                        <option>巴拉巴拉小魔仙</option>
+                        <option>巴拉巴拉</option>
+                    </select>
+                    </div>
+					<div class="control-select-with-nav pull-left">
+                        <a href="javascript:;" class="select-nav select-nav-left"><i class="fa fa-caret-left"></i></a>
+                        <select data-select>
+                            <option>最近24小时</option>
+                            <option>最近3天</option>
+                            <option>最近7天</option>
+                            <option>最近30天</option>
+                        </select>
+                        <a href="javascript:;" class="select-nav select-nav-right"><i class="fa fa-caret-right"></i></a>
+                    </div>
+                    <div class="list-unstyled pull-right">
+                    <button class="btn btn-default">编辑订阅词汇 <i class="fa fa-cog"></i></button>
+                	</div>
+                </div>
+            </div>
+            <!--/subscribe-article-list-->
+            
+            <div class="alert alert-success fade in">
+                <i class="fa-fw fa fa-info-circle"></i>已为您生成新的推荐词汇，<a href="#">点击此处</a>添加
+                <i class="fa-fw fa fa-close pull-right"></i>
+            </div>
+            <!--<div class="keywordArticleEmpty">
+                <p>您订阅的关键词暂无匹配的文章，添加或调整关键词可获得更多内容</p>
+                <p><a class="btn">立即修改关键词</a></p>
+            </div>-->
+            <div class="mp-article-list">
+                <table class="table">
+                    <colgroup>
+                        <col width="100">
+                        <col>
+                        <col width="120">
+                        <col width="220">
+                        <col width="110">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>传播指数</th>
+                            <th class="text-left">文章标题</th>
+                            <th class="text-center">类型</th>
+                            <th class="text-left">封面/来源</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="label label-danger risk-index ico-danger">96.98</span>
+                            </td>
+                            <td>
+                                <div class="mp-article-title">
+                                    <a href="#">年纪与梦想无关，80岁依然可以做自己喜欢的事 | 晨读359期 </a>
+                                    <a href="#"><i class="iconfont list-ico-violations" data-toggle="tooltip" data-placement="top" title="违规">&#xe627;</i></a> <span class="mp-article-label">教育</span> <span class="mp-article-label">教育</span>
+                                </div> 
+                            </td>
+                            <td class="text-center"><i class="iconfont list-ico-graphic" data-toggle="tooltip" data-placement="top" title="图文">&#xe638;</i></td>
+                            <td>
+                                <div class="media-list">
+                                    <div class="item-media">
+                                        <a href="#" target="_blank">
+                                            <img src="images/avatars/2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title"><a href="#" target="_blank" class="">新华网-思客</a></div>
+                                        <div class="item-sub-title">22 小时前</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                               <div class="mp-article-source">
+                                    <a href="#" class="source-collect" data-toggle="tooltip" data-placement="top" title="加入素材库"><i class="iconfont">&#xe61a;</i></a>
+                                    <a href="#" class="source-analyze" data-toggle="tooltip" data-placement="top" title="指数分析"><i class="iconfont">&#xe60b;</i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-warning risk-index ico-warning">96.98</span>
+                            </td>
+                            <td>
+                                <div class="mp-article-title">
+                                    <a href="#">年纪与梦自己喜欢的事 | 晨读359期 </a>
+                                    <a href="#"><i class="iconfont list-ico-violations" data-toggle="tooltip" data-placement="top" title="违规">&#xe627;</i></a> <span class="mp-article-label">教育</span> <span class="mp-article-label">教育</span>
+                                </div>
+                            </td>
+                            <td class="text-center"><i class="iconfont list-ico-graphic" data-toggle="tooltip" data-placement="top" title="图文">&#xe638;</i></td>
+                            <td>
+                                <div class="media-list">
+                                    <div class="item-media">
+                                        <a href="#" target="_blank">
+                                            <img src="images/avatars/2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title"><a href="#" target="_blank" class="">新华网-思客</a></div>
+                                        <div class="item-sub-title">22 小时前</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                               <div class="mp-article-source">
+                                    <a href="#" class="source-collect" data-toggle="tooltip" data-placement="top" title="加入素材库"><i class="iconfont">&#xe61a;</i></a>
+                                    <a href="#" class="source-analyze" data-toggle="tooltip" data-placement="top" title="指数分析"><i class="iconfont">&#xe60b;</i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-success risk-index ico-success">96.98</span>
+                            </td>
+                            <td>
+                                <div class="mp-article-title">
+                                    <a href="#">年纪与梦以做自己喜欢的事 | 晨读359期 </a>
+                                    <a href="#"><i class="iconfont list-ico-violations" data-toggle="tooltip" data-placement="top" title="违规">&#xe627;</i></a> <span class="mp-article-label">教育</span> <span class="mp-article-label">教育</span>
+                                </div>
+                            </td>
+                            <td class="text-center"><i class="iconfont list-ico-graphic" data-toggle="tooltip" data-placement="top" title="图文">&#xe638;</i></td>
+                            <td>
+                                <div class="media-list">
+                                    <div class="item-media">
+                                        <a href="#" target="_blank">
+                                            <img src="images/avatars/2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title"><a href="#" target="_blank" class="">新华网-思客</a></div>
+                                        <div class="item-sub-title">22 小时前</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                               <div class="mp-article-source">
+                                    <a href="#" class="source-collect" data-toggle="tooltip" data-placement="top" title="加入素材库"><i class="iconfont">&#xe61a;</i></a>
+                                    <a href="#" class="source-analyze" data-toggle="tooltip" data-placement="top" title="指数分析"><i class="iconfont">&#xe60b;</i></a>
+                                </div>
+                            </td>
+            
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="label label-default risk-index ico-default">96.98</span>
+                            </td>
+                            <td>
+                                <div class="mp-article-title">
+                                    <a href="#">年纪与梦想无关，欢的事 | 晨读359期 </a>
+                                    <a href="#"><i class="iconfont list-ico-violations" data-toggle="tooltip" data-placement="top" title="违规">&#xe627;</i></a> <span class="mp-article-label">教育</span> <span class="mp-article-label">教育</span>
+                                </div>
+                            </td>
+                            <td class="text-center"><i class="iconfont list-ico-graphic" data-toggle="tooltip" data-placement="top" title="图文">&#xe638;</i></td>
+                            <td>
+                                <div class="media-list">
+                                    <div class="item-media">
+                                        <a href="#" target="_blank">
+                                            <img src="images/avatars/2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title"><a href="#" target="_blank" class="">新华网-思客</a></div>
+                                        <div class="item-sub-title">22 小时前</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                               <div class="mp-article-source">
+                                    <a href="#" class="source-collect" data-toggle="tooltip" data-placement="top" title="加入素材库"><i class="iconfont">&#xe61a;</i></a>
+                                    <a href="#" class="source-analyze" data-toggle="tooltip" data-placement="top" title="指数分析"><i class="iconfont">&#xe60b;</i></a>
+                                </div>
+                            </td>
+            
+            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+               
+             
+		</div>
+		<!--/wrapper-->
+
+    </div>
+</div>
+<!--/main-->
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/icheck.min.js"></script>
+<script src="js/easypiechart.js"></script>
+<script src="js/site.js"></script>
+
+<script src="js/jquery-2.0.2.min.js"></script>
+<script>
+    var timeSelect = $('.timeSelect').select2({minimumResultsForSearch: -1});
+    timeSelect.data('select2').dropdown.addClass("timeSelectDropdown")
+</script>
+</body>
+</html>

@@ -513,7 +513,7 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .popular-public-list .mp-classify-title{ border: 1px solid #e5e9ed; border-width:1px 0; height: 54px; line-height: 54px; background: #f8f9fb; color: #696969; font-weight: bold; text-align: center;}
 
 /*图文*/
-.subscribeKeywords { border-bottom: 1px solid #e5e9ed; background: #fff; padding: 20px 40px 8px; margin: 0; }
+.graphic-keywords { border-bottom: 1px solid #e5e9ed; background: #fff; padding: 20px 40px 8px; margin: 0; }
 .subscribeKeywords a { display: inline-block; border: 1px solid #e5e9ed; border-radius: 5px; padding: 6px; min-width: 250px; color: #89a; font-size: 14px; font-weight: bold; height: 42px; line-height: 28px; overflow: hidden; float: left; margin: 0 12px 12px 0; }
 .subscribeKeywords a img { margin-right: 6px; float: left; width: 28px; height: 28px; border-radius: 2px; }
 .subscribeKeywords a i { margin-right: 6px; float: left; font-weight: normal; }
@@ -810,6 +810,169 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .login-copyright .fa{ font-size:12px;}
 .login-copyright a{ color:#666; text-decoration:none; border-bottom:1px dotted #999;}
 .login-copyright a:hover{ color:#333;}
+/* 关键词订阅 */
+.subscribeContainer{ border: 1px solid #e5e9ed; background: #f8f9fb;}
+.subscribeSide{ position: relative;}
+.subscribeList{ background:#FFF; border-right:1px solid #e5e9ed; text-align: center; position: relative; min-height: 600px; padding:0 !important;}
+.subscribeList h1{ padding-top: 10px; color: #345; font-size: 24px !important; margin-bottom: 0;}
+.subscribeCharts{ background: url(../img/subscribe/demand-bg.png) no-repeat center top; position:relative; min-height:640px; max-width:1150px; margin:0 auto; }
+.subscribeSubTitle{ color: #89a; font-size: 14px;}
+.subscribeList .subscribe-item{ position:absolute; width:auto; text-align:center; font-size:16px; cursor:pointer;}
+.subscribeList .subscribe-item .bubble{ display:block; border-radius:100%; transition:all .18s; transform:scale(1.0);}
+.subscribeList .subscribe-item .bubble:hover{transition:all .18s; transform:scale(1.1);}
+.subscribeWrap{ position:absolute; z-index:0; width:88px; top:0; left:50%; margin-left:-44px;}
+.subscribe-item:hover{ text-decoration:none;}
+.subscribe-item .bubble{ background:#e74c3c;}
+.subscribe-item em{ color:#e74c3c; font-style:normal; position:absolute; width:100%; left:0; text-align:center; line-height:1.2;}
+.subscribe-item .bubble-s1{ background:#e74c3c;}
+.subscribe-item .bubble-s1 + em{ color:#e74c3c;}
+.subscribe-item .bubble-s2{ background:#d34ad8;}
+.subscribe-item .bubble-s2 + em{ color:#d34ad8;}
+.subscribe-item .bubble-s3{ background:#ff8106;}
+.subscribe-item .bubble-s3 + em{ color:#ff8106;}
+.subscribe-item .bubble-s4{ background:#ffb606;}
+.subscribe-item .bubble-s4 + em{ color:#ffb606;}
+.subscribe-item .bubble-s5{ background:#46be68;}
+.subscribe-item .bubble-s5 + em{ color:#46be68;}
+.subscribe-item .bubble-s6{ background:#50d2d0;}
+.subscribe-item .bubble-s6 + em{ color:#50d2d0;}
+.subscribe-item .bubble-w1{ width:52px; height:52px;}
+.subscribe-item .bubble-w2{ width:48px; height:48px;}
+.subscribe-item .bubble-w3{ width:42px; height:42px;}
+.subscribe-item .bubble-w4{ width:34px; height:34px;}
+.subscribe-item .bubble-w5{ width:26px; height:26px;}
+.subscribe-item .bubble-w1 + em{ top:57px;}
+.subscribe-item .bubble-w2 + em{ top:52px;}
+.subscribe-item .bubble-w3 + em{ top:46px;}
+.subscribe-item .bubble-w4 + em{ top:38px;}
+.subscribe-item .bubble-w5 + em{ top:30px;}
+.subscribe-item .bubble-w3 + em,.subscribe-item .bubble-w4 + em,.subscribe-item .bubble-w5 + em{ width:46px; font-size:14px; left:50%; margin-left:-23px;}
+.subscribe-item-1{ left:0; top:275px;}
+.subscribe-item-1 .bubble{ background:#e74c3c !important; width:88px !important; height:88px !important;}
+.subscribe-item-1 em{ color:#e74c3c !important; top:93px !important;}
+.subscribe-item-2{ left:-82px; top:167px;}
+.subscribe-item-3{ left:-107px; top:370px;}
+.subscribe-item-4{ right:-120px; top:200px;}
+.subscribe-item-5{ right:-15px; top:455px;}
+.subscribe-item-6{ right:-215px; top:345px;}
+.subscribe-item-7{ left:-75px; top:515px;}
+.subscribe-item-8{ left:-220px; top:260px;}
+.subscribe-item-9{ right:-10px; top:120px;}
+.subscribe-item-10{ right:-160px; top:485px;}
+.subscribe-item-11{ right:-140px; top:60px;}
+.subscribe-item-12{ left:-200px; top:130px;}
+.subscribe-item-13{ right:-230px; top:180px;}
+.subscribe-item-14{ left:-220px; top:480px;}
+.subscribe-item-15{ right:-300px; top:460px;}
+.subscribe-item-16{ left:-340px; top:220px;}
+.subscribe-item-17{ right:-370px; top:365px;}
+.subscribe-item-18{ left:-350px; top:420px;}
+.subscribe-item-19{ right:-340px; top:120px;}
+.subscribe-item-20{ left:-320px; top:60px;}
+
+.subscribeAdvice{ position:absolute; z-index:999; left:0; top:0; height:75px; width:100%; background:#f8f9fb; border-bottom:1px solid #E5E9ED; text-align:center; font-size:14px;}
+.subscribeAdvice p{ padding-top:25px; margin:0;}
+.subscribeAdvice .btn-success{ background:#46BE68; border-color:#3EAE5C;}
+.subscribeAdvice .btn-success:hover{ background:#3EAE5C;}
+.subscribeAdvice h1{ padding-top:5px;}
+.subscribeAdvice h1 .btn{ position:absolute; z-index:1; left:20px; top:22px;}
+.subscribeLoading{ background:rgba(255,255,255,0.95); position:absolute; z-index:998; left:0; top:0; right:0; bottom:0; width:100%; height:100%; text-align:center; padding-top:300px; font-size:14px;}
+
+.subscribeChosen p{ font-size: 14px; color: #345;}
+.subscribeChosen ul{ list-style: none; padding: 0; margin:0;}
+.subscribeChosen li{ display: inline-block; font-weight: bold; font-size: 14px; padding: 0 10px; line-height: 36px; background: #89a; border-radius: 5px; color: #fff; margin:0 6px 10px 0;}
+.subscribeChosen li:hover{ background: #9babbb;}
+.subscribeChosen li i{ cursor: pointer; margin-left: 5px; font-weight: normal; color: #bac4ce;}
+.subscribeChosen .tips{ font-size:14px;}
+.addKeyword{ padding: 13px 0;}
+.addKeyword .btn{ background: #edf0f5; color: #89a; border: 1px solid #e5e9ed; box-shadow: none !important;}
+.addKeyword .col-md-9{ padding-right: 0;}
+.subscribeBtn{ padding:20px 0; width: 100%; }
+.subscribeBtn .btn{ background: #46be68;}
+.subscribeBtn .disabled{ opacity:0.45;}
+.keywordInput{ border-radius: 5px!important; border: 1px solid #e5e9ed;}
+
+.topBar{ height: 85px; border-bottom: 1px solid #e5e9ed; background: #fff; margin-top: -10px;}
+.topBar .userIcon{ background: #9dabb9; width:24px; height: 24px; margin-right: 6px; text-align: center; color: #fff; border-radius: 100%; font-size: 16px;}
+.topBar .userArea{ line-height: 24px; color: #89a; font-size: 14px; padding: 32px 40px 0 0;}
+.topBar .userArea .fa-angle-down{ font-size: 16px;}
+.topBar .navArea{ color: #89a; font-size: 18px; padding: 32px 0 0 40px;}
+.topBar .navArea a{ margin-right: 40px; display: inline-block;}
+.topBar .navArea a:link,
+.topBar .navArea a:visited{ color: #89a;}
+.topBar .navArea a:hover{ color: #a3b7ca;}
+.subscribeKeywords{ border-bottom: 1px solid #e5e9ed;  background: #fff; padding:20px 40px 8px;}
+.subscribeKeywords li{ display:inline-block; margin:0 12px 12px 0;}
+.subscribeKeywords a{ display:inline-block; border: 1px solid #e5e9ed; border-radius:5px 0 0 5px; width:240px; padding:6px; color: #89a; font-size: 14px; font-weight: bold; height: 42px; line-height: 28px; overflow:hidden; float:left; cursor:pointer;}
+.subscribeKeywords a img{ margin-right: 6px; float: left;}
+.subscribeKeywords a:hover{ text-decoration:none;}
+.subscribeKeywords a.viewKeyword{ margin-left:-1px; width:40px; border-radius:0 5px 5px 0; padding:0; font-size:18px; line-height:44px; text-align:center;}
+.subscribeKeywords .active a{ background: #46be68; border: 1px solid #46be68; color:#fff;}
+.subscribeKeywords .active a.viewKeyword{ background:#27A547;}
+.subscribeKeywords .active a.viewKeyword.expanded .fa:before{ content:"\f0d8"; font-family:FontAwesome;}
+.subscribeKeywords li:hover a{ border-color:#46be68; color:#46be68;}
+.subscribeKeywords li.active:hover a{ color:#FFF;}
+.mpKeywords{ background:#F6F6F6; border-bottom:1px solid #e5e9ed; padding:15px 32px; font-size:14px; margin:0;}
+.mpKeywords a:first-child{ margin-right:15px;}
+.mpKeywords a{ display:inline-block; background:#FFF; text-decoration:none; color:#666; padding:8px 15px; border:1px solid #e5e9ed; border-radius:4px; float:left; margin:5px; cursor:pointer;}
+.mpKeywords a:hover{ border-color:#46be68; color:#46be68;}
+.mpKeywords a.selectedKey{ background:#46be68; border-color:#46be68; color:#FFF;}
+.artToKeyword{ border-radius:3px; background:#C5CFD9; font-size:12px; padding:4px 5px; margin:0 5px; line-height:1; color:#FFF; text-align:center;}
+.keywordArticleEmpty{ background:#FFF; text-align:center; font-size:14px; margin:15px 6px; padding:40px;}
+.keywordArticleEmpty .btn{ background:#46BE68; color:#FFF; padding:8px 15px; margin-top:10px;}
+.keywordArticleEmpty .btn:hover{ background:#27A547;}
+
+.subscribeEmpty{ width: 452px; margin: 100px auto; color: #89a; font-size: 18px;}
+.subscribeEmpty p:nth-of-type(1){ padding-bottom: 20px;}
+.subscribeEmpty ul{ list-style: none; margin: 0; padding: 40px 0;}
+.subscribeEmpty li{ float: left; width: 33.3%; margin: 0; padding: 0; overflow: hidden; font-size: 14px; text-align: center;}
+.subscribeEmpty li i{ margin-bottom: 5px; text-align:center;}
+.subscribeEmpty li:nth-of-type(1){  padding-right: 80px;}
+.subscribeEmpty li:nth-of-type(1) i{ background:url(../images/subscribe/subscribe_icon1.png) no-repeat; width:48px; height:48px; display:block; margin-left:11px;}
+.subscribeEmpty li:nth-of-type(2) i{background:url(../images/subscribe/subscribe_icon2.png) no-repeat;width:48px; height:48px; display:block; margin-left:52px;}
+.subscribeEmpty li:nth-of-type(3){ text-align: center; padding-left: 80px;}
+.subscribeEmpty li:nth-of-type(3) i{ background:url(../images/subscribe/subscribe_icon3.png) no-repeat;width:48px; height:48px; display:block; margin-left:11px;}
+.subscribeAddAccount .btn{ padding: 14px; background: #44b549; font-size: 22px;}
+.subscribeEmptyWrap{height: 100%; background: #fff; margin:0 -14px;}
+.subscribeGuide{ position: absolute; top: 0; left:0; width: 100%; height: 100%; background: rgba(255,255,255,.9); font-size: 18px; color: #89a;}
+.subscribeGuideIn{ width: 220px; margin: 120px auto;}
+.subscribeGuide img{ margin-bottom: 10px;}
+.subscribeGuide .btn{ background: #44b549;}
+.subscribeArticleList{ padding:0 !important;}
+.subscribeArticleList ul:nth-of-type(1){ margin-right: 10px;}
+.mpUserArticleTimer{ clear:both; padding:0 6px 0 6px; overflow:hidden;}
+.mpUserArticleTimer .topArticleSwitch{ float:left; font-size:14px; color:#666;}
+.mpUserArticleTimer ul{ float:right; margin:0;}
+.mpUserArticleTimer li{ float:left;}
+.mpUserArticleTimer li a{ float:left; margin-left:-1px; height:36px; border:1px solid #CCD4D6; font-size:14px; background:#FFF; line-height:36px; padding:0 12px; text-decoration:none; color:#6C7477; cursor:pointer;}
+.mpUserArticleTimer li a:hover{ background-color:#EDEEEF;}
+.mpUserArticleTimer li a.current{ background:#767E81; color:#FFF; box-shadow:0 0 3px rgba(0,0,0,0.4) inset; border-color:#767E81;}
+.mpUserArticleTimer li:first-child a{ border-radius:5px 0 0 5px;}
+.mpUserArticleTimer li:last-child a{ border-radius:0 5px 5px 0;}
+
+
+.timeSelect{ width: 130px; color:#89a; font-size:14px;}
+.timeSelect.select2-container .select2-choice .select2-arrow{ background: none; border-left:0;}
+.timeSelect.select2-container .select2-choice{ border-radius: 5px; height: 36px; line-height: 36px; border: 1px solid #ccd4d6;}
+.timeSelect.select2-dropdown-open .select2-choice{ border-bottom-left-radius: 0; border-bottom-right-radius: 0;}
+.timeSelectDropdown.select2-drop-active { border-color: #ccd4d6;}
+.timeSelectDropdown .select2-highlighted{ background: #ccd4d6;}
+
+.subscribeGuidanceWrap{height: 100%; background: #fff; margin:-10px -14px;}
+.subscribeGuidance{ margin:50px auto; max-width:926px; text-align:center;}
+.subscribeGuidance img{ width:100%; padding-bottom:30px;}
+.subscribeGuidance h3{ color:#334455; font-size:24px; font-family:"Microsoft YaHei"; line-height:2.3; padding-bottom:20px;}
+.subscribeGuidance h3 small{ color:#8899aa; font-size:16px; display:block; line-height:1.6;}
+.subscribeGuidance .btn{ max-width:600px; margin:0 auto; padding:8px; background: #44b549; font-size:14px; border:none;}
+/*无关键字提示*/
+.noKeywordTip{ background:#fff; font-family:"Microsoft YaHei"; font-size:16px;}
+.subscribeGuideTip{ margin:120px auto; padding:0 20px;}
+.subscribeGuideTip p{ padding-bottom:30px;}
+.subscribeGuideTip .fa{ font-size:130px;}
+
+.subscribe-control-list{ padding:20px 40px;}
+.subscribe-control-list .control-list{ margin-right:10px;}
+.wrapper .alert{ border-radius:0; margin-bottom:0;}
 @media all and (max-width:768px) {
     .sidebar { display: none;}
     .main { float: none; }
