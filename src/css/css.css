@@ -689,8 +689,8 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 /*索取发票*/
 .invoice-nav { padding: 0 !important; }
 .invoice-nav .col-md-3 { padding: 0; }
-.invitation-statistics { text-align: center; height: 150px; border-bottom: 1px solid #e5e9ed; padding: 30px 0; }
-.invitation-statistics li { width: 25%; float: left; }
+.invitation-statistics { text-align: center; border-bottom: 1px solid #e5e9ed; padding:35px 0 45px; }
+/*.invitation-statistics li { width: 25%; float: left; }*/
 .invitation-statistics span { font-size: 36px; color: #345; font-weight: bold }
 .invite-link-table { height: 48px; color: #485664; }
 .my-invitation-link { background: #f8f9fb; color: #89a;}
@@ -974,10 +974,16 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .subscribe-control-list .control-list{ margin-right:10px;}
 .wrapper .alert{ border-radius:0; margin-bottom:0;}
 /*违规曝光台*/
-.bar-danger{ background:#e74c3c; padding:24px 40px; font-size:14px; color:#fff;}
+.bar-danger{ background:#e74c3c; padding:24px 50px 24px 40px; font-size:14px; color:#fff; position:relative;}
 .bar-danger i{ margin-right:10px;}
-.danger-nav .diagnose-nav li a:hover, .danger-nav .diagnose-nav li.current a{background:#e74c3c;}
+.bar-danger a i{ position:absolute; top:24px; right:20px; color:#fff;}
+.violations-nav .diagnose-nav li a:hover, .violations-nav .diagnose-nav li.current a{background:#e74c3c;}
+.violations-search{ margin:20px auto !important;}
 
+.mp-danger-list a:hover, .mp-danger-list a:active { color: #e74c3c;}
+.mp-danger-list .active { color: #e74c3c !important; }
+.violations-statistics span{ color:#e74c3c;}
+.danger-text{ color:#e74c3c;}
 @media all and (max-width:768px) {
     .sidebar { display: none;}
     .main { float: none; }
