@@ -788,7 +788,7 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .login-box-inner{ padding:40px; background:#fff; border-radius:0 0 3px 3px;}
 .uesr-ico{ background:url(../images/sprites_icon.png) no-repeat 0 -266px; width:14px; height:16px; display:inline-block;}
 .password-ico{ background:url(../images/sprites_icon.png) no-repeat 0 -250px; width:14px; height:16px; display:inline-block;}
-.login-box-inner .input-group-addon{ border:1px solid #e5e9ed; background:#f1f4f8;}
+.login-box-inner .input-group-addon{ border:1px solid #e5e9ed; background:#f1f4f8; border-right: 0;}
 .login-box-inner .input-group-addon input{ border:none;}
 .login-box-inner .input-group{ margin-bottom:20px;}
 
@@ -810,6 +810,8 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .login-copyright .fa{ font-size:12px;}
 .login-copyright a{ color:#666; text-decoration:none; border-bottom:1px dotted #999;}
 .login-copyright a:hover{ color:#333;}
+.register-col-left{ width: 60%; float: left;}
+.register-col-right{ width: 36%; float: right;}
 /* 关键词订阅 */
 .subscribeContainer{ border: 1px solid #e5e9ed; background: #f8f9fb;}
 .subscribeSide{ position: relative;}

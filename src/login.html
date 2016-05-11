@@ -25,44 +25,41 @@
         
 			<div class="input-group">
                 <span class="input-group-addon"><em class="uesr-ico"></em></span>
-                <input type="text" class="form-control" id="inputGroupSuccess4" value="手机号" aria-describedby="inputGroupSuccess4Status">
+                <input type="text" class="form-control" id="inputGroupSuccess4" placeholder="手机号" value="" aria-describedby="inputGroupSuccess4Status">
               </div>
 			</div>
         	<div class="input-group">
                 <span class="input-group-addon"><em class="password-ico"></em></span>
-                <input type="text" class="form-control" id="inputGroupSuccess4" value="密码" aria-describedby="inputGroupSuccess4Status">
+                <input type="Password" class="form-control" id="inputGroupSuccess4" placeholder="密码" aria-describedby="inputGroupSuccess4Status">
           	</div>
             <div class="input-group">
                 <span class="input-group-addon"><em class="password-ico"></em></span>
-                <input type="text" class="form-control" id="inputGroupSuccess4" value="确认密码" aria-describedby="inputGroupSuccess4Status">
+                <input type="Password" class="form-control" id="inputGroupSuccess4" placeholder="确认密码" aria-describedby="inputGroupSuccess4Status">
           	</div>
-            <div class="row verify-code">
-  				<div class="col-lg-6">
+            <div class="verify-code clearfix">
+  				<div class="register-col-left">
                 	<div class="input-group">
                         <span class="input-group-addon"><em class="password-ico"></em></span>
-                        <input type="text" class="form-control" id="inputGroupSuccess4" value="图片验证码" aria-describedby="inputGroupSuccess4Status">
+                        <input type="text" class="form-control" id="inputGroupSuccess4" placeholder="图片验证码" aria-describedby="inputGroupSuccess4Status">
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="register-col-right">
                 	<div class="verify-code-img"><img src="images/avatars/verification-code.png" id="btnGetPicValidateCode" style="cursor:pointer"></div>
                 </div>
             </div>
-            <div class="row verify-code">
-  				<div class="col-lg-6">
+            <div class="verify-code clearfix">
+  				<div class="register-col-left">
                 	<div class="input-group">
                         <span class="input-group-addon"><em class="password-ico"></em></span>
-                        <input type="text" class="form-control" id="inputGroupSuccess4" value="短信验证码" aria-describedby="inputGroupSuccess4Status">
+                        <input type="text" class="form-control" id="inputGroupSuccess4" placeholder="短信验证码" aria-describedby="inputGroupSuccess4Status">
                     </div>
                 </div>
-                <div class="col-lg-6"><a class="btn btn-default" id="btnGetValidateCode">免费获取短信验证码</a></div>
+                <div class="register-col-right"><a class="btn btn-default" id="btnGetValidateCode">免费获取短信验证码</a></div>
             </div>
             
-            <section>
-                <label class="checkbox">
-                    <input type="checkbox" name="remember" checked="checked" value="1">
-                    <i></i>我已阅读并接受<a href="/about/agreement" target="_blank">《用户协议》</a>
-                </label>
-            </section>
+            <div>
+                <input class="control-checkbox" data-checkbox id="checkbox1" type="checkbox" checked><label class="control-checkbox-label" for="checkbox1"><i></i>我已阅读并接受<a href="/about/agreement" target="_blank">《用户协议》</a></label>
+            </div>
 			<div class="login-button">
                 <button type="submit" class="btn btn-primary" id="submitButton">
                     注册
