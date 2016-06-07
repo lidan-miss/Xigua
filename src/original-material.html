@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>原创圈</title>
+    <title>原创文章</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="css/select2.css" rel="stylesheet">
@@ -91,8 +91,8 @@
         <!--wrapper-->
         <div class="wrapper wrapper-no-gap my-material">
         	<ul class="diagnose-nav clearfix">
-                <li><a href="#">原创文章</a></li>
-                <li class="current"><a href="#">原创圈</a></li>
+                <li class="current"><a href="#">原创文章</a></li>
+                <li><a href="#">原创圈</a></li>
             </ul>
             <div class="material-tag-list btn-unify original-articles">
                 <a href="#" class="active">情感励志</a>
@@ -107,15 +107,14 @@
                 <div class="original-number pull-right">入驻原创号：8849</div>
             </div>
             <div class="mp-user-article-timer mp-article-original-timer clearfix">
+            	<div class="btns-hot-newest pull-left"><a href="#" class="active">热门</a><a href="#">最新</a></div>
                 <div class="control-select-with-nav">
-                    <a href="javascript:;" class="select-nav select-nav-left"><i class="fa fa-caret-left"></i></a>
                     <select class="time-select" data-select>
                         <option>最近24小时</option>
                         <option>最近3天</option>
                         <option>最近7天</option>
                         <option>最近30天</option>
                     </select>
-                    <a href="javascript:;" class="select-nav select-nav-right"><i class="fa fa-caret-right"></i></a>
                 </div>
             </div>
             <div class="mp-article-list">
@@ -123,14 +122,16 @@
                     <colgroup>
                         <col width="140">
                         <col>
-                        <col width="250">
-                        <col width="80">
+                        <col width="200">
+                        <col width="100">
+                        <col width="260">
                     </colgroup>
                     <thead>
                         <tr>
                             <th>封面</th>
                             <th class="text-left">文章标题</th>
                             <th class="text-left">来源/时间</th>
+                            <th>转载次数</th>
                             <th>操作</th>
                         </tr>
                     </thead>
@@ -162,9 +163,10 @@
                                     </div>
                                 </div>
                             </td>
+                            <td class="text-center">1234</td>
                             <td class="text-center">
-                               <div class="mp-article-source">
-                                    <a href="#" class="source-collect" data-toggle="tooltip" data-placement="top" title="加入素材库"><i class="iconfont">&#xe61a;</i></a>
+                               <div class="original-article-source">
+                                    <a class="btn btn-default view-details" href="#" role="button">免费转载</a><a class="btn btn-default view-details" href="#" role="button">申请授权</a>
                                 </div>
                             </td>
                         </tr>
@@ -195,9 +197,10 @@
                                     </div>
                                 </div>
                             </td>
+                            <td class="text-center">1234</td>
                             <td class="text-center">
-                               <div class="mp-article-source">
-                                    <a href="#" class="source-collect" data-toggle="tooltip" data-placement="top" title="加入素材库"><i class="iconfont">&#xe61a;</i></a>
+                               <div class="original-article-source">
+                                    <a class="btn btn-default view-details" href="#" role="button">免费转载</a><a class="btn btn-default view-details" href="#" role="button">申请授权</a>
                                 </div>
                             </td>
                         </tr>
@@ -228,9 +231,10 @@
                                     </div>
                                 </div>
                             </td>
+                            <td class="text-center">1234</td>
                             <td class="text-center">
-                               <div class="mp-article-source">
-                                    <a href="#" class="source-collect" data-toggle="tooltip" data-placement="top" title="加入素材库"><i class="iconfont">&#xe61a;</i></a>
+                               <div class="original-article-source">
+                                    <a class="btn btn-default view-details" href="#" role="button">免费转载</a><a class="btn btn-default view-details" href="#" role="button">申请授权</a>
                                 </div>
                             </td>
                         </tr>
@@ -243,6 +247,68 @@
     </div>
 </div>
 <!--/main-->
+
+
+<div class="modal fade in" style=" display:block;">
+    <div class="modal-dialog modal-dialog-wide">
+        <div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 class="modal-title">申请白名单授权</h4>
+			</div>
+			<div class="modal-body">
+				<h4 class="mpArticleColTitle">选择需要授权的公众号</h4>
+                
+                <div class="public-accredit-list clearfix">
+                    <div class="public-accredit">
+                        <div class="media-list">
+                            <div class="item-media"><img src="images/avatars/2.jpg" width="48" height="48" class="round-img"></div>
+                            <div class="item-inner">
+                                <div class="item-title">有色彩的漫画</div>
+                                <div class="item-sub-title">trade-club</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="public-accredit">
+                    	<div class="media-list">
+                            <div class="item-media"><img src="images/avatars/2.jpg" width="48" height="48" class="round-img"></div>
+                            <div class="item-inner">
+                                <div class="item-title">有色彩的漫画</div>
+                                <div class="item-sub-title">trade-club</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="public-accredit active">
+                        <div class="media-list">
+                            <div class="item-media"><img src="images/avatars/2.jpg" width="48" height="48" class="round-img"></div>
+                            <div class="item-inner">
+                                <div class="item-title">有色彩的漫画</div>
+                                <div class="item-sub-title">trade-club</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="mpArticleColTitle">需授权的权限(可多选)</h4>
+                <div class="access-accredit clearfix">
+                	<a href="#" class="selected"><i></i></a>
+                    <div class="access-accredit-info">
+                		<div class="access-accredit-title">可修改文章</div>
+                		白名单公众号可以修改文章的内容、格式、排版等。勾选后，原公众号再行投诉修改并转载的文章侵犯著作权将不被支持。腾讯不会也不会介入该文章修改事宜的纠纷解决。
+                    </div>
+                </div>
+				<div class="access-accredit clearfix">
+                	<a href="#"><i></i></a>
+                	<div class="access-accredit-info">
+                    	<div class="access-accredit-title">可不显示转载来源</div>
+                		白名单公众号转载文章将不再由系统注明出处。
+                    </div>
+                </div>
+                <div class="price-accredit"><span>授权价格：<em>188</em> 元 </span>（价格按100元/千字计算，不足千字按比例计算，混合授权需溢价50%，如授权失败，款项将在48小时内原路返回）</div>
+                <div class="btns-payment"><a href="#">去支付宝付款，申请授权</a></div>
+			</div>
+		</div>
+    </div>
+</div>
 <script src="js/jquery-1.12.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/select2.min.js"></script>
