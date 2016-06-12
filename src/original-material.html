@@ -248,8 +248,8 @@
 </div>
 <!--/main-->
 
-
-<div class="modal fade in" style=" display:block;">
+<!--White list-->
+<div class="modal fade in" style=" display:none;">
     <div class="modal-dialog modal-dialog-wide">
         <div class="modal-content">
 			<div class="modal-header">
@@ -309,6 +309,45 @@
 		</div>
     </div>
 </div>
+<!--/White list-->
+<!--pay pop-->
+<div class="corporate-account-layer">
+    
+    <div class="modal modal-payment fade in" style=" display:block;">
+        <div class="modal-dialog modal-dialog-wide pay-dialog-wide">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3 class="pay-success-title">请您在新打开的页面完成支付！</h3>
+                    <div class="complete-payment">
+                        <p>• 支付完成前请不要关闭此窗口</p>
+                        <p>• 如遇支付失败时，可以点击支付失败，重新支付</p>
+                    </div>
+    
+                    <div class="payment-btn"> <button class="btn btn-success btn-payment">支付成功</button><button class="btn btn-default btn-payment">支付失败，重新支付</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+    
+    <div class="modal modal-payment fade in" style=" display:block;">
+        <div class="modal-dialog modal-dialog-wide pay-dialog-wide">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="payment-state"><i class="ioc-succeed"></i></div>
+                    <p class="payment-success">支付成功</p>
+                    <div class="payment-success-tip">您随时可以在<a href="#">授权订单</a>页面查看授权进度，授权结果将在2小时内发送到西瓜公众号助手消息中心，非工作时段适当延长</div>
+                    <div class="payment-btn"><button class="btn btn-success btn-payment">确定</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<!--/pay pop-->
+
+
+
 <script src="js/jquery-1.12.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/select2.min.js"></script>
