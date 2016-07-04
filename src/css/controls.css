@@ -26,6 +26,8 @@
 .control-search-2-submit:link, .control-search-2-submit:visited { color: #fff; text-decoration: none; }
 .control-search-2-submit:hover { text-decoration: none; background: #27a547; }
 .control-search-2-submit:active { background: #159328; }
+.control-search-3-submit{ background:#e74c3c;}
+.control-search-3-submit:hover,.control-search-3-submit:active{ background:#d64637;}
 
 /* 选择框 */
 .control-checkbox { }
@@ -46,8 +48,8 @@
 .btn-unify a { text-decoration: none; border-radius:4px; padding:7px 22px; color: #6d8092; margin: 5px; }
 .btn-unify a:link, .btn-unify a:visited { background: none; display: inline-block; border: 1px solid #e5e9ed; }
 .btn-unify a:hover { background: #edf0f5; }
-.btn-unify a:active { background: #46be68; color: #fff; }
-.btn-unify .active { background: #46be68 !important; color: #fff !important; }
+.btn-unify a:active { background: #46be68; color: #fff;}
+.btn-unify .active { background: #46be68 !important; color: #fff !important;  border:1px solid #46be68 !important;}
 
 /*分页*/
 .control-pagination { margin: 20px 0; color: #89a; }
