@@ -68,6 +68,7 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .main { width: 100%; float: left; }
 .main .main-content { margin-left: 240px; padding-top: 88px; }
 .page { padding: 20px; }
+.page-no-gap{ padding:0;}
 .sidebar a { display: block; }
 .sidebar i { padding-right: 10px; }
 .sidebar a:link, .sidebar a:visited { color: #7a8a9a; text-decoration: none; }
@@ -1036,6 +1037,66 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .payment-state .ioc-failure{ background-position:0 -345px;}
 .payment-success{ font-size:16px; color:#345; padding:20px 0 10px; font-weight:bold; text-align:center;}
 .payment-success-tip{ padding-bottom:30px; font-size:16px; line-height:1.8;}
+/*public-set*/
+.dada-public-set{ max-width:810px; margin:0 auto; padding:20px 0;}
+.dada-public-set .dada-public-set-title{ font-size:24px; color:#345; line-height:80px;}
+.dada-public-set .form-group label{ font-weight:normal; font-size:14px; color:#345;}
+.dada-public-set .price-input{ width:130px; text-align:center; float:left;}
+.unit-price-set{line-height:42px; color:#a5afb7;}
+.unit-price-set strong{ font-weight:bold; color:#345; padding:0 10px;}
+.problem-timeliness a{ width:130px; padding:10px 0; text-align:center; margin:0 20px 0 0;}
+.btns-set-save{ width:130px; height:42px; font-size:16px;}
+.public-set-btn .btn-success{ background:#46be68 !important; border-color:#46be68 !important;}
+.public-set-btn .btn-success:hover{ background:#27a547 !important; box-shadow:none;}
+
+.dada-public-set .form-control{ border:1px solid #e5e9ed;-webkit-box-shadow:none; color:#7a8a9a; min-height:42px;}
+.operator-set-box{border:1px solid #e5e9ed; border-radius:5px; margin-bottom:20px;}
+.operator-set-title{border-radius:5px 5px 0 0; height:40px; line-height:40px;border-bottom:1px solid #e5e9ed; padding:0 10px; background:#f8f9fb;}
+.operator-set-title span{ float:right;}
+.perator-set-content{ padding:20px; position:relative;}
+.perator-set-content .btns{ position:absolute; right:20px; top:27px;}
+.perator-set-content .item-sub-title a:link,.perator-set-content .item-sub-title a:visited{ color:#3498db;}
+.add-auxiliary-operating{ text-align:center; padding:20px; font-size:16px;}
+
+.xigua-dada{ background:#fff; border-bottom:1px solid #e5e9ed; padding:20px 0 30px;}
+.xigua-dada-content{ max-width:940px; margin:0 auto; padding:0 20px;}
+.xigua-dada-title{ font-size:32px; color:#345; padding-bottom:10px;}
+.dada-certified-public{ text-align:center; max-width:670px; padding:60px 20px 20px 20px; margin:0 auto; font-size:16px;}
+.dada-certified-public .media-list{ margin:30px auto 40px;}
+.dada-certified-public .item-media img{ width:68px; height:68px; border-radius:34px;}
+.dada-certified-public .item-title{ padding-bottom:5px;}
+.dada-certified-public .item-title a{ font-size:18px; color:#345;}
+.dada-certified-tip{ text-align:left; padding-bottom:40px}
+.btns-dada-certified{ width:160px;}
+.xigua-dada-qrcode{ padding:10px 0 30px;}
+.xigua-dada-qrcode img{ max-width:160px; height:160px; width:100%;}
+.xigua-public-choose-box{ padding-bottom:120px;}
+.xigua-public-choose{ background:none; max-width:940px; margin:0 auto;}
+.xigua-public-choose .col-md-4{ padding:10px;}
+.xigua-public-choose-title{ padding:20px 20px 10px 20px; font-size:16px; color:#345;}
+.public-choose-list{ width:100%; border:1px solid #e5e9ed; background:#fff; padding:20px; float:left; height:100px;display:block;}
+.public-choose-list .item-media img{ width:60px; height:60px; border-radius:3px;}
+
+.public-choose-list:hover,.public-choose-list.active{ border:1px solid #46be68;}
+.public-choose-list.active:before{background:url(../images/sprites_icon.png) no-repeat 0 -412px; width:36px; height:36px; content:""; display:inline-block; position:absolute; right:10px; top:10px;}
+.public-choose-list .item-title{ font-size:16px; color:#345;}
+.public-choose-list .item-sub-title{ color:#7a8a9a;}
+.public-choose-list-add{ text-align:center; color:#7a8a9a; font-size:16px; vertical-align:middle;}
+.public-choose-list-add i{ font-size:20px; padding-top:10px;}
+.xigua-dada-btns-box{ position:fixed; bottom:0; right:0; left:240px; background:#fff; padding:30px 0;}
+.xigua-dada-btns{ max-width:900px; margin:0 auto; text-align:right;}
+
+.opened-head{ padding:20px 0;}
+.opened-head a{ float:right; padding-right:5px;}
+.opened-public-list{ max-width:940px; margin:0 auto; padding:0 20px;}
+.opened-public-list .opened-list li{ position:relative; padding:20px; margin-bottom:20px; background:#fff; border:1px solid #e5e9ed; border-radius:5px;}
+.opened-public-list .item-media img{ width:60px; height:60px; border:3px;}
+.opened-public-list .item-title{ font-size:16px; color:#345;}
+.set-pull-right{ position:absolute; right:20px; top:32px;}
+.xigua-dada-guide{ color:#3498db; background:#fff; border:1px solid #e5e9ed; border-radius:3px; padding:20px; margin-top:20px;}
+.xigua-dada-guide h4{ font-size:16px; color:#345; font-weight:bold; padding-bottom:10px;}
+.xigua-dada-guide li{ float:left; width:50%; padding-bottom:10px;}
+.xigua-dada-guide li:nth-child(2n){ border-left:1px solid #edf0f5; box-sizing:border-box; padding-left:20px;}
 @media all and (max-width:768px) {
     .sidebar { display: none;}
     .main { float: none; }
@@ -1051,6 +1112,7 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
     .page-dashboard .col-md-4:nth-of-type(1) { padding-right: 0; }
     .page-dashboard .col-md-4:nth-of-type(2) { padding-left: 0; padding-right: 0; }
     .page-dashboard .col-md-4:nth-of-type(3) { padding-left: 0; }
+	.xigua-dada-btns-box{ left:0;}
 }
 
 @media all and (min-width:769px) and (max-width: 860px) {
