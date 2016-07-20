@@ -729,11 +729,12 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .system-message li p{ line-height: 1.6;}
 .system-message .message-loading{ text-align: center; margin: 30px 0;}
 /*索取发票*/
-.invoice-table{ margin:0;}
+.invoice-table{ margin:0; border:1px solid #e5e9ed; border-width:0 1px;}
 .warm-prompt h5{ font-size:14px; font-weight:bold; color:#345;}
 .warm-prompt{ text-align:left; margin-bottom:30px;} 
 .no-orders{ text-align:center; font-weight:bold;}
-
+.user-invoice-total{ text-align:left;}
+.user-invoic-amount{ text-align:right;}
 /*热点风向标*/
 .left-hot-list{ width:360px; background:#f8f9fb !important;}
 .right-hot-content{margin-left: 360px;}
@@ -1115,7 +1116,11 @@ em.invalid{ color:#e74c3c; font-style:normal; display:block; margin-top:-15px; p
 .btn-add-disabled{ background:#e5e9ed; color:#7a8a9a;}
 .pop-main-entry{ height:200px; line-height:200px; text-align:center; font-size:18px;}
 /*客服*/
-.customer-service{ background:#f8f9fb;}
+.customer-service{ background:#f8f9fb; padding:0 40px;}
+.customer-service li{ padding:20px 0; width:260px; display:inline-block;}
+.customer-service li img{ width:80px; height:80px; border-radius:50%; margin-right:20px; float:left;}
+.customer-nickname{ color:#345; font-size:14px; font-weight:bold; padding:15px 0 0; line-height:1.8;}
+.customer-qqnumber{color:#89a; font-size:18px;}
 /*加载*/
 .loading-page{ position:absolute; top:50%; left:50%; display:block; font-size:24px; color:#fff; margin:-35px 0 0 -150px;}
 .loading-page i{ float:left;}
@@ -1126,6 +1131,7 @@ em.invalid{ color:#e74c3c; font-style:normal; display:block; margin-top:-15px; p
 .error h2{ font-size:18px; padding:15px 0 30px 0;}
 .error .btn{ display:inline-block; width:160px; background:#45BD67; border-radius:42px; color:#FFF; text-decoration:none;}
 .error .btn:hover{ background:#3CA659;}
+.wrapper-loading{ text-align:center; color:#345;}
 @media all and (max-width:768px) {
     .sidebar { display: none;}
     .main { float: none; }
