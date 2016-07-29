@@ -73,7 +73,8 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .sidebar i { padding-right: 10px; }
 .sidebar a:link, .sidebar a:visited { color: #7a8a9a; text-decoration: none; }
 .sidebar a:hover, .sidebar a:active { color: #fff; }
-.sidebar ul { padding: 0; }
+.sidebar nav{ height:100%; overflow:auto; overflow-x:hidden; padding-bottom:88px;}
+.sidebar ul { padding: 0;}
 .sidebar li { min-height: 40px; line-height: 40px; list-style: none;}
 .sidebar ul li a{ padding-left: 30px; }
 .sidebar li ul { background: #26303b; padding-left:60px;}
@@ -288,11 +289,11 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .diagnose-main .row { margin-bottom: 20px; }
 .diagnose-main .col { padding: 0; }
 .diagnose-block { background-color: #fff; border: 1px solid #e5e9ed; border-radius: 5px; padding:40px 20px 20px 20px; margin: 0 10px 10px 0; }
-.diagnose-record .totalScore { position: relative; width: 160px; height: 160px; margin: 0 auto 20px; }
+.diagnose-record .totalScore { position: relative; width: 160px; height: 160px; margin: 0 auto 20px;}
 .diagnose-record .ico-diagnose{background:url(../images/ico_time_sad.png) no-repeat; width:160px; height:160px; display:inline-block;}
 .diagnose-record .ico-diagnose-time{ background-position:0 0;}
 .diagnose-record .ico-diagnose-sad{ background-position:0 -160px;}
-.diagnose-record .percent { position: absolute; left: 0; top: 40px; width: 160px; text-align: center; font-size: 48px; font-weight: bold; color: #46be68; }
+.diagnose-record .percent { background:none; position: absolute; left: 0; top: 40px; width: 160px; text-align: center; font-size: 48px; font-weight: bold; color: #46be68; }
 
 .diagnose-record .scoreName { position: absolute; top: 98px; text-align: center; width: 100%; }
 .diagnose-block .history-diagnose-info{ height:105px; border-bottom:1px solid #e5e9ed;}
@@ -735,7 +736,7 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .user-invoice-total{ text-align:left;}
 .user-invoic-amount{ text-align:right;}
 /*热点风向标*/
-.left-hot-list{ width:360px; background:#f8f9fb !important;}
+.left-hot-list{ width:360px; background:#f8f9fb !important; height:100%; overflow:auto; overflow-x:hidden;}
 .right-hot-content{margin-left: 360px;}
 .left-hot-list .left-hot-title{ height:60px; font-size:16px; font-weight:bold; color:#89a; border-bottom:1px solid #e5e9ed;}
 .left-hot-list .left-hot-title .flag-ico{ background:#fff; border:1px solid #e9ecf0; border-radius:50%; width:34px; height:34px; text-align:center; line-height:34px; display:inline-block; margin:11px 25px 0 23px;}
@@ -915,9 +916,9 @@ em.invalid{ color:#e74c3c; font-style:normal; display:block; margin-top:-15px; p
 .topBar .navArea a:hover{ color: #a3b7ca;}
 .subscribeKeywords{ border-bottom: 1px solid #e5e9ed;  background: #fff; padding:0 40px 8px;}
 .subscribeKeywords li{ display:inline-block; margin:0 12px 12px 0;}
-.subscribeKeywords a{ display:inline-block; border: 1px solid #e5e9ed; border-radius:5px 0 0 5px; width:240px; padding:6px; color: #89a; font-size: 14px; font-weight: bold; height: 42px; line-height: 28px; overflow:hidden; float:left; cursor:pointer;}
-.subscribeKeywords a img{ margin-right: 6px; float: left;}
-.subscribeKeywords a:hover{ text-decoration:none;}
+.subscribeKeywords a{ display:inline-block; border: 1px solid #e5e9ed; border-radius:5px; width:240px; padding:6px; color: #89a; font-size: 14px; font-weight: bold; height: 42px; line-height: 28px; overflow:hidden; float:left; cursor:pointer; margin-right:10px;}
+.subscribeKeywords a img{ width:28px; height:28px; margin-right: 6px; float: left;}
+.subscribeKeywords a:hover{ text-decoration:none; background: #46be68; border: 1px solid #46be68; color:#fff;}
 .subscribeKeywords a.viewKeyword{ margin-left:-1px; width:40px; border-radius:0 5px 5px 0; padding:0; font-size:18px; line-height:44px; text-align:center;}
 .subscribeKeywords .active a{ background: #46be68; border: 1px solid #46be68; color:#fff;}
 .subscribeKeywords .active a.viewKeyword{ background:#27A547;}
@@ -1060,7 +1061,7 @@ em.invalid{ color:#e74c3c; font-style:normal; display:block; margin-top:-15px; p
 .perator-set-content .item-sub-title a:link,.perator-set-content .item-sub-title a:visited{ color:#3498db;}
 .add-auxiliary-operating{ text-align:center; padding:20px; font-size:16px;}
 
-.xigua-dada{ background:#fff; border-bottom:1px solid #e5e9ed; padding:20px 0 30px;}
+.xigua-dada{ background:#fff; border-bottom:1px solid #e5e9ed; padding:20px 0 30px; font-size:15px; line-height:1.6;}
 .xigua-dada-content{ max-width:940px; margin:0 auto; padding:0 20px;}
 .xigua-dada-title{ font-size:32px; color:#345; padding-bottom:10px;}
 .dada-certified-public{ text-align:center; max-width:670px; padding:60px 20px 20px 20px; margin:0 auto; font-size:16px;}
@@ -1132,6 +1133,138 @@ em.invalid{ color:#e74c3c; font-style:normal; display:block; margin-top:-15px; p
 .error .btn{ display:inline-block; width:160px; background:#45BD67; border-radius:42px; color:#FFF; text-decoration:none;}
 .error .btn:hover{ background:#3CA659;}
 .wrapper-loading{ text-align:center; color:#345;}
+/*我运营的公众号*/
+.my-operate-public{ background:#fff; border-bottom:1px solid #e5e9ed; padding:18px 40px; margin:-20px -20px 20px -20px;}
+.btn-edit-list{ height:40px; line-height:40px; display:inline-block; border:1px solid #e5e9ed; padding:0 12px; border-radius:3px; color:#7a8a9a;}
+.btn-edit-list:hover{ color:#46be68; border:1px solid #46be68; text-decoration:none;}
+.btn-edit-list.editing{color:#46be68; border:1px solid #46be68;text-decoration:none;}
+
+.no-padding{ padding:0 !important;}
+.myMpAccountGuide{ text-align:center; margin:100px 0 50px 0;}
+.myMpAccountGuide p{ font-size:20px; padding:0;}
+.myMpAccountGuide dl{ display:inline-block; margin:30px; padding:0;}
+.myMpAccountGuide dt{ margin:0 auto; border-radius:50%; width:72px; height:72px; line-height:72px; color:#FFF; background:#4BA1F0; font-size:32px;}
+.myMpAccountGuide dd{ margin-top:5px; font-size:18px;}
+.myMpAccountGuide .s2 dt{ background:#68AF27;}
+.myMpAccountGuide .s3 dt{ background:#F45A41;}
+.myMpAccountGuide .s4 dt{ background:#FDB900;}
+.myMpAccountGuide .s5 dt{ background:#64D7EF;}
+.myMpAccountGuide .s6 dt{ background:#646EEF;}
+.bigBtn{ margin-top:20px;}
+.bigBtn a{ display:inline-block; height:60px; line-height:60px; padding:0 30px; color:#FFF; background:#44B549; font-size:22px; border-radius:5px;}
+.bigBtn a:hover{ text-decoration:none; background:#3DA042;}
+.myMpAccountTips{ margin:10px 6px; text-align:right;}
+.btnEditList{ display:inline-block; color:#424242; font-size:14px; background:#FFF; border-radius:3px; border:1px solid #E5E9ED; padding:10px 15px;}
+.btnEditList:hover{ color:#FE7D00; border-color:#FE7D00; text-decoration:none;}
+.btnEditList.editing{ color:#FE7D00; border-color:#FE7D00;}
+.myMpAccount{ margin-top:10px;}
+.myMpAccount section{ min-width:440px;}
+.myMpAccountItem,.myMpAccountAdd{ display:block; min-height:304px; border:1px solid #E5E9ED; margin:5px; background:#FFF;}
+.myMpAccountItem:hover{ z-index:2;}
+.myMpAccountItem .mpHeader{ border-bottom:1px solid #F1F4F8; padding:20px; background:#f8f9fb;}
+.myMpAccountItem .mpCover{ float:left; width:50px; height:50px; border-radius:5px; overflow:hidden;}
+.myMpAccountItem .mpCover img{ display:block; width:100%;}
+.myMpAccountItem .mpName{ margin:0 80px 0 60px; padding:0; font-size:16px; color:#345; font-weight:bold; line-height:1.8;}
+.myMpAccountItem .iconVerify{ display:inline-block; width:16px; height:16px; background:url(../img/icon_verify.png) no-repeat; vertical-align:middle;}
+.myMpAccountItem .mpInfo{ font-size:12px; color:#7a8a9a; margin:2px 0 0 0; font-weight:normal;}
+.myMpAccountItem .myMpAccountBtn{ float:right; margin:-5px -5px 0 0;}
+.myMpAccountItem .myMpAccountBtn .btn{ display:inline-block; color:#7a8a9a; padding:6px; line-height:1; margin:5px 0 0 0; border-radius:3px; position:static !important; box-shadow:none; font-size:16px;}
+.myMpAccountItem .myMpAccountBtn .btn:hover,.myMpAccountItem .myMpAccountBtn .dropdown.open .btn{ border:1px solid #E5E5E5;}
+.myMpAccountItem .myMpAccountBtn .btn-moving{ color:#FE7D00;}
+.myMpAccountItem .myMpAccountBtn .btn-moving:hover{ border-color:#FE7D00;}
+.myMpAccountItem .myMpAccountBtn .btn-moving:active{ cursor:move; border-color:#FE7D00; background:#FFF5EC;}
+.myMpAccountItem .myMpAccountBtn .dropdown-menu{ font-size:14px; border-color:#E5E9ED; box-shadow:1px 1px 5px rgba(0,0,0,0.15);}
+.myMpAccountItem .myMpAccountBtn .dropdown-menu a .fa{ margin-right:5px;}
+.myMpAccountItem .myMpAccountBtn .dropdown-menu a{ color:#7b7b7b; padding:7px 20px;}
+.myMpAccountItem .myMpAccountBtn .dropdown-menu a:hover{ background:#8AC38B; color:#FFF;}
+.myMpAccountItem .myMpAccountBtn .dropdown-menu a.danger{ color:#C30;}
+.myMpAccountItem .myMpAccountBtn .dropdown-menu a.danger:hover{ background:#C30; color:#FFF;}
+.myMpAccountItem .tooltip{ white-space:nowrap;}
+.myMpAccountDiag{ height:120px; padding:20px 0; border:1px solid #e5e9ed; border-width:0 0 1px 0;}
+.myMpAccountDiag .totalScore{ float:left; margin:15px 20px; width:64px; height:64px; position:relative; z-index:1; background:none; border-radius:50%; color:#444b4f;}
+.myMpAccountDiag .myMpAccountmain{ margin-top:-20px;}
+.myMpAccountDiag .totalScore-v2 .percent-v2{ font-size:54px !important; color:#e74c3c !important;}
+.myMpAccountDiag .totalScore .easyPieChart{ display:block;}
+.myMpAccountDiag .totalScore .scoreName{ position:absolute; top:70px; left:-5px; text-align:center; font-size:12px; width:74px; line-height:1.2; color:#7a8a9a;}
+.myMpAccountDiag .totalScore .percent{ display:block; position:absolute; left:0; top:0; width:100%; line-height:64px; font-size:32px; text-align:center; color:#87BE05;}
+.myMpAccountDiag .totalScore canvas{ width:64px !important; height:64px !important;}
+.myMpAccountDiag .illegalInfo{ margin:0 0 0 10px; font-size:14px; color:#46BE68;}
+.myMpAccountDiag .illegalInfo.danger{ color:#E74C3C;}
+.myMpAccountDiag .diagTime{ margin:0 0 0 10px; color:#7a8a9a;}
+.myMpAccountDiag .btns{ margin:5px 0 0 10px;}
+.myMpAccountDiag .btns .btn{ font-size:12px; margin-right:10px; color:#424242;}
+
+.myMpAccountDiag .sub-diag-enty{ margin-left:104px;}
+.myMpAccountDiag .sub-diag-list{ border:1px solid #e5e9ed; border-width:0 0 1px 1px; height:60px; line-height:60px; position:relative;}
+.myMpAccountDiag .sub-diag-list .btns-link{ width:94px; position:absolute; right:0; top:0; border-left:1px solid #e5e9ed; text-align:center;}
+.myMpAccountDiag .sub-diag-list .btns-link a{ font-weight:bold; color:#7a8a9a;}
+.myMpAccountDiag .none{ text-align:center; font-size:14px; color:#E74C3C;}
+.myMpAccountDiag .none .btns{ margin:15px 0 0 0;}
+.myMpAccountDiag .waiting{ font-size:14px; text-align:center; color:#7a8a9a;}
+.myMpAccountDiag .waitingIcon{ margin-bottom:15px; font-size:28px;}
+.myMpAccountDiag .noresult{ font-size:14px; text-align:left; color:#7a8a9a; margin-top:-10px; padding:0 20px;}
+.myMpAccountDiag .noresultIcon{ font-size:36px; text-align:center;}
+.myMpAccountDiag .noresult .btns{ margin:6px 0 0 0; text-align:center;}
+.myMpAccountDiag .noresult .btns .btn{ margin-right:0;}
+.myMpAccountToday dl{ margin:0; color:#46BE68; padding:0 15px; border-bottom:1px solid #e5e9ed;}
+.myMpAccountToday dl:last-child{ border-bottom:none;}
+.myMpAccountToday dl.danger{ color:#E74C3C;}
+.myMpAccountToday dl.tips{ color:#7a8a9a;}
+.myMpAccountToday dt{ float:left; font-size:14px; font-weight:normal; line-height:54px;}
+.myMpAccountToday dt .fa{ font-size:18px;}
+.myMpAccountToday dd{ float:right; line-height:54px;}
+.myMpAccountToday dd .btn{ font-size:12px;}
+.myMpAccountAdd{ line-height:320px; text-align:center; font-size:18px; color:#666; cursor:pointer; border-style:dashed;}
+.myMpAccountAdd:hover{ text-decoration:none; color:#46be68; border-color:#46be68;}
+.addMyAccountType{ font-size:14px;}
+.addMyAccountType .select select{ font-size:14px !important; color:#666;}
+.addMyAccountType .tab-content{ padding:15px;}
+.addMyAccountType fieldset{ padding:0; margin:0;}
+.addMyAccountType .control-label{ text-align:right; line-height:30px;}
+.addMyAccountType .input input{ font-size:14px; line-height:18px; height:36px;}
+.addMyAccountType .icon-append{ height:26px; line-height:26px;}
+.addMyAccountType .form-group{ max-width:280px; margin:0 auto; padding:5px 0 10px 0}
+.addMyAccountType .form-group + p{ max-width:280px; margin:0 auto;}
+.addMyAccountType em{ display:block; font-size:12px;}
+.addMyAccountType .input + p{ margin-top:10px;}
+.addMyAccountType .note{ margin-top:10px; color:#999; line-height:1.6 !important; background:#F9F9F9; padding:8px 12px 6px 12px; border:1px solid #EEE;}
+.addMyAccountType .sendArticleAccountCheck{ margin:0 0 15px 0 !important;}
+.addMyAccountType .checkbox{ font-size:14px; color:#666;}
+.addMyAccountWarn{ margin:20px; font-size:14px;}
+.addMyAccountWarn .alert{ padding:15px; line-height:1.8;}
+.addMyAccountWarn p{ padding-left:20px; color:#666;}
+.hasVerify{ vertical-align:middle;}
+.hasVerify .input{ display:inline-block; width:100px; vertical-align:middle;}
+.hasVerify .verifyImg{ display:inline-block; height:36px; vertical-align:middle;}
+.myMpAccountTips{}
+.articleTemp{ padding:20px 20px 0 20px; color:#666;}
+.articleTemp h3{ margin:0; padding:0 0 10px 0; font-size:14px;}
+.articleTemp .fa-exclamation-circle{ vertical-align:bottom;}
+.articleTempEditor{ margin-bottom:15px; font-size:14px;}
+.articleTempEditor .note{ font-size:14px !important; margin-top:8px;}
+.articleTemp .tooltip{ z-index:9999999;}
+
+.addMyAccountStep{ margin:15px 20px; font-size:14px;}
+.addMyAccountStep .form-group{ padding:5px 0 10px 0;}
+.addMyAccountStep .note{ margin:0; color:#999; line-height:1.6 !important; background:#F9F9F9; padding:8px 12px 6px 12px; border:1px solid #EEE;}
+.addMyAccountStep .smart-form .input input, .addMyAccountStep .smart-form .select select, .addMyAccountStep .smart-form .textarea textarea{ height:36px; font-size:14px;}
+.addMyAccountStep .smart-form .icon-append, .addMyAccountStep .smart-form .icon-prepend{ height:26px; line-height:26px;}
+.addMyAccountStep .mpAccountConfirm{ text-align:center; margin:30px auto;}
+.addMyAccountStep .mpAccountConfirm dt{ display:inline-block; width:100px; height:100px; border-radius:50%; overflow:hidden;}
+.addMyAccountStep .mpAccountConfirm dt img{ display:block; width:100px;}
+.addMyAccountStep .mpAccountConfirm dd{ margin-top:5px;}
+/*错误提示页*/
+.error-message-page{ text-align:center; padding-top:140px;}
+.icon-error{ background:url(../images/ico-error.png) #c5cbd5 no-repeat center center; width:98px; height:98px;  border-radius:50%;display:block; margin:0 auto 20px;}
+/*个人信息改密和绑定手机*/
+.verify-binding{font-size:14px; color:#345; clear:both; border-top:1px solid #e5e9ed; padding:20px 0 ;}
+.verify-binding .form-group{ margin-bottom:20px;}
+.verify-binding label{ width:103px; font-weight:normal;}
+.phone-number{ padding-top:7px;}
+.test-btn a{ background:#46be68; color:#FFF; border:1px solid #46be68; display:block; padding:8px 34px; border-radius:3px; float:left; margin-right:10px;text-decoration:none;}
+.test-btn .cancel{ background:#FFF; border:1px solid #e5e9ed; color:#7a8a9a;  }
+.verify-element-input{width:322px; height:36px; border:1px solid #e5e9ed; background:#fff; padding:0 5px; border-radius:3px;}
+
 @media all and (max-width:768px) {
     .sidebar { display: none;}
     .main { float: none; }
