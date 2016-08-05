@@ -788,11 +788,6 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .hot-index-kol .kol-main-title a:hover{ color:#214E75;}
 .hot-index-kol .kol-main-footer{ text-align:right; font-size:14px;}
 .hot-index-kol .kol-main-footer strong{ font-weight:normal; color:#46be68;}
-
-.hot-hint-area{ text-align:center; font-size:16px;}
-.hot-hint-area h4{ font-size:48px; color:#345; padding:100px 0 25px 0;}
-.hot-hint-area p{ padding-bottom:30px;}
-.hot-hint-area .btns-upgraded-version{ padding:0 40px; height:42px; line-height:42px; font-size:16px;}
 /*注册*/
 .login-box{ max-width:518px; margin:0 auto; border-radius:3px; color:#a5afb7; position:relative; top:10%;}
 .login-box .login-title{ height:88px; background:#232b35; border-radius:3px 3px 0 0;}
@@ -919,22 +914,17 @@ em.invalid{ color:#e74c3c; font-style:normal; display:block; margin-top:-15px; p
 .topBar .navArea a:link,
 .topBar .navArea a:visited{ color: #89a;}
 .topBar .navArea a:hover{ color: #a3b7ca;}
-
-.subscribeKeywords{ border-bottom: 1px solid #e5e9ed;  background: #fff; margin:0 -20px;}
+.subscribeKeywords{ border-bottom: 1px solid #e5e9ed;  background: #fff; padding:0 40px 8px;}
 .subscribeKeywords li{ display:inline-block; margin:0 12px 12px 0;}
-.subscribeKeywords a{ display:inline-block; border: 1px solid #e5e9ed; border-radius:5px 0 0 5px; width:208px; padding:6px; color: #89a; font-size: 14px; font-weight: bold; height: 42px; line-height: 28px; overflow:hidden; float:left; cursor:pointer;}
-.subscribeKeywords a img{ margin-right: 6px; float: left;}
-.subscribeKeywords a:hover{ text-decoration:none;}
-.subscribeKeywords a.viewKeyword{ margin-left:-1px; width:40px; border-radius:0 5px 5px 0; padding:0; font-size:18px; line-height:40px; text-align:center;}
+.subscribeKeywords a{ display:inline-block; border: 1px solid #e5e9ed; border-radius:5px; width:240px; padding:6px; color: #89a; font-size: 14px; font-weight: bold; height: 42px; line-height: 28px; overflow:hidden; float:left; cursor:pointer; margin-right:10px;}
+.subscribeKeywords a img{ width:28px; height:28px; margin-right: 6px; float: left;}
+.subscribeKeywords a:hover{ text-decoration:none; background: #46be68; border: 1px solid #46be68; color:#fff;}
+.subscribeKeywords a.viewKeyword{ margin-left:-1px; width:40px; border-radius:0 5px 5px 0; padding:0; font-size:18px; line-height:44px; text-align:center;}
 .subscribeKeywords .active a{ background: #46be68; border: 1px solid #46be68; color:#fff;}
 .subscribeKeywords .active a.viewKeyword{ background:#27A547;}
 .subscribeKeywords .active a.viewKeyword.expanded .fa:before{ content:"\f0d8"; font-family:FontAwesome;}
 .subscribeKeywords li:hover a{ border-color:#46be68; color:#46be68;}
 .subscribeKeywords li.active:hover a{ color:#FFF;}
-.sub-list-unstyled{ padding:20px 60px 3px;}
-.subscribeKeywords .sub-list-style{ padding:0 40px 3px 35px;}
-.subscribeKeywords .sub-list-style a{border-radius:5px;}
-
 .mpKeywords{ background:#F6F6F6; border-bottom:1px solid #e5e9ed; padding:15px 32px; font-size:14px; margin:0;}
 .mpKeywords a:first-child{ margin-right:15px;}
 .mpKeywords a{ display:inline-block; background:#FFF; text-decoration:none; color:#666; padding:8px 15px; border:1px solid #e5e9ed; border-radius:4px; float:left; margin:5px; cursor:pointer;}
@@ -1177,7 +1167,7 @@ em.invalid{ color:#e74c3c; font-style:normal; display:block; margin-top:-15px; p
 .myMpAccountItem .mpName{ margin:0 80px 0 60px; padding:0; font-size:16px; color:#345; font-weight:bold; line-height:1.8;}
 .myMpAccountItem .iconVerify{ display:inline-block; width:16px; height:16px; background:url(../img/icon_verify.png) no-repeat; vertical-align:middle;}
 .myMpAccountItem .mpInfo{ font-size:12px; color:#7a8a9a; margin:2px 0 0 0; font-weight:normal;}
-.myMpAccountItem .myMpAccountBtn{ float:right; position:absolute; right:20px; top:20px;}
+.myMpAccountItem .myMpAccountBtn{ float:right; margin:-5px -5px 0 0;}
 .myMpAccountItem .myMpAccountBtn .btn{ display:inline-block; color:#7a8a9a; padding:6px; line-height:1; margin:5px 0 0 0; border-radius:3px; position:static !important; box-shadow:none; font-size:16px;}
 .myMpAccountItem .myMpAccountBtn .btn:hover,.myMpAccountItem .myMpAccountBtn .dropdown.open .btn{ border:1px solid #E5E5E5;}
 .myMpAccountItem .myMpAccountBtn .btn-moving{ color:#FE7D00;}
