@@ -1014,7 +1014,6 @@ em.invalid{ color:#e74c3c; font-style:normal; display:block; margin-top:-15px; p
 .btns-hot-newest a:hover, .btns-hot-newest a.active:last-child{ background:#46be68; border-radius:0 4px 4px 0; color:#fff;}
 .original-article-source a{ margin:0 5px; padding:6px 16px; font-size:14px;}
 /*申请白名单授权*/
-.modal{ top:70px;}
 .public-accredit-list{ }
 .public-accredit{ width:294px; height:68px; border:1px solid #edf0f3; box-sizing:border-box; border-radius:3px; float:left; margin-right:20px; position:relative;}
 .public-accredit .media-list{padding:9px;}
@@ -1220,7 +1219,7 @@ em.invalid{ color:#e74c3c; font-style:normal; display:block; margin-top:-15px; p
 .myMpAccountToday dl:last-child{ border-bottom:none;}
 .myMpAccountToday dl.danger{ color:#E74C3C;}
 .myMpAccountToday dl.tips{ color:#7a8a9a;}
-.myMpAccountToday dt{ float:left; font-size:14px; font-weight:normal; line-height:54px;}
+.myMpAccountToday dt{ float:left; font-size:14px; font-weight:normal; line-height:54px; color:#7a8a9a;}
 .myMpAccountToday dt .fa{ font-size:18px;}
 .myMpAccountToday dd{ float:right; line-height:54px;}
 .myMpAccountToday dd .btn{ font-size:12px;}
@@ -1253,6 +1252,12 @@ em.invalid{ color:#e74c3c; font-style:normal; display:block; margin-top:-15px; p
 .articleTempEditor{ margin-bottom:15px; font-size:14px;}
 .articleTempEditor .note{ font-size:14px !important; margin-top:8px;}
 .articleTemp .tooltip{ z-index:9999999;}
+.sendAlert{ color:#7a8a9a !important; padding:20px;}
+.sendAlert label{ font-weight:normal; color:#345; height:24px; line-height:24px;}
+.sendAlert .text-input{ width:206px; height:34px; line-height:34px; background:#f8f9fb; border:1px solid #e5e9ed; border-radius:3px; padding:0 4px; margin-bottom:2px;}
+.sendAlert .note{ padding:10px 0;}
+.sendAlert .testGetCode{ display:inline-block; margin-left:10px;}
+.modal-footer button{ padding:0 30px; height:36px;}
 
 .addMyAccountStep{ margin:15px 20px; font-size:14px;}
 .addMyAccountStep .form-group{ padding:5px 0 10px 0;}
@@ -1263,6 +1268,20 @@ em.invalid{ color:#e74c3c; font-style:normal; display:block; margin-top:-15px; p
 .addMyAccountStep .mpAccountConfirm dt{ display:inline-block; width:100px; height:100px; border-radius:50%; overflow:hidden;}
 .addMyAccountStep .mpAccountConfirm dt img{ display:block; width:100px;}
 .addMyAccountStep .mpAccountConfirm dd{ margin-top:5px;}
+/*switch*/
+.mui-switch {width: 42px; height: 20px; position: relative; background-color: #7a8a9a; border-radius:2px; border-top-left-radius:2px; border-top-right-radius:2px; border-bottom-left-radius:2px; border-bottom-right-radius:2px; background-clip: content-box; display: inline-block; -webkit-appearance: none; user-select: none; outline: none; }
+.mui-switch:before { content: ''; width: 16px; height: 16px; position: absolute; top: 2px; left:2px; border-radius:2px; border-top-left-radius:2px; border-top-right-radius:2px; border-bottom-left-radius:2px; border-bottom-right-radius:2px; background-color: #fff;}
+.mui-switch:checked { border-color:#35ca78;background-color: #35ca78; }
+.mui-switch:checked:before { left: 23px; }
+.mui-switch.mui-switch-animbg {transition: background-color ease 0.4s; }
+.mui-switch.mui-switch-animbg:before { transition: left 0.3s; }
+.mui-switch.mui-switch-animbg:checked { background-color: #35ca78;transition: border-color 0.4s, background-color ease 0.4s; }
+.mui-switch.mui-switch-animbg:checked:before {transition: left 0.3s; }
+.mui-switch.mui-switch-anim { transition: border cubic-bezier(0, 0, 0, 1) 0.4s, box-shadow cubic-bezier(0, 0, 0, 1) 0.4s; }
+.mui-switch.mui-switch-anim:before { transition: left 0.3s; }
+.mui-switch.mui-switch-anim:checked {background-color: #35ca78;transition: border ease 0.4s, box-shadow ease 0.4s, background-color ease 1.2s; }
+.mui-switch.mui-switch-anim:checked:before { transition: left 0.3s; }
+
 /*错误提示页*/
 .error-message-page{ text-align:center; padding-top:140px;}
 .icon-error{ background:url(../images/ico-error.png) #c5cbd5 no-repeat center center; width:98px; height:98px;  border-radius:50%;display:block; margin:0 auto 20px;}
