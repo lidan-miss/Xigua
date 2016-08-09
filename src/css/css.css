@@ -520,7 +520,7 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .popular-public-list .mp-classify-title{ border: 1px solid #e5e9ed; border-width:1px 0; height: 54px; line-height: 54px; background: #f8f9fb; color: #696969; font-weight: bold; text-align: center;}
 
 /*图文*/
-.graphic-keywords { border-bottom: 1px solid #e5e9ed; background: #fff; padding:14px 40px; }
+.graphic-keywords { border-bottom: 1px solid #e5e9ed; background: #fff; padding:14px 40px; margin:0;}
 .graphic-keywords a { display: inline-block; border: 1px solid #e5e9ed; border-radius:5px; padding: 6px; min-width: 250px; color: #89a; font-size: 14px; font-weight: bold; height: 42px; line-height: 28px; overflow: hidden; float: left; margin:6px; }
 .graphic-keywords a img { margin-right: 6px; float: left; width: 28px; height: 28px; border-radius: 2px; }
 .graphic-keywords a i { margin-right: 6px; float: left; font-weight: normal; }
@@ -534,14 +534,16 @@ body {height: 100%;  background: #edf0f5; font-family: "Microsoft YaHei", Arial,
 .add-appmsg-item-btns { height: 84px; line-height: 70px; font-size: 16px; color: #89a; }
 .add-appmsg-item-btns a { margin: 0 24px; }
 .appmsg-list .col { padding: 0; }
-.appmsg-list section { margin: 0 5px 15px; }
-.appmsg-list { padding: 0 10px; }
+.appmsg-list .container-fluid{ padding-left:5px; padding-right:5px;}
+.appmsg-list .row{ margin:0;}
+.appmsg-list section { margin: 0 9px 15px; }
+.appmsg-list .container-fluid{ padding:}
 .material-list { padding: 11px 11px 0 11px; background: #fff; border: 1px solid #e5e9ed; }
 .add-appmsg-item { height: 96px; text-align: center; }
 .appmsg-list-info { height: 36px; border-bottom: 1px solid #e5e9ed; }
 .appmsg-list-info img { width: 28px; height: 28px; border-radius: 50%; margin-right: 10px; }
 .appmsg-top { position: relative; }
-.appmsg-top img { width: 100%; margin: 0 auto; z-index: 1; }
+.appmsg-top img { width: 100%; margin: 0 auto; z-index: 1; width:360px; height:224px;}
 .appmsg-item-title { position: absolute; left: 0; bottom: 0; background: #2a3542; height: 36px; width: 100%; z-index: 2; line-height: 36px; padding: 0 15px; filter: alpha(opacity=90); -moz-opacity: 0.9; -khtml-opacity: 0.9; opacity: 0.9; color: #fff; font-size: 16px; }
 .appmsg-item ul { -webkit-padding-start: 0; list-style: none; color: #345; }
 .appmsg-item ul li { vertical-align: middle; border-bottom: 1px solid #f2f2f2; height: 80px; vertical-align: middle; padding: 15px 0; line-height: 1.8; }
