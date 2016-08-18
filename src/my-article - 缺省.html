@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>公众号诊断</title>
+    <title>我的素材库</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="css/select2.css" rel="stylesheet">
@@ -87,38 +87,52 @@
             </div>
         </div>
         <!--/topbar-->
+        
         <!--wrapper-->
-        <div class="wrapper">
-        	<div class="public-diagnose">
-                <ul class="diagnose-nav clearfix">
-                    <li class="current"><a href="#">公众号诊断</a></li>
-                    <li><a href="#">诊断历史</a></li>
-                </ul>
-                <div class="control-search-2 standard-search">
-                    <input type="text" placeholder="请输入需要诊断的公众号/ID/文章链接地址">
-                    <a href="javascript:;" class="control-search-2-submit">诊断</a>
+        <div class="wrapper wrapper-no-gap my-material">
+        	<div class="wrapper-col-left">
+                <div class="my-selected-graphic">已选图文 <a href="#">返回</a></div>
+                <div class="new-graphic">
+                	<div class="new-graphic-main">不从素材库挑选文图文章，直接新建空白图文<br><a class="btn btn-default btns-green" href="#" role="button">新建空白图文</a></div>
                 </div>
-				<div class="diagnose-welcome clearfix">
-					<h3>为您提供最专业的公众号运营质量分析</h3>
-					<dl>
-						<dt><i class="diagnose-ico ico-users"></i></dt>
-						<dd><strong>活跃粉丝预估</strong>快速了解公众号活跃粉丝数</dd>
-					</dl>
-					<dl>
-						<dt><i class="diagnose-ico ico-clock"></i></dt>
-						<dd><strong>发文习惯分析</strong>掌握公众号发文内容偏好和习惯</dd>
-					</dl>
-					<dl>
-						<dt><i class="diagnose-ico ico-bug"></i></dt>
-						<dd><strong>违规文章检测</strong>检测近期文章违规情况，让公众号运营更安全</dd>
-					</dl>
-					<dl>
-						<dt><i class="diagnose-ico ico-diamond"></i></dt>
-						<dd><strong>流量收益预估</strong>了解流量主最佳收入，提供流量主收入优化建议</dd>
-					</dl>
-				</div>
+                <div class="new-graphic-btns"><a class="btn btn-default btns-gray" href="#" role="button">保存并编辑</a></div>
             </div>
-         </div>
+            
+            <div class="wrapper-col-right">
+            	<div class="material-tag-list btn-unify">
+                <div class="">导入微信素材：<a href="#">导入微信文章</a></div>
+                <div class="">素材文件夹：
+                    <a href="#" class="active">情感励志</a>
+                    <a href="#">女人时尚</a>
+                    <a href="#">搞笑趣闻</a>
+                    <a href="#">财经</a>
+                    <a href="#">运动</a>
+                    <a href="#">旅游</a>
+                    <a href="#">汽车</a>
+                    <a href="#">健康</a>
+                    <a href="#">母婴</a>
+                    <a href="#">餐饮美食</a>
+                    <a href="#">职场教育</a>
+                    <a href="#">数码科技</a>
+                    <a href="#">影音娱乐</a>
+                    <a href="#">生活</a>
+                    <a href="#">地方</a>
+                    <a href="#">家居</a>
+                    <a href="#">其他</a>
+                </div>
+            </div>
+            
+            <!--myattention-default-->
+            <div class="default-page material-library-default">
+                <h3 class="text-left">素材库暂无文章</h3>
+                <p><img src="images/default/material-library-default.png"></p>
+                <div class="my-material-default">
+                    在文章列表点击“加入素材库”即可添加文章至我的素材库
+                    <span>从以下页面开始收集文章: <a href="#">全网优质素材</a> | <a href="#">我关注的</a> | <a href="#">黑马爆文</a> | <a href="#">专享素材</a> | <a href="#">原创优选</a></span>
+                </div>
+            </div>
+            <!--/myattention-default-->
+      	</div>
 		<!--/wrapper-->
 
     </div>

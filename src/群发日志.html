@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>群发日志</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/select2.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <!--[if lt IE 8]>
+        <link href="css/bootstrap-ie7.css" rel="stylesheet">
+    <![endif]-->
+    <link href="css/controls.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
+    <script src="js/respond.min.js"></script>
+</head>
+<body>
+<!--sidebar-->
+<div class="sidebar">
+    <div class="brand">
+        <img src="images/logo.png" class="navbar-brand-logo">
+        <div class="public-name">
+            <span class="navbar-brand-text">西瓜公众号助手</span>
+            <span class="navbar-brand-url">www.xiguaji.com</span>
+        </div>
+    </div>
+
+        <ul>
+            <li>
+                <a href="#" title="工作台"><i class="iconfont">&#xe60d;</i> <span class="menu-item-parent">工作台</span></a>
+            </li>
+            <li class="active has-sub open">
+                <a href="#" title="图文同步"><i class="iconfont">&#xe61d;</i> <span class="menu-item-parent">图文同步</span><b class="collapse-sign"><em class="fa fa-angle-up fa-right fa-up"></em></b></a>
+                <ul style="display: block;">
+                    <li class="active"><a href="#">我的图文</a></li>
+                    <li><a href="#">我的素材库</a></li>
+                    <li><a href="#">我运营的公众号</a></li>
+                </ul>
+            </li>
+            <li class="has-sub open">
+                <a href="#" title="素材收集"><i class="iconfont">&#xe61d;</i> <span class="menu-item-parent">素材收集</span><b class="collapse-sign"><em class="fa fa-angle-down fa-right"></em></b></a>
+                <ul style="display: none;">
+                    <li><a href="#">全网优质素材</a></li>
+                    <li><a href="#">我关注的</a></li>
+                    <li><a href="#">黑马爆文</a></li>
+                    <li><a href="#">专享素材</a></li>
+                    <li><a href="#">原创优选</a></li> 
+                </ul>
+            </li>
+            <li class="has-sub open">
+                <a href="#" title="高级功能"><i class="iconfont">&#xe61d;</i> <span class="menu-item-parent">高级功能</span><b class="collapse-sign"></i><em class="fa fa-angle-down fa-right"></em></b></a>
+                <ul>
+                    <li><a href="#">违规文章曝光台</a></li>
+                    <li><a href="#">公众号诊断</a></li>
+                    <li><a href="#">热点风向标</a></li>
+                    <li><a href="#">全网公众号搜索</a></li>
+                    <li><a href="#">热门公众号榜单</a></li>
+                </ul>
+            </li>
+            <li><a href="#" title="购买升级" target="_blank"><i class="iconfont">&#xe62b;</i> <span class="menu-item-parent">购买升级</span> <span class="badge inbox-badge bg-color-red">新春开门红</span></a></li>
+            <li><a href="#" title="西瓜集App" target="_blank"><i class="iconfont">&#xe62a;</i> <span class="menu-item-parent">西瓜集App</span> <span class="badge inbox-badge bg-color-red">NEW</span></a></li>
+            <li><a href="#" title="帮助中心" target="_blank"><i class="iconfont">&#xe606;</i> <span class="menu-item-parent">帮助中心</span></a></li>
+        </ul>
+
+</div>
+<!--/sidebar-->
+<!--main-->
+<div class="main">
+    <div class="main-content">
+    	<!--topbar-->
+		<div class="topbar">
+            <div class="pull-left nav-area">
+                <a href="#" id="topbar_menu"><i class="fa fa-bars"></i></a>
+				<a href="#" id="topbar_fullscreen"><i class="iconfont">&#xe62f;</i></a>
+                <a href="#" id="topbar_message"><i class="iconfont">&#xe634;</i><i class="fa fa-circle ico-new-msg"></i></a>
+                <a href="#" id="topbar_talk"><i class="iconfont">&#xe632;</i></a>
+            </div>
+            <div class="pull-right nav-right-area">
+                <div class="pull-left user-area">
+                    <div class="pull-left icon-user"><i class="fa fa-user"></i></div>
+                    <a href="javascript:;">ckkdm@gmail.com</a>
+                </div>
+                <a class="pull-right btn-exit" href="javascript:;">
+                    <i class="fa fa-sign-out ico-exit"></i>
+                </a>
+            </div>
+            <div class="message-panel">
+                <div class="message-panel-head">系统消息</div>
+                <ul>
+                    <li>
+                        <i class="fa fa-circle ico-new-msg"></i>
+                        <p class="message-title">新增图文编辑功能</p>
+                        <p class="message-content">恭喜您，收到1张11元的优惠券，有效期截止至2015年12月09日。该优惠券可以给任意账户使用。</p>
+                    </li>
+                    <li>
+                        <i class="fa fa-circle ico-new-msg"></i>
+                        <p class="message-title">新增图文编辑功能</p>
+                        <p class="message-content">恭喜您，收到1张11元的优惠券，有效期截止至2015年12月09日。该优惠券可以给任意账户使用。</p>
+                    </li>
+                    <li>
+                        <i class="fa fa-circle ico-new-msg"></i>
+                        <p class="message-title">新增图文编辑功能</p>
+                        <p class="message-content">恭喜您，收到1张11元的优惠券，有效期截止至2015年12月09日。该优惠券可以给任意账户使用。</p>
+                    </li>
+                    <li>
+                        <i class="fa fa-circle ico-new-msg"></i>
+                        <p class="message-title">新增图文编辑功能</p>
+                        <p class="message-content">恭喜您，收到1张11元的优惠券，有效期截止至2015年12月09日。该优惠券可以给任意账户使用。</p>
+                    </li>                 
+                </ul>
+                <div class="message-panel-foot"><a href="javascript:;">查看所有消息&raquo;</a></div>
+            </div>
+        </div>
+        <!--/topbar-->
+ 			
+	    <div class="row subscribeKeywords graphic-keywords">
+        	<a href="javascript:;" class="active"><img src="images/subscribe/temp_avatar.jpg">巴拉巴拉小魔仙</a>
+            <a href="javascript:;"><img src="images/subscribe/temp_avatar.jpg">巴拉巴拉小魔仙</a>
+            <a href="javascript:;"><img src="images/subscribe/temp_avatar.jpg">巴拉小魔仙</a>
+            <a href="javascript:;"><img src="images/subscribe/temp_avatar.jpg">巴拉仙</a>
+            <a href="javascript:;"><img src="images/subscribe/temp_avatar.jpg">巴仙</a>
+            <a href="javascript:;"><img src="images/subscribe/temp_avatar.jpg">巴拉巴拉小魔仙</a>
+        </div>
+        <!--page--> 
+        <div class="page">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mp-log-list">
+                <colgroup>
+                <col width="100">
+                <col>
+                <col width="200">
+                <col width="200">
+                <col width="100">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>内容</th>
+                    <th></th>
+                    <th>群发时间</th>
+                    <th>公众号</th>
+                    <th>&nbsp;</th>
+                </tr>
+            </thead>
+            <tbody> 
+                <tr>
+                    <td><img src="images/avatars/3.jpg" ></td>
+                    <td class="links-jump">
+                        <p><span class="serial-number">1</span><a href="#">骗子已经盯上点赞，点赞点出大事了，速看…… </a></p>
+                        <p><span class="serial-number">1</span><a href="#">骗子已经盯上点赞，点赞点出大事了 ，速看…… </a></p> 
+                        <p><span class="serial-number">1</span><a href="#">骗子已经盯上点赞，点赞点出大事了，速看…… </a></p>
+                        <p><span class="serial-number">1</span><a href="#">骗子已经盯上点赞，点赞点出大事了，速看…… </a></p> 
+                        <p><span class="serial-number">1</span><a href="#">骗子已经盯上点赞，点赞点出大事了，速看…… </a></p> 
+                        <p><span class="serial-number">1</span><a href="#">骗子已经盯上点赞，点赞点出大事了，速看…… </a></p>
+                        <p><span class="serial-number">1</span><a href="#">骗子已经盯上点赞，点赞点出大事了，速看…… </a></p>
+                        <p><span class="serial-number">1</span><a href="#">骗子已经盯上点赞，点赞点出大事了，速看…… </a></p>
+                        <p><span class="serial-number">1</span><a href="#">骗子已经盯上点赞，点赞点出大事了，速看…… </a></p>
+                    </td>
+                    <td valign="top"><strong>21:00</strong><br>2016年07月21日</td>
+                    <td valign="top" class="links-jump"><a href="#">搞笑动图</a></td>
+                    <td valign="top" class="mass-log-btns">
+                        <a href="#" class="btn btn-success">群发成功</a>
+                        <a href="#" class="btn btn-warning">等待群发</a>
+                        <a href="#" class="btn btn-info">群发失败</a>
+                        <a href="#" class="btn btn-success">群发中</a>
+                        <a href="#" class="btn btn-default"><i class="fa fa-gear" ></i> 重新设置</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="images/avatars/3.jpg" ></td>
+                    <td class="links-jump">
+                        <p><span class="serial-number">1</span><a href="#">骗子已经盯上点赞，点赞点出大事了，速看…… </a></p>
+                        <p><span class="serial-number">1</span><a href="#">骗子已经盯上点赞，点赞点出大事了 ，速看…… </a></p> 
+                        <p><span class="serial-number">1</span><a href="#">骗子已经盯上点赞，点赞点出大事了，速看…… </a></p>
+                        <p><span class="serial-number">1</span><a href="#">骗子已经盯上点赞，点赞点出大事了，速看…… </a></p> 
+                        <p><span class="serial-number">1</span><a href="#">骗子已经盯上点赞，点赞点出大事了，速看…… </a></p> 
+                        <p><span class="serial-number">1</span><a href="#">骗子已经盯上点赞，点赞点出大事了，速看…… </a></p>
+                        <p><span class="serial-number">1</span><a href="#">骗子已经盯上点赞，点赞点出大事了，速看…… </a></p>
+                        <p><span class="serial-number">1</span><a href="#">骗子已经盯上点赞，点赞点出大事了，速看…… </a></p>
+                        <p><span class="serial-number">1</span><a href="#">骗子已经盯上点赞，点赞点出大事了，速看…… </a></p>
+                    </td>
+                    <td valign="top"><strong>21:00</strong><br>2016年07月21日</td>
+                    <td valign="top" class="links-jump"><a href="#">搞笑动图</a></td>
+                    <td valign="top" class="mass-log-btns">
+                        <a href="#" class="btn btn-success">群发成功</a>
+                        <a href="#" class="btn btn-warning">等待群发</a>
+                        <a href="#" class="btn btn-info">群发失败</a>
+                        <a href="#" class="btn btn-success">群发中</a>
+                        <a href="#" class="btn btn-default"><i class="fa fa-gear" ></i> 重新设置</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="control-pagination text-center">
+            <ul class="pagination">
+                <li>
+                    <a href="#" aria-label="Previous">
+                        <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+                    </a>
+                </li>
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                    <a href="#" aria-label="Next">
+                        <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+                    </a>
+                </li>
+            </ul>
+                共20页，到  <input name="" type="text" class="pagination-text-input">页 <a href="#" class="pagination-btn-go">GO</a>
+        </div>
+    </div>
+    <!--/page-->
+		
+    </div>
+</div>
+<!--/main-->
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/icheck.min.js"></script>
+<script src="js/easypiechart.js"></script>
+<script src="js/site.js"></script>
+<script>
+    var chart = window.totalChart = new EasyPieChart(document.querySelector('.totalScore span'), {
+        easing: 'easeOutElastic',
+        delay: 3000,
+        barColor: '#46be68',
+        trackColor: '#e5e9ed',
+        scaleColor: false,
+        lineWidth: 4,
+        trackWidth: 4,
+        size: 88,
+        lineCap: 'butt',
+        onStep: function(from, to, percent) {
+            this.el.children[0].innerHTML = Math.round(percent);
+        }
+    });
+</script>
+</body>
+</html>

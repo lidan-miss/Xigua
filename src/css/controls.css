@@ -16,6 +16,8 @@
 .control-search-1 .fa { position: absolute; top: 8px; right: 8px; font-size: 18px; }
 .control-search-1 .fa:hover { color: #46be68; }
 .control-search-1 a:link, .control-search-1 a:visited { color: #7a838f; }
+.control-search-1 .text-link{ position: absolute; top: 8px; right: 8px; font-size: 14px; color:#3498db;}
+.control-search-1 a.text-link:link, .control-search-1 a.text-link:visited{color:#3498db !important;}
 
 /* 搜索栏2 */
 .control-search-2 { height: 40px; overflow: hidden; position: relative; }

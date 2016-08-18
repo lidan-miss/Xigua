@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>公众号诊断</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/select2.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <!--[if lt IE 8]>
+        <link href="css/bootstrap-ie7.css" rel="stylesheet">
+    <![endif]-->
+    <link href="css/controls.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
+    <script src="js/respond.min.js"></script>
+</head>
+<body>
+<!--sidebar-->
+<div class="sidebar">
+    <div class="brand">
+        <img src="images/logo.png" class="navbar-brand-logo">
+        <div class="public-name">
+            <span class="navbar-brand-text">西瓜公众号助手</span>
+            <span class="navbar-brand-url">www.xiguaji.com</span>
+        </div>
+    </div>
+
+        <ul>
+            <li>
+                <a href="#" title="工作台"><i class="iconfont">&#xe60d;</i> <span class="menu-item-parent">工作台</span></a>
+            </li>
+            <li class="active has-sub open">
+                <a href="#" title="图文同步"><i class="iconfont">&#xe61d;</i> <span class="menu-item-parent">图文同步</span><b class="collapse-sign"><em class="fa fa-angle-up fa-right fa-up"></em></b></a>
+                <ul style="display: block;">
+                    <li class="active"><a href="/Material/List">我的图文</a></li>
+                    <li><a href="/MArticleUse/ArticleUseListNew">我的素材库</a></li>
+                    <li><a href="/UserBiz/UserBizListNew">我运营的公众号</a></li>
+                </ul>
+            </li>
+            <li class="has-sub open">
+                <a href="#" title="素材收集"><i class="iconfont">&#xe61d;</i> <span class="menu-item-parent">素材收集</span><b class="collapse-sign"><em class="fa fa-angle-down fa-right"></em></b></a>
+                <ul style="display: none;">
+                    <li><a href="/MArticle/Explore">全网优质素材</a></li>
+                    <li><a href="/MArticle/Subscription">我关注的</a></li>
+                    <li><a href="/MArticleCollect/PopularArticle">黑马爆文</a></li>
+                    <li><a href="/UserBiz/List">专享素材</a></li>
+                    <li><a href="/Original/ArticleList">原创优选</a></li> 
+                </ul>
+            </li>
+            <li class="has-sub open">
+                <a href="#" title="高级功能"><i class="iconfont">&#xe61d;</i> <span class="menu-item-parent">高级功能</span><b class="collapse-sign"></i><em class="fa fa-angle-down fa-right"></em></b></a>
+                <ul>
+                    <li><a href="/AgainsRulesArticle/Index">违规文章曝光台</a></li>
+                    <li><a href="/Diagnosis/Index">公众号诊断</a></li>
+                    <li><a href="/HotKeyword/Index">热点风向标</a></li>
+                    <li><a href="/MyMBiz/MBizSearch">全网公众号搜索</a></li>
+                    <li><a href="/MBiz/Rank">热门公众号榜单</a></li>
+                </ul>
+            </li>
+            <li><a href="/Purchase" title="购买升级" target="_blank"><i class="iconfont">&#xe62b;</i> <span class="menu-item-parent">购买升级</span> <span class="badge inbox-badge bg-color-red font-weight-400">新春开门红</span></a></li>
+            <li><a href="/App" title="西瓜集App" target="_blank"><i class="iconfont">&#xe62a;</i> <span class="menu-item-parent">西瓜集App</span></a></li>
+            <li><a href="/Knowledge" title="帮助中心" target="_blank"><i class="iconfont">&#xe606;</i> <span class="menu-item-parent">帮助中心</span></a></li>
+        </ul>
+
+</div>
+<!--/sidebar-->
+<!--main-->
+<div class="main">
+    <div class="main-content">
+    	<!--topbar-->
+		<div class="topbar">
+            <div class="pull-left nav-area">
+                <a href="#" id="topbar_menu"><i class="fa fa-bars"></i></a>
+				<a href="#" id="topbar_fullscreen"><i class="iconfont">&#xe62f;</i></a>
+                <a href="#" id="topbar_message"><i class="iconfont">&#xe634;</i><i class="fa fa-circle ico-new-msg"></i></a>
+                <a href="#" id="topbar_talk"><i class="iconfont">&#xe632;</i></a>
+            </div>
+            <div class="nav-right-area">
+                <div class="pull-left user-area">
+                    <div class="pull-left icon-user"><i class="fa fa-user"></i></div>
+                    <a href="javascript:;">ckkdm@gmail.com</a>
+                </div>
+                <a class="pull-right btn-exit" href="javascript:;">
+                    <i class="fa fa-sign-out ico-exit"></i>
+                </a>
+            </div>
+        </div>
+        <!--/topbar-->
+        <!--wrapper-->
+        <div class="wrapper">
+        	<div class="public-diagnose">
+                <ul class="diagnose-nav clearfix">
+                    <li class="current"><a href="#">公众号诊断</a></li>
+                    <li><a href="#">诊断历史</a></li>
+                </ul>
+                <div class="control-search-2 standard-search">
+                    <input type="text" placeholder="请输入需要诊断的公众号/ID/文章链接地址">
+                    <a href="javascript:;" class="control-search-2-submit">诊断</a>
+                </div>
+				<div class="diagnose-welcome clearfix">
+					<h3>为您提供最专业的公众号运营质量分析</h3>
+					<dl>
+						<dt><i class="diagnose-ico ico-users"></i></dt>
+						<dd><strong>活跃粉丝预估</strong>快速了解公众号活跃粉丝数</dd>
+					</dl>
+					<dl>
+						<dt><i class="diagnose-ico ico-clock"></i></dt>
+						<dd><strong>发文习惯分析</strong>掌握公众号发文内容偏好和习惯</dd>
+					</dl>
+					<dl>
+						<dt><i class="diagnose-ico ico-bug"></i></dt>
+						<dd><strong>违规文章检测</strong>检测近期文章违规情况，让公众号运营更安全</dd>
+					</dl>
+					<dl>
+						<dt><i class="diagnose-ico ico-diamond"></i></dt>
+						<dd><strong>流量收益预估</strong>了解流量主最佳收入，提供流量主收入优化建议</dd>
+					</dl>
+				</div>
+                
+                <div class="diagnose-result" >
+					<div class="result-info">为您找到769个结果(只显示匹配到的前10页公众号，请调整您的关键字进行精确匹配):</div>
+                    
+					<section>
+                        <div class="clearfix">
+                            <div class="mp-avatar">
+                                <img src="images/avatars/2.jpg">
+                                <div class="mp-info pull-left"><span>盐城123网</span><br><em>微信号cym123</em></div>
+                            </div>
+                            <a class="pull-right btn btn-success" href="javascript:;">诊断</a>
+                        </div>                      
+						<div class="mp-intro pull-none">满足广大人民群众日益健康增长的需求，向公众传播健康防病知识和公共卫生政策</div>
+					</section>
+                    <section>
+                        <div class="clearfix">
+                            <div class="mp-avatar">
+                                <img src="images/avatars/2.jpg">
+                                <div class="mp-info pull-left"><span>盐城123网</span><br><em>微信号cym123</em></div>
+                            </div>
+                           <a class="pull-right btn btn-success" href="javascript:;">诊断</a>
+                        </div>                      
+						<div class="mp-intro pull-none">满足广大人民群众日益健康增长的需求，向公众传播健康防病知识和公共卫生政策满足广大人民群众日益健康增长的需求，向公众传播健康防病知识和公共卫生政策</div>
+					</section>
+                    
+                </div>
+                
+            </div>
+         </div>
+		<!--/wrapper-->
+
+    </div>
+</div>
+<!--/main-->
+
+<!--添加公众号-->
+<div class="modal fade in"  style=" display:none;">
+    <div class="modal-dialog modal-dialog-650">
+        <div class="modal-content">     
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">添加我运营的公众号</h4>
+            </div>
+            <div class="modal-body no-padding">
+                <div class="addMyAccountWarn" style=" display:none;">
+                    <div class="alert alert-warning no-margin">
+                        <i class="fa-fw fa fa-info-circle"></i>
+                        <strong>您添加的“我运营的公众号”已到达上限</strong>
+                        <p>基础版可绑定1个公众号，高级版可绑定10个公众号。如需绑定超过10个公众号请联系客服购买定制版。</p> 
+                    </div>
+                </div>
+                <div class="addMyAccountStep">
+                	<h4 class="dialog-sub-title">选择添加方式</h4>
+                    <div class="control-search-1">
+                        <input type="text" placeholder="请输入公众号素材网址">
+                        <a href="javascript:;" class="text-link">如何获得公众号素材网址</a>
+                    </div>
+                    <h4 class="dialog-sub-title">分组设置</h4> 
+                    <div class="dialog-public-settings">
+                    	<dl>
+                            <dd><span class="settings-group-name">他是一个文件夹</span><br>34篇文章</dd>
+                            <dt>
+                            <div class="pull-right control-checkbox-area">
+                                <input class="control-checkbox" data-checkbox id="checkbox1" type="checkbox"><label class="control-checkbox-label" for="checkbox1"></label>
+                            </div>
+                            </dt>
+                        </dl>
+                        <dl>
+                            <dd><span class="settings-group-name">他是一个文件夹</span><br>34篇文章</dd>
+                            <dt>
+                            <div class=" pull-right control-checkbox-area">
+                                <input class="control-checkbox" data-checkbox id="checkbox1" type="checkbox"><label class="control-checkbox-label" for="checkbox1"></label>
+                            </div>
+                            </dt>
+                        </dl>
+                        <dl>
+                            <dd><span class="settings-group-name">他是一个文件夹</span><br>34篇文章</dd>
+                            <dt>
+                            <div class="pull-right control-checkbox-area">
+                                <input class="control-checkbox" data-checkbox id="checkbox1" type="checkbox"><label class="control-checkbox-label" for="checkbox1"></label>
+                            </div>
+                            </dt>
+                        </dl>
+                        <dl>
+                            <dd><input name="" type="text" placeholder="输入文件夹名称"><button type="button" id="addMBizBtn" class="btn btn-primary">新建</button></dd>
+                        </dl>
+                    </div>
+                                       
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="addMBizBtn" class="btn btn-primary">
+                    确定
+                </button>
+                <button id="btnCancel" type="button" class="btn btn-default" data-dismiss="modal">
+                    关闭
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--素材文件夹管理-->
+<div class="modal fade in"  style=" display:block;">
+    <div class="modal-dialog modal-dialog-650">
+        <div class="modal-content">     
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">素材文件夹管理</h4>
+            </div>
+            <div class="modal-body no-padding">
+                <div class="addMyAccountStep">
+
+                    <div class="dialog-public-settings clearfix">
+                    	<dl>
+                            <dd><span class="settings-group-name">他是一个文件夹</span><br>34篇文章</dd>
+                            <dt>
+                                <div class="pull-right edit-area">
+                                    <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                </div>
+                            </dt>
+                        </dl>
+                        <dl>
+                            <dd><span class="settings-group-name">他是一个文件夹</span><br>34篇文章</dd>
+                            <dt>
+								<div class="pull-right edit-area">
+                                    <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                </div>
+                            </dt>
+                        </dl>
+                        <dl>
+                            <dd class="add-edit-area">新建文件夹 <i class="fa fa-plus" aria-hidden="true"></i></dd>
+                        </dl>
+                    </div>
+                                       
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="btnCancel" type="button" class="btn btn-default" data-dismiss="modal">
+                    关闭
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--素材文件夹管理 选择公众号-->
+<div class="modal fade in"  style=" display:none;">
+    <div class="modal-dialog modal-dialog-650">
+        <div class="modal-content">     
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">素材文件夹管理</h4>
+            </div>
+            <div class="modal-body no-padding">
+                <div class="addMyAccountStep">
+
+                    <div class="dialog-public-choose clearfix">
+                    	<ul>
+                            <li class="active"><img src="images/avatars/2.jpg">心探索心探索</li>
+                            <li><img src="images/avatars/2.jpg">心探索心探索</li>
+                            <li><img src="images/avatars/2.jpg">心探索心探索</li>
+                            <li><img src="images/avatars/2.jpg">心探索心探索</li>
+                            <li><img src="images/avatars/2.jpg">心探索心探索</li>
+                            <li><img src="images/avatars/2.jpg">心探索心探索</li>
+                            <li><div class="set-operations-public"><i class="fa fa-cog" aria-hidden="true"></i> 设置我运营的公众号</div></li>
+                        </ul>
+                    </div>
+                                       
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="btnCancel" type="button" class="btn btn-default" data-dismiss="modal">
+                    关闭
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--诊断提示-->
+<div class="modal fade in" style="display:none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 class="modal-title">提示</h4>
+			</div>
+			<div class="modal-body no-padding">
+				<div class="diagnoseWarn">
+					<div class="resultIcon"><i class="fa fa-frown-o"></i></div>
+					对不起，您的诊断次数超出上限，基础版每天可诊断3次，高级版每天可诊断10次。请升级版本以获得相应诊断次数。
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="submit" class="btn btn-primary">
+					购买升级
+				</button>
+				<button id="btnCancel" type="button" class="btn btn-default" data-dismiss="modal">
+					关闭
+				</button>
+			</div>
+		</div>
+    </div>
+</div>
+<div class="modal fade in" style="display:block;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 class="modal-title">提示</h4>
+			</div>
+			<div class="modal-body no-padding">
+				<div class="diagnoseWarn">
+					<div class="resultIcon"><i class="fa fa-smile-o"></i></div>
+					【搞笑精选】提交诊断成功，进入诊断历史页面可查看诊断结果。
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="submit" class="btn btn-primary">
+					查看诊断历史
+				</button>
+				<button id="btnCancel" type="button" class="btn btn-default" data-dismiss="modal">
+					关闭
+				</button>
+			</div>
+		</div>
+    </div>
+</div>
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/icheck.min.js"></script>
+<script src="js/easypiechart.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
