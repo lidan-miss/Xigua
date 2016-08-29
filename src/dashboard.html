@@ -118,7 +118,16 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="dash-operation-info">
+                    	
+                    	<div class="dash-operation-info" style=" display:none;">
+                        	<div class="dash-public-unbounded">
+                        		<i class="exclamation-circle"></i>
+                        		<p>暂未绑定公众号</p>
+                           		<a class="btn btn-default" href="#" role="button">立即绑定</a>
+                            </div>
+                        </div>
+                        
+                        <div class="dash-operation-info" style=" display:block;">
                             <div class="wechat-info">
                                 <div class="wechat-id pull-left">
                                     <img src="images/avatars/1.jpg" class="wechat-avatar pull-left">
@@ -128,6 +137,7 @@
                                     </span>
                                 </div>
                                 <a class="btn btn-success pull-right btn-sync" href="javascript:;"><i class="fa fa-check-circle"></i> 今日推文已同步</a>
+                                <a class="btn btn-sync btn-info pull-right" href="javascript:;"><i class="fa fa-times-circle" aria-hidden="true"></i> 今日推文未同步</a>
                             </div>
                             
                             <div class="dispatch-time">
@@ -156,14 +166,15 @@
                             </div>
                            
                             <div class="diagnose-brief row">
-								<div class="col col-sm-3">
+                            	<div class="diagnose-brief-content">公众号诊断失败，请<a href="#">重新诊断</a></div>
+								<div class="col col-sm-3" style=" display:none;">
 									<div class="totalScore">
 										<span class="totalChart" data-percent="88">
 											<span class="percent">88</span>
 										</span>
 									</div>
 								</div>
-								<div class="col col-sm-9">
+								<div class="col col-sm-9" style=" display:none;">
 									<ul>
                                         <li><span>13.5万</span><br>预估活跃粉丝</li>
                                         <li><span>4512</span><br>头条24小时阅读</li>
