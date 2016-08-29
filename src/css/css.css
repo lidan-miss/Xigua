@@ -145,6 +145,7 @@ input:-ms-input-placeholder {　color: #7a8a9a !important; }
 .mp-article-source a:hover { color: #fff; }
 .mp-article-source a.source-collect:hover { background-color: #ffb400; }
 .mp-article-source a.source-collect:active { background-color: #ff8200; }
+.mp-article-source a.source-collect-current{background-color: #ff8200; color:#fff;}
 .mp-article-source a.source-absence:hover { background-color: #e74c3c }
 .mp-article-source a.source-absence:active { background-color: #d81f1b; }
 .mp-article-source a.source-analyze:hover { background-color: #46be68; }
@@ -202,7 +203,7 @@ input:-ms-input-placeholder {　color: #7a8a9a !important; }
 .dash-operation-info, .dash-notice { min-height: 452px; background: #fff; border: 1px solid #e5e9ed; border-radius: 5px; }
 .dash-operation-info { padding: 20px; }
 .dash-operation-info .wechat-info { height: 55px; border-bottom: 1px solid #e5e9ed; position: relative; }
-.dash-operation-info .wechat-id { width: 200px; }
+.dash-operation-info .wechat-id { width: 300px; }
 .dash-operation-info .wechat-avatar { margin-right: 20px; width:40px; height:40px;}
 .dash-operation-info .wechat-nickname { display: block; font-size: 16px; font-weight: bold; color: #345; }
 .dash-operation-info .wechat-username { color: #89a; }
@@ -583,7 +584,7 @@ input:-ms-input-placeholder {　color: #7a8a9a !important; }
 .appmsg-list-info { height: 36px; border-bottom: 1px solid #e5e9ed; }
 .appmsg-list-info img { width: 28px; height: 28px; border-radius: 50%; margin-right: 10px; }
 .appmsg-top { position: relative; }
-.appmsg-top img { width: 100%; margin: 0 auto; z-index: 1; width:360px; height:224px;}
+.appmsg-top img { width: 100%; margin: 0 auto; z-index: 1; max-width:360px; height:224px;}
 .appmsg-item-title { position: absolute; left: 0; bottom: 0; background: #2a3542; height: 36px; width: 100%; z-index: 2; line-height: 36px; padding: 0 15px; filter: alpha(opacity=90); -moz-opacity: 0.9; -khtml-opacity: 0.9; opacity: 0.9; color: #fff; font-size: 16px; }
 .appmsg-item ul { -webkit-padding-start: 0; list-style: none; color: #345; }
 .appmsg-item ul li { vertical-align: middle; border-bottom: 1px solid #f2f2f2; height: 80px; vertical-align: middle; padding: 15px 0; line-height: 1.8; }
