@@ -13,13 +13,14 @@
     <![endif]-->
     <link href="css/controls.css" rel="stylesheet">
     <link href="css/css.css" rel="stylesheet">
+    <link href="css/diagnosis.css" rel="stylesheet" type="text/css">
     <script src="js/respond.min.js"></script>
 </head>
 <body>
 <!--sidebar-->
 <div class="sidebar">
     <div class="brand">
-        <img src="images/logo.png" class="navbar-brand-logo">
+        <img src="images/diagnose/logo.png" class="navbar-brand-logo">
         <div class="public-name">
             <span class="navbar-brand-text">西瓜公众号助手</span>
             <span class="navbar-brand-url">www.xiguaji.com</span>
@@ -579,7 +580,666 @@
 			</div>
 		</div>
 	</div>
-    
+  
+  	<!--诊断报告-->
+	<div class="modal fade in" style="display:none;">
+		<div class="modal-dialog  modal-dialog-wide modal-dialog-720">
+			<div class="modal-content">     
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h4 class="modal-title">西瓜君诊断报告</h4>
+				</div>
+				<div class="modal-body no-padding">
+                	<!--广告诊断-->
+					<div class="container">
+                        <section>
+                            <div class="ad-valuation-report">
+                                <div class="wechat-public">
+                                    <div class="wechat-logo"><img src="images/diagnose/1.jpg" alt="犀牛故事"></div>
+                                    <span class="wechat-name">犀牛故事</span>
+                                </div>
+                                <div class="valuation-report-title">广告估值报告</div>
+                                <div class="valuation-time">
+                                    报告采样时间范围: 2016.5.1-2016.5.7<br>
+                                    <span>如需更详细的广告数据，请联系西瓜助手</span>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section>
+                            <div class="wechat-id">
+                                <div class="wechat-avatar pull-left"><img src="images/diagnose/1.jpg"></div>
+                                <div class="wechat-name">
+                                    <span class="wechat-nickname"><span class="nickname">犀牛故事</span><span class="tags tag-green">原创号</span> <span class="tags tag-gray">流量主</span></span>
+                                    <span class="wechat-username">微信号：storyboom</span>
+                                </div>
+                            </div>
+                                
+                            <div class="attention-number">关注人数：<span class="pull-right">运营者暂未提供</span></div>
+                            <div class="valuation-info table">
+                                <ul>
+                                    <li>活跃粉丝数（人）<span class="text24">264823</span></li>
+                                    <li>头条广告行业报价<span>¥1000 - ¥1500</span></li>
+                                    <li>非头条广告行业报价<span>¥500 - ¥1300</span></li>
+                                </ul>
+                            </div> 
+                        </section>
+                        
+                        <section>
+                            <h3>广告承接单价</h3>
+                            <div class="table price-table">
+                                <ul class="ad-price clearfix">
+                                    <li>头条广告报价<span>¥1000-¥1500</span></li>
+                                    <li>非头条广告报价<span>¥500-¥1300</span></li>
+                                </ul>
+                                <div class="price-time">运营者报价时间：2016.5.3</div>
+                            </div>
+                            
+                            <div class="price-msg-box">
+                                <p class="price-msg">以上头条及非头条广告报价由公众号运营者提供，如需投
+                    放请与西瓜公众号助手联系。</p>
+                                <p class="price-msg">如果您是公众号运营者，可随时对<a href="#">报价进行修订</a></p>
+                            </div>
+                        </section>
+                        
+                        <section>
+                            <h3>历史广告表现</h3>
+                            <div class="no-data">暂无数据</div>
+                            
+                            <h4>发文时间及广告分布  <span class="dispatch-time pull-right"><i class="fa fa-circle"></i> 无推文 <i class="fa fa-circle circle-green"></i> 广告推文 <i class="fa fa-circle circle-orange"></i> 正常推文</span></h4>
+                            <div class="chart"><img src="images/diagnose/temp/2.jpg" width="100%" height="100%"></div>
+                            <div class="price-msg price-msg-box"><p>最近一次广告发布时间：5月2日 20:23 (头条位置)</p></div>
+                            
+                            <h4>文章广告比例</h4>
+                            <div class="chart chart-article">
+                                <div id="canvas-holder" style="width:100%;">
+                                <canvas id="chart-area" /></div>
+                                <ul class="article-push">
+                                    <li>75%（14篇）<br> <i class="fa fa-circle circle-green"></i>正常推文</li>
+                                    <li>25%（4篇）<br> <i class="fa fa-circle circle-orange"></i>广告推文</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="table ad-number">
+                                <ul class="ad-price clearfix">
+                                    <li>头条广告<span>3篇</span></li>
+                                    <li>非头条广告<span>2篇</span></li>
+                                </ul>
+                            </div>
+                            
+                            <h4>广告文章列表</h4>
+                            <div class="article-list">
+                                <dl>
+                                    <a href="#">
+                                    <dt><img src="images/diagnose/2.png"></dt>
+                                    <dd>如何找到喜欢做的事，成为想成为的人？</dd>
+                                    </a>
+                                </dl>
+                                <dl>
+                                    <a href="#">
+                                    <dt><img src="images/diagnose/2.png"></dt>
+                                    <dd>如何找到喜欢做的事，成为想成为的人？</dd>
+                                    </a>
+                                </dl>
+                             </div>   
+                             
+                            <h4>24小时平均阅读横向对比 (公众号内对比)</h4>
+                            <div class="chart read-contrast-box clearfix">
+                                <div class="read-contrast pull-left">
+                                    <ul class="headlines">
+                                        <li>
+                                            <div class="read-map"><span style="height:100%;"><i class="read-map-color1"><em>3870<br>普通文章</em></i></span></div>
+                                        </li>
+                                        <li>
+                                            <div class="read-map"><span style="height:50%;"><i class="read-map-color2"><em>2230<br>广告</em></i></span></div>
+                                        </li>
+                                    </ul>
+                                    <div class="text">头条</div>
+                                </div>
+                                <div class="read-contrast pull-left">
+                                    <ul class="headlines">
+                                        <li>
+                                            <!--<div class="read-map"><span style="height:100%;"><i class="read-map-color1"><em>3870<br>普通文章</em></i></span></div>-->
+                                            <div class="read-map"><span style="height:100%;"><i class="read-map-gray"><em>近期暂无普通文章</em></i></span></div>
+                                        </li>
+                                        <li>
+                                            <div class="read-map"><span style="height:50%;"><i class="read-map-color2"><em>2230<br>广告</em></i></span></div>
+                                        </li>
+                                    </ul>
+                                    <div class="text">非头条</div>
+                                </div>
+                            </div>
+                            
+                            <h4>24小时平均阅读纵向对比 (与行业其它公众号对比)</h4>
+                            <div class="chart read-contrast-box clearfix">
+                                <div class="average-read-contrast">
+                                    <div class="average-performance"><span>行业均值</span></div>
+                                    <div class="read-contrast-block">
+                                        <div class="mean-line"></div>
+                                        <div class="read-contrast pull-left">
+                                             <div class="read-map"><span style="height:100%;"><i class="read-map-color1"><em>为行业均值1%</em></i></span></div>
+                                            <div class="text">头条广告效果</div>
+                                        </div>
+                                        <div class="read-contrast pull-left">
+                                            <div class="read-map"><span style="height:50%;"><i class="read-map-color2"><em>为行业均值80%</em></i></span></div>
+                                            <div class="text">非头条广告效果</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="price-msg-box">
+                              <p class="price-msg">长期投放广告的公众号阅读会比同水平行业公众号低</p>
+                              <p class="price-msg">广告阅读一般为正常阅读的72%</p>
+                            </div>
+                        </section>
+                      
+                        <section>
+                            <h3>公众号人群画像</h3>
+                            <h4>公众号阅读者年龄分布</h4>
+                            <div class="chart">
+                                <div class="mpArticleAge">                
+                                   <div class="articleAgeRatio">
+                                        <ul>
+                                            <li><span class="ratio">50%</span></li>
+                                            <li><span class="ratio">40%</span></li>
+                                            <li><span class="ratio">30%</span></li>
+                                            <li><span class="ratio">20%</span></li>
+                                            <li><span class="ratio">10%</span></li>
+                                            <li><span class="ratio">0%</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ageDistribution">
+                                        <ul>
+                                            <li>19岁及以下</li>
+                                            <li>20~29岁</li>
+                                            <li>30~39岁</li>
+                                            <li>40~49岁</li>
+                                            <li>50岁以上</li>
+                                        </ul>
+                                    </div>
+                                    <div class="ageRatio">
+                                        <ul class="clearfix">
+                                            <li><div class="columnarDistribution"><span style="height:16%;"><i class="distributionProportion1"><em>16%</em></i></span></div></li>
+                                            <li><div class="columnarDistribution"><span style="height:26%;"><i class="distributionProportion2"><em>26%</em></i></span></div></li>
+                                            <li><div class="columnarDistribution"><span style="height:80%;"><i class="distributionProportion3"><em>80%</em></i></span></div></li>
+                                            <li><div class="columnarDistribution"><span style="height:40%;"><i class="distributionProportion4"><em>40%</em></i></span></div></li>
+                                            <li><div class="columnarDistribution"><span style="height:20%;"><i class="distributionProportion5"><em>20%</em></i></span></div></li>
+                                        </ul>
+                                    </div>
+                                 </div>
+                            </div>
+                            <h4>公众号阅读者性别偏向</h4>
+                            <div class="chart gender">
+                                <ul class="clearfix">
+                                    <li><span class="male">男性<br>60.39%</span></li>
+                                    <li><span class="female">女性<br>39.61%</span></li>
+                                </ul>
+                            </div>
+                            <div class="price-msg price-msg-box">该性别偏向为所有参与文章阅读及传播的粉丝的人群比例，
+                    与公众号后台粉丝性别比例不同。</div>
+                            <h4>公众号阅读者族群分布</h4>
+                            <div class="chart">
+                                <div class="mpArticleAge">                
+                                   <div class="articleAgeRatio">
+                                        <ul>
+                                            <li><span class="ratio">50%</span></li>
+                                            <li><span class="ratio">40%</span></li>
+                                            <li><span class="ratio">30%</span></li>
+                                            <li><span class="ratio">20%</span></li>
+                                            <li><span class="ratio">10%</span></li>
+                                            <li><span class="ratio">0%</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ethnicGroup">
+                                        <ul>
+                                            <li>宅男宅女</li>
+                                            <li>家庭主妇</li>
+                                            <li>数码一族</li>
+                                            <li>时尚女性</li>
+                                            <li>运动一族</li>
+                                            <li>精英人群</li>
+                                        </ul>
+                                    </div>
+                                    <div class="groupDistribution">
+                                        <ul class="clearfix">
+                                            <li><div class="columnarDistribution groupCollagen"><span style="height:16%;"><i class="distributionProportion1"><em>16%</em></i></span></div></li>
+                                            <li><div class="columnarDistribution groupCollagen"><span style="height:26%;"><i class="distributionProportion3"><em>26%</em></i></span></div></li>
+                                            <li><div class="columnarDistribution groupCollagen"><span style="height:80%;"><i class="distributionProportion6"><em>80%</em></i></span></div></li>
+                                            <li><div class="columnarDistribution groupCollagen"><span style="height:40%;"><i class="distributionProportion7"><em>40%</em></i></span></div></li>
+                                            <li><div class="columnarDistribution groupCollagen"><span style="height:20%;"><i class="distributionProportion4"><em>20%</em></i></span></div></li>
+                                            <li><div class="columnarDistribution groupCollagen"><span style="height:20%;"><i class="distributionProportion2"><em>20%</em></i></span></div></li>
+                                        </ul>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="btns">
+                                <a href="#" class="btns-assess">我也要评估</a>
+                                <a href="#" class="btns-share">分享给好友</a>
+                            </div>
+                        </section>
+                        <footer>
+                            <div class="copyright">
+                                <span>该诊断报告由西瓜公众号助手提供</span><br>
+                                如需更详细的广告数据，请<a href="#">[联系我们]</a>
+                            </div>
+                        </footer> 
+                         
+                    </div>
+                    <!--广告诊断-->
+                    <!--运营质量诊断-->
+                    <div class="container">
+                        <section>
+                            <div class="total-info">
+                                <div class="total-score rule-opened">
+                                    <span class="chart" data-percent="86">
+                                        <span class="percent"></span>
+                                    </span>
+                                    <div class="score-name">运营质量得分</div>
+                                </div>
+                                <div class="report-time">
+                                    诊断时间：2015/9/25 15:40:53<br>
+                                    报告采样时间范围: 2016.5.1-2016.5.7
+                                </div>
+                                
+                                <div class="totalScoreIntro">
+                                    <h4 class="sectionSubTitle">运营质量得分详情</h4>
+                                    <div class="totalScoreRule">
+                                        <dl>
+                                            <dt>连续发文</dt>
+                                            <dd>
+                                                <div class="backline"></div>
+                                                <div class="line lineWitdh100">
+                                                    <div class="lineScore" style="width:60%;"></div>
+                                                    <div class="scoreRate"><span class="realScore">12.0</span>分/20分</div>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>活跃粉丝基数</dt>
+                                            <dd>
+                                                <div class="backline"></div>
+                                                <div class="line lineWitdh25">
+                                                    <div class="lineScore" style="width:100%;"></div>
+                                                    <div class="scoreRate"><span class="realScore">5.0</span>分/5.0分</div>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>每天发满文章</dt>
+                                            <dd>
+                                                <div class="backline"></div>
+                                                <div class="line lineWitdh100">
+                                                    <div class="lineScore" style="width:12.5%;"></div>
+                                                    <div class="scoreRate"><span class="realScore">2.5</span>分/20分</div>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>原创内容</dt>
+                                            <dd>
+                                                <div class="backline"></div>
+                                                <div class="line lineWitdh50">
+                                                    <div class="lineScore" style="width:100%;"></div>
+                                                    <div class="scoreRate"><span class="realScore">10.0</span>分/10分</div>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>阅读习惯时间</dt>
+                                            <dd>
+                                                <div class="backline"></div>
+                                                <div class="line lineWitdh75">
+                                                    <div class="lineScore" style="width:66.6%;"></div>
+                                                    <div class="scoreRate"><span class="realScore">10.0</span>分/15分</div>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>视频占比</dt>
+                                            <dd>
+                                                <div class="backline"></div>
+                                                <div class="line lineWitdh25">
+                                                    <div class="lineScore" style="width:0%;"></div>
+                                                    <div class="scoreRate"><span class="realScore">0.0</span>分/5分</div>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>违规文章</dt>
+                                            <dd>
+                                                <div class="backline"></div>
+                                                <div class="line lineWitdh50">
+                                                    <div class="lineScore" style="width:75%;"></div>
+                                                    <div class="scoreRate"><span class="realScore">10.0</span>分/10分</div>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>被举报文章</dt>
+                                            <dd>
+                                                <div class="backline"></div>
+                                                <div class="line lineWitdh50">
+                                                    <div class="lineScore" style="width:100%;"></div>
+                                                    <div class="scoreRate"><span class="realScore">10.0</span>分/10分</div>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>主动删除文章</dt>
+                                            <dd>
+                                                <div class="backline"></div>
+                                                <div class="line lineWitdh25">
+                                                    <div class="lineScore" style="width:100%;"></div>
+                                                    <div class="scoreRate"><span class="realScore">5.0</span>分/5分</div>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>基本资料完整</dt>
+                                            <dd>
+                                                <div class="backline"></div>
+                                                <div class="line lineWitdh75">
+                                                    <div class="lineScore" style="width:66.6%;"></div>
+                                                    <div class="scoreRate"><span class="realScore">10.0</span>分/15分</div>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="totalScoreRuleLine">
+                                        <ul class="flex">
+                                            <li><span>0</span>5</li>
+                                            <li>10</li>
+                                            <li>15</li>
+                                            <li>20</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                    
+                            <div class="wechat-id wechat-box">
+                                <div class="wechat-avatar pull-left"><img src="images/diagnose/1.jpg"></div>
+                                <div class="wechat-name">
+                                    <span class="wechat-nickname">犀牛故事 <span class="tags tag-green">原创号</span> <span class="tags tag-gray">流量主</span></span>
+                                    <span class="wechat-username">微信号：storyboom</span>
+                                </div>
+                            </div>
+                            
+                            <div class="valuation-info table">
+                                <ul>
+                                    <li>活跃粉丝数（人）<span class="text24">264823</span></li>
+                                    <li>公众号估值<span class="text24">366万</span></li>
+                                    <li class="clearfix">
+                                        <div class="amount-box">头条24小时平均阅读<em>45906</em></div>
+                                        <div class="amount-box">头条24小时平均点赞<em>459</em></div>
+                                    </li>
+                                </ul>
+                            </div> 
+                        </section>
+                        
+                        <section>
+                            <h3>违规风险识别</h3>
+                            <ul class="violation-article clearfix">
+                                <li><a href="#"><span class="article-number article-number-circle2">0篇</span><br>被举报删除文章</a></li>
+                                <li><a href="#" class="active"><span class="article-number article-number-circle2">1篇<i class="fa fa-caret-down" aria-hidden="true"></i></span><br>疑似违规文章</a></li>
+                                <li><a href="#"><span class="article-number article-number-circle1">0篇</span><br>主动删除文章</a></li>
+                            </ul>
+                            
+                            <h4>疑似违规文章列表</h4>
+                            <div class="article-list">
+                                <dl>
+                                    <a href="#">
+                                    <dt><img src="images/diagnose/2.png"></dt>
+                                    <dd>如何找到喜欢做的事，成为想成为的人？</dd>
+                                    </a>
+                                </dl>
+                                <dl>
+                                    <a href="#">
+                                    <dt><img src="images/diagnose/2.png"></dt>
+                                    <dd>如何找到喜欢做的事，成为想成为的人？</dd>
+                                    </a>
+                                </dl>
+                                <dl>
+                                    <a href="#">
+                                    <dt><img src="images/diagnose/2.png"></dt>
+                                    <dd>如何找到喜欢做的事，成为想成为的人？</dd>
+                                    </a>
+                                </dl>
+                                <dl>
+                                    <a href="#">
+                                    <dt><img src="images/diagnose/2.png"></dt>
+                                    <dd>如何找到喜欢做的事，成为想成为的人？</dd>
+                                    </a>
+                                </dl>
+                                <dl>
+                                    <a href="#">
+                                    <dt><img src="images/diagnose/2.png"></dt>
+                                    <dd>如何找到喜欢做的事，成为想成为的人？</dd>
+                                    </a>
+                                </dl>
+                             </div>   
+                            
+                            <div class="price-msg price-msg-box">微信对公众号的违规发文进行阶梯式严厉惩罚，如果公众号
+                    持续被识别到违规内容，将导致被封号。</div>
+                        </section>
+                        
+                        <section>
+                            <h3>近一周发文习惯</h3>
+                            <div class="valuation-info table">
+                                <ul>
+                                    <li class="clearfix">
+                                        <div class="amount-box">近一周发文总数<em>16</em></div>
+                                        <div class="amount-box">近一周未发文天数<em>1</em></div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="amount-box">该号平均每次发文数<em>2</em></div>
+                                        <div class="amount-box">行业平均每次发文数<em>6.5</em></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="price-msg price-msg-box">在文章质量有保证的情况下，文章数量越多可以显著提高粉
+                    丝粘性。</div>
+                            
+                            <h4>发文时间分布及连续性  <span class="dispatch-time pull-right"><i class="fa fa-circle"></i> 无推文 <i class="fa fa-circle circle-green"></i> 发文时间</span></h4>
+                            <div class="chart"><img src="images/diagnose/temp/2.jpg" width="100%" height="100%"></div>
+                            <ul class="dispatch-time-distribution clearfix">
+                                <li><i class="fa fa-circle circle-green"></i>在4月6号,4月7号,4月9号,4月10号,4月11号没有正常发文。</li>
+                                <li><i class="fa fa-circle circle-green"></i>该公众号的发文时间主要集中于: 10:00-10:59</li>
+                                <li><i class="fa fa-circle circle-green"></i>行业平均发文时间段: 20:00-21:00</li>
+                                <li><i class="fa fa-circle circle-green"></i>持续及固定时段发文可以培养良好的粉丝阅读习惯，进而提高整体阅读水平。</li>
+                            </ul>
+                        </section>
+                        
+                        <section>
+                            <h3>文章属性</h3>
+                            <h4>发文内容类型</h4>
+                            <div class="price-msg price-msg-box">图文内容最易于传播与转发，视频及短篇幅内容有助于提高
+                    广告曝光，提高流量主收人。</div>
+                            <h4>原创文章比例</h4>
+                            <div class="article-attributes">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                                <colgroup>
+                                    <col width="33.3%">
+                                    <col>
+                                    <col width="33.3%">
+                                    <col width="33.3%">
+                                </colgroup>
+                                <tr>
+                                    <th>纯文字</th>
+                                    <th>图文</th>
+                                    <th>视频</th>
+                                </tr>
+                                <tr>
+                                    <td><span>篇数<br><em>0</em></span></td>
+                                    <td><span>篇数<br><em>8</em></span></td>
+                                    <td><span>篇数<br><em>2</em></span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>占比<br><em>0%</em></span></td>
+                                    <td><span>占比<br><em>80%</em></span></td>
+                                    <td><span>占比<br><em>20%</em></span></td>
+                                </tr>
+                            </table>
+                            </div>
+                            <div class="price-msg price-msg-box">开通原创号有助于保护文章版权，同时拥有评论与打赏等特
+                    色功能。申请了原创标示的文章，将受微信版权保护，转载者
+                    无法对具有原创标示的文章进行任何修改。</div>
+                        </section>
+                        
+                        <section>
+                            <h3>流量主预估</h3>
+                            <div class="valuation-info table">
+                                <ul>
+                                    <li class="clearfix">
+                                        <div class="amount-box">预估每日最佳收入<em>￥135</em></div>
+                                        <div class="amount-box">预估每日最高曝光量<em>45146</em></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h5>流量主优化方法</h5>
+                            <ul class="flow-forecast">
+                                <li><span class="methods">通过微信原创公众号申请</span><i class="pattern-right"></i></li>
+                                <li><span class="methods">每天连续发文</span><i class="pattern-right"></i></li>
+                                <li><span class="methods">每次发文满8篇文章</span><i class="pattern-wrong"></i></li>
+                                <li><span class="methods">内容为视频的文章占比</span><i class="occupies-compared">66.66%[优]</i></li>
+                            </ul>
+                        </section>
+                        
+                        <section>
+                            <h3>公众号热词</h3>
+                            <div id="div1">
+                                <a href="http://www.oleou.com/tags/中国/" class="tagc1">中国</a>
+                                <a href="http://www.oleou.com/tags/金融/" class="tagc2">金融</a>  
+                                <a href="http://www.oleou.com/tags/营销/" class="tagc1">营销</a>
+                                <a href="http://www.oleou.com/tags/服务/" class="tagc2">服务</a>
+                                <a href="http://www.oleou.com/tags/家电/" class="tagc1">家电</a>
+                                <a href="http://www.oleou.com/tags/兰州/" class="tagc1">兰州</a>
+                                <a href="http://www.oleou.com/tags/管道/" class="tagc1">管道</a>
+                                <a href="http://www.oleou.com/tags/维修/" class="tagc2">维修</a>
+                                <a href="http://www.oleou.com/tags/电脑/" class="tagc2">电脑</a>
+                                <a href="http://www.oleou.com/tags/路由器/" class="tagc2">路由器</a>
+                                <a href="http://www.oleou.com/tags/无线/" class="tagc2">无线</a>
+                                <a href="http://www.oleou.com/tags/tp link/" class="tagc1">tp link</a>
+                                <a href="http://www.oleou.com/tags/桥接/" class="tagc2">桥接</a>
+                                <a href="http://www.oleou.com/tags/设置/" class="tagc2">设置</a>
+                                <a href="http://www.oleou.com/tags/2003/" class="tagc2">2003</a>
+                                <a href="http://www.oleou.com/tags/端口/" class="tagc1">端口</a>
+                                <a href="http://www.oleou.com/tags/windows/" class="tagc2">windows</a>
+                                <a href="http://www.oleou.com/tags/远程/" class="tagc2">远程</a>
+                                <a href="http://www.oleou.com/tags/用友/" class="tagc2">用友</a>
+                                <a href="http://www.oleou.com/tags/软件/" class="tagc2">软件</a>
+                                <a href="http://www.oleou.com/tags/对方科目/" class="tagc2">对方科目</a>
+                                <a href="http://www.oleou.com/tags/调整单/" class="tagc2">调整单</a>
+                                <a href="http://www.oleou.com/tags/出库类别/" class="tagc1">出库类别</a>
+                                <a href="http://www.oleou.com/tags/操作/" class="tagc1">操作</a>
+                                <a href="http://www.oleou.com/tags/恢复/" class="tagc2">恢复</a>
+                                <a href="http://www.oleou.com/tags/sql/" class="tagc2">sql</a>
+                                <a href="http://www.oleou.com/tags/导入/" class="tagc2">导入</a>
+                                <a href="http://www.oleou.com/tags/分享/" class="tagc6">分享</a>
+                                <a href="http://www.oleou.com/tags/效果/" class="tagc2">效果</a>
+                                <a href="http://www.oleou.com/tags/兼容/" class="tagc1">兼容</a>           
+                                <a href="http://www.oleou.com/tags/域名/" class="tagc2">域名</a>
+                            </div>
+                            <div class="price-msg price-msg-box">公众号发文热词决定了公众号粉丝的定位，直接影响公众号
+                    匹配到的广告类型。</div>
+                        </section>
+                        
+                        <section>
+                            <h3>公众号人群画像</h3>
+                            <h4>公众号阅读者年龄分布</h4>
+                            <div class="chart">
+                                <div class="mpArticleAge">                
+                                   <div class="articleAgeRatio">
+                                        <ul>
+                                            <li><span class="ratio">50%</span></li>
+                                            <li><span class="ratio">40%</span></li>
+                                            <li><span class="ratio">30%</span></li>
+                                            <li><span class="ratio">20%</span></li>
+                                            <li><span class="ratio">10%</span></li>
+                                            <li><span class="ratio">0%</span></li>
+                                        </ul>
+                                  </div>
+                                    <div class="ageDistribution">
+                                        <ul>
+                                            <li>18-24岁</li>
+                                            <li>25~29岁</li>
+                                            <li>30~34岁</li>
+                                            <li>35~39岁</li>
+                                            <li>40~49岁</li>
+                                        </ul>
+                                    </div>
+                                    <div class="ageRatio">
+                                        <ul class="clearfix">
+                                            <li><div class="columnarDistribution"><span style="height:16%;"><i class="distributionProportion1"><em>16%</em></i></span></div></li>
+                                            <li><div class="columnarDistribution"><span style="height:26%;"><i class="distributionProportion2"><em>26%</em></i></span></div></li>
+                                            <li><div class="columnarDistribution"><span style="height:80%;"><i class="distributionProportion3"><em>80%</em></i></span></div></li>
+                                            <li><div class="columnarDistribution"><span style="height:40%;"><i class="distributionProportion4"><em>40%</em></i></span></div></li>
+                                            <li><div class="columnarDistribution"><span style="height:20%;"><i class="distributionProportion5"><em>20%</em></i></span></div></li>
+                                        </ul>
+                                    </div>
+                              </div>
+                            </div>
+                            <h4>公众号阅读者性别偏向</h4>
+                            <div class="chart gender">
+                                <ul class="clearfix">
+                                    <li><span class="male">男性<br>60.39%</span></li>
+                                    <li><span class="female">女性<br>39.61%</span></li>
+                                </ul>
+                            </div>
+                            <div class="price-msg price-msg-box">该性别偏向为所有参与文章阅读及传播的粉丝的人群比例，
+                    与公众号后台粉丝性别比例不同。</div>
+                            <h4>公众号阅读者族群分布</h4>
+                            <div class="chart">
+                                <div class="mpArticleAge">                
+                                   <div class="articleAgeRatio">
+                                        <ul>
+                                            <li><span class="ratio">50%</span></li>
+                                            <li><span class="ratio">40%</span></li>
+                                            <li><span class="ratio">30%</span></li>
+                                            <li><span class="ratio">20%</span></li>
+                                            <li><span class="ratio">10%</span></li>
+                                            <li><span class="ratio">0%</span></li>
+                                        </ul>
+                                  </div>
+                                    <div class="ethnicGroup">
+                                        <ul>
+                                            <li>宅男宅女</li>
+                                            <li>家庭主妇</li>
+                                            <li>数码一族</li>
+                                            <li>时尚女性</li>
+                                            <li>运动一族</li>
+                                            <li>精英人群</li>
+                                        </ul>
+                                    </div>
+                                    <div class="groupDistribution">
+                                        <ul class="clearfix">
+                                            <li><div class="columnarDistribution groupCollagen"><span style="height:16%;"><i class="distributionProportion1"><em>16%</em></i></span></div></li>
+                                            <li><div class="columnarDistribution groupCollagen"><span style="height:26%;"><i class="distributionProportion3"><em>26%</em></i></span></div></li>
+                                            <li><div class="columnarDistribution groupCollagen"><span style="height:80%;"><i class="distributionProportion6"><em>80%</em></i></span></div></li>
+                                            <li><div class="columnarDistribution groupCollagen"><span style="height:40%;"><i class="distributionProportion7"><em>40%</em></i></span></div></li>
+                                            <li><div class="columnarDistribution groupCollagen"><span style="height:20%;"><i class="distributionProportion4"><em>20%</em></i></span></div></li>
+                                            <li><div class="columnarDistribution groupCollagen"><span style="height:20%;"><i class="distributionProportion2"><em>20%</em></i></span></div></li>
+                                        </ul>
+                                    </div>
+                              </div>
+                            </div>
+                            <div class="btns">
+                                <a href="#" class="btns-assess">我也要评估</a>
+                                <a href="#" class="btns-share">分享给好友</a>
+                            </div>
+                        </section>
+                        <footer>
+                            <div class="copyright">
+                                <span>该诊断报告由西瓜公众号助手提供</span>
+                            </div>
+                        </footer>
+                    </div>
+                    <!--运营质量诊断-->
+				</div>
+			</div>
+		</div>
+	</div>  
 <script src="js/jquery-1.12.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/select2.min.js"></script>

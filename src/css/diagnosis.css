@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+/* css reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,header,footer,menu{ margin:0; padding:0; vertical-align:middle; font:inherit; -webkit-text-size-adjust:none; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+h1, h2, h3, h4, h5, h6{ font-weight:normal; font-size:100%;}
+address,caption,cite,code,dfn,em,th,var { font-weight:normal; font-style:normal;} 
+table{ border-collapse:collapse; border-spacing:0;}
+fieldset,img,abbr,acronym{border:0;}
+input,textarea,select,button{ font-family:Helvetica, Roboto, Verdana, Geneva, Arial, sans-serif; -webkit-appearance:none; outline:none; font-size:14px; color:#666;}
+caption,th{ text-align:left;}
+q:before, q:after{ content:'';}
+ul,ol,dl{ list-style:none;}
+
+.clearfix:after{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.clearfix{display:inline-block;}
+/* Hide from IE Mac \*/
+.clearfix {display:block;}
+/* End hide from IE Mac */
+
+/* CSS Document */
+body{ background:#fff; font-family:"Microsoft Yahei", Helvetica, Roboto, Verdana, Geneva, Arial, sans-serif; font-size:13px; color:#7a8a9a; line-height:1.5;}
+a{ color:#666; text-decoration:none; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+
+#main { -webkit-box-flex:1; -webkit-flex:1; flex:1;}
+.flex{ display:-webkit-box; display:-webkit-flex; display:flex;}
+.container{ background:#FFF; padding:0 18px;}
+.pull-left{ float:left;}
+.pull-right{ float:right;}
+.container h3{ background:url(../images/diagnose/title-ico.png) no-repeat left center; background-size:6px 14px; padding-left:15px; font-size:15px; font-weight:bold; margin-bottom:20px; color:#345;}
+.container h4{ padding-bottom:20px;}
+.container h5{ padding-bottom:20px; font-size:13px; color:#345;}
+.table{ border:1px solid #e5e9ed; padding:0 10px;}
+
+/*diagnose-public*/
+/*统计*/
+.total-info{ padding:60px 0 20px;}
+.total-score{ margin:0 auto; width:136px; height:136px; position:relative; background:#F9F9F9; border-radius:100px; color:#7a8a9a;}
+.total-score .score-name{ position:absolute; top:80px; text-align:center; font-size:13px; width:100%; line-height:1.2;}
+.total-score .score-name:after{ content:"\f0d7"; font-family:FontAwesome; display:block; line-height:1; font-size:20px;}
+.total-score .percent{ position:absolute; left:0; top:0; width:100%; line-height:110px; font-size:36px; font-weight:bold; text-align:center; color:#345;}
+.total-score canvas{ width:136px !important; height:136px !important;}
+.total-score.rule-opened .score-name:after{ content:"\f0d8"}
+.report-time{ padding:20px 0 40px; color:#999; font-size:12px; text-align:center; line-height:1.6;}
+
+.totalScoreIntro{ padding-bottom:20px; border-width:1px 0; background:#334455; color:#e0e2e4;}
+.totalScoreIntro .sectionSubTitle{ text-align:center; font-size:18px; padding:20px 0;}
+.totalScoreRule{ margin:10px 40px 0 20px;}
+.totalScoreRule dl{ display:-webkit-box; display:-webkit-flex; display:flex;}
+.totalScoreRule dt{ width:80px; text-align:right; border-right:1px solid #51606e; color:#879197; padding:5px 5px 5px 0;}
+.totalScoreRule dd{ -webkit-box-flex:1; -webkit-flex:1; flex:1; background:#334455;border-right:1px solid #51606e; margin-right:55px; position:relative;}
+.totalScoreRule .backline{ position:absolute; z-index:1; height:100%; width:50%; margin:0 25%; border:1px solid #51606e; border-width:0 1px;}
+.totalScoreRule .backline:before{ display:block; width:50%; border-right:1px solid #51606e; content:" "; height:100%; position:absolute; z-index:1;}
+.totalScoreRule .line{ display:block; position:absolute; z-index:2; left:0; top:12px;}
+.totalScoreRule .line:before{ display:block; width:100%; height:4px; background:#D3D6D8; content:" "; opacity:0.6;}
+.totalScoreRule .lineScore{ display:block; height:4px; position:absolute; left:0; top:0;}
+.totalScoreRule .lineScore:before{ display:block; background:#46be68; width:100%; height:4px; -webkit-animation:easeWidth 0.8s 0s; -moz-animation:easeWidth 0.8s 0s; animation:easeWidth 0.8s 0s; line-height:1.2; content:" "; overflow:hidden;}
+.totalScoreRule .lineWitdh25{ width:25%;}
+.totalScoreRule .lineWitdh50{ width:50%;}
+.totalScoreRule .lineWitdh75{ width:75%;}
+.totalScoreRule .lineWitdh100{ width:100%;}
+.totalScoreRule .scoreRate{ position:absolute; width:55px; right:-58px; z-index:2; top:50%; margin-top:-4px; line-height:1; font-size:11px; white-space:nowrap;}
+.totalScoreRule .realScore{ font-weight:bold;}
+.totalScoreRuleLine{ margin:0 40px 0 105px; border-top:1px solid #51606e; padding:0 55px 0 1px; color:#879197; font-weight:bold;}
+.totalScoreRuleLine li{ -webkit-box-flex:1; -webkit-flex:1; flex:1; text-align:right; margin-right:-5px;}
+.totalScoreRuleLine li span{ float:left; margin-left:-3px;}
+@-webkit-keyframes easeWidth{0%{width:0}100%{width:100%;}}
+@-moz-keyframes easeWidth{0%{width:0}100%{width:100%;}}
+@keyframes easeWidth{0%{ width:0}100%{width:100%;}}
+
+.wechat-box{ border:1px solid #e5e9ed; margin-bottom:20px;}
+.amount-box{width:50%; float:left; border-right:1px solid #e5e9ed; box-sizing:border-box; line-height:1.8; text-align:center; margin:10px 0; padding:10px 0;}
+.amount-box:last-child{ border-right:none;}
+.amount-box em{ font-size:15px; font-weight:bold; color:#345; text-align:center; display:block;}
+/*违规风险识别*/
+.violation-article{ height:128px; width:100%; text-align:center;}
+.violation-article li{ width:33.3%; float:left;}
+.violation-article li a{ display:block;}
+.article-number{width:74px; height:74px; line-height:74px; font-size:18px; display:inline-block; color:#fff; border-radius:50%; margin-bottom:10px;}
+.article-number-circle1{ background:#46be68;}
+.article-number-circle2{ background:#e74c3c; position:relative; z-index:0;}
+.article-number-circle2 i{ position:absolute; top:50px; z-index:10; left:32px;}
+.violation-article a:hover span{ background:#fff; color:#e74c3c; border:1px solid #e74c3c; border-radius:74px; box-sizing:border-box;}
+.violation-article a.active span{ background:#fff; color:#e74c3c; border:1px solid #e74c3c; border-radius:74px; box-sizing:border-box;}
+
+.article-list{ padding-bottom:10px;}
+.article-list dl{ border:1px solid #e5e9ed; color:#345; width:100%; height:60px; font-size:14px; margin-bottom:10px; display:table; box-sizing:border-box;}
+.article-list dl dt img{ width:60px; height:60px; float:left;}
+.article-list dl dd{ padding:0 15px; font-size:12px; height:60px; display:table-cell;}
+.article-list dl a{width:100%; height:60px; display:block; color:#345;}
+
+.dispatch-time-distribution{ padding-bottom:40px;}
+.dispatch-time-distribution li{ padding-bottom:10px;}
+.dispatch-time-distribution li i{ padding-right:6px;}
+/*文章广告比例*/
+.chart-article{ margin-top:-20px;}
+.article-push{ padding-bottom:20px;}
+.article-push li{ width:50%; float:left; text-align:center;}
+.article-push li i{ padding:0 10px 0 0;}
+/*文章属性*/
+.article-attributes{border:1px solid #e5e9ed; margin-bottom:20px;}
+.article-attributes th,.article-attributes td{ text-align:center; border-right:1px solid #e5e9ed; height:52px;}
+.article-attributes th:last-child{ border-right:none;}
+.article-attributes th{ background:#fafafa;border-bottom:1px solid #e5e9ed;}
+.article-attributes td span{ margin:0 10px; padding:15px 0; border-bottom:1px solid #e5e9ed; display:block;}
+.article-attributes td em{ color:#345; font-size:15px; font-weight:bold;}
+.article-attributes tr:last-child td span{ border-bottom:none;}
+/*流量预估*/
+.flow-forecast{ padding-bottom:50px; margin-top:-20px;}
+.flow-forecast li{ border:1px dashed #e5e9ed; height:32px; border-width:0 0 1px 1px; margin:0 30px 0 6px; padding:0 30px 0 10px; position:relative;}
+.flow-forecast li .methods{ background:#fff; position:absolute; top:25px; padding:0 10px;}
+.flow-forecast li i{background: url(../images/diagnose/methods.png) no-repeat; background-size:18px 36px; width:18px; height:18px; display:inline-block;position:absolute; top:25px; right:-30px;}
+.flow-forecast li i.pattern-right{ background-position: 0 0;}
+.flow-forecast li i.pattern-wrong{ background-position:0 -18px;}
+.flow-forecast li i.occupies-compared{ min-width:70px; text-align:right; color:#46be68; background-image:none; background:#fff; height:17px; line-height:17px; font-style:normal; border-radius:3px; padding:0 0 0 6px;}
+/*公众号热词*/
+#div1 {position:relative; width:0%; height:500px; margin:0 auto ; }
+#div1 a {position:absolute; top:0px; left:0px; font-family: Microsoft YaHei; color:#345; text-decoration:none; padding: 3px 6px; }
+#div1 a:hover {border: 1px solid #eee; background: #ccc; }
+#div1 .blue {color:blue;}
+#div1 .red {color:red;}
+#div1 .yellow {color:yellow;}
+
+#div1 p { font: 14px Microsoft YaHei; text-align: center; color: #ba0c0c; }
+#div1 p a { font-size: 14px; color: #ba0c0c; }
+#div1 p a:hover { color: red; }
+/*diagnose-ad*/
+.ad-valuation-report{text-align:center; padding:100px 0 0 0;}
+.wechat-public{ border:1px solid #e5e9ed; width:136px; margin:0 auto;}
+.wechat-public .wechat-logo{width:136px; height:136px; display:inline-block;}
+.wechat-public .wechat-logo img{width:136px; height:136px;}
+.wechat-public .wechat-name{ background:#f9f9f9; border-top:1px solid #e5e9ed; height:33px; text-align:center; line-height:33px; color:#7a8a9a; font-size:14px; font-weight:bold; display:block;}
+
+.valuation-report-title{ font-size:36px; color:#345; font-weight:bold; border-bottom:1px solid #e5e9ed; padding:40px 0 15px 0; margin:0 45px 15px;}
+.valuation-time{ font-size:13px; line-height:1.8; padding-bottom:90px;}
+.valuation-time span{ font-size:9px;}
+
+.wechat-id { height:60px; padding:10px;}
+.wechat-avatar { margin-right:10px;}
+.wechat-avatar img{ width:60px; height:60px;}
+
+.wechat-nickname { display: block; color:#345; padding:5px 0;}
+.wechat-nickname .nickname{ margin-right:8px;display:inline-block; font-size: 15px;font-weight: bold; vertical-align:middle;}
+.wechat-username { color:#7a8a9a; font-size:12px;}
+.tags{ height:15px; line-height:15px; padding:0 7px; vertical-align:middle; font-size:10px; color:#fff; border-radius:3px; font-size:10px; font-weight:normal; display:inline-block;}
+.tag-green{ background:#46be68;}
+.tag-gray{ background:#7a8a9a;}
+
+.dispatch-time i{ padding-left:5px;}
+.circle-green{ color:#46be68;}
+.circle-orange{ color:#ffb606;}
+
+.attention-number{ padding:10px 10px 30px;  border-top:1px solid #e5e9ed; margin:0 10px;}
+.valuation-info{ margin-bottom:40px;}
+.valuation-info li{ border-bottom:1px solid #e5e9ed; padding-top:10px;}
+.valuation-info li span{ font-size:15px; font-weight:bold; color:#345; text-align:center; display:block; padding:20px 0;}
+.text24{ font-size:24px !important;}
+.valuation-info li:last-child{ border-bottom:none;}
+
+/*广告承接单价*/
+.price-table{ margin-bottom:20px;}
+.ad-price{ margin:15px 0; text-align:center;}
+.ad-price li{ width:50%; float:left; border-right:1px solid #e5e9ed; box-sizing:border-box; line-height:1.8;}
+.ad-price li:last-child{ border-right:none;}
+.ad-price li span{ font-size:15px; font-weight:bold; color:#345; text-align:center; display:block;}
+.price-time{ font-size:13px; color:#345; height:40px; line-height:40px; text-align:center; border-top:1px solid #e5e9ed;}
+.price-msg-box{ padding-bottom:20px;}
+.price-msg{ background:url(../images/diagnose/triangle.png) no-repeat left 3px; background-size:12px 12px; padding-left:20px; line-height:1.6; margin-bottom:10px;}
+.price-msg a{ color:#52a6fb;}/**/
+.price-msg a:hover{ text-decoration:underline;}/**/
+
+.ad-number{ background:#fbfbfb; margin-bottom:20px;}
+.chart{ padding:20px 0 80px;}
+
+/*阅读横向对比*/
+.read-contrast-box{ width:100%;}
+.read-contrast{ position: relative; border-bottom:1px solid #e5e9ed; height:130px; width:50%;}
+.read-contrast .headlines{ list-style:none; position:absolute; bottom:0; width:100%; text-align:center;}
+.read-contrast .headlines li{ width:50px; position:relative; z-index:1; display:inline-block; margin:0 6px;}
+.read-contrast .text{ position:absolute; bottom:-30px; text-align:center; width:100%; line-height:30px;}
+
+.read-map{width:50px; height:130px;  margin:0 auto;}
+.read-map span{ display:block; position:absolute; bottom:0; width:50px;}
+.read-map i{ height:100%; width:50px; position:absolute; left:0; bottom:0; -webkit-animation:easeHeight 0.8s 0s; -moz-animation:easeHeight 0.8s 0s; animation:easeHeight 0.8s 0s;}
+.read-map em{ font-style:normal; position:absolute; height:16px; line-height:16px; top:10px; left:0; width:50px; text-align:center; color:#fff;}
+.read-map-color1{ background:#46be68; display:block;}
+.read-map-color2{ background:#ffb606; display:block;}
+.read-map-color3{ background:#50d2d0; display:block;}
+.read-map-gray{ background:#b7c8d6; display:block;}
+
+.average-read-contrast{ border:1px solid #e5e9ed; border-width:0 0 1px 1px; height:180px; position:relative;}
+.average-read-contrast .read-contrast{ border-bottom:0;/*margin-top:50px;*/}
+.read-contrast-block{height:130px; position:absolute; bottom:0; left:0; width:100%; }
+.mean-line{ height:110px; border-top:1px dashed #50d2d0; position:absolute; bottom:0; left:1px; width:100%;}
+
+.average-performance{ position:absolute; top:0; right:0; height:10px;border-bottom:1px dashed #50d2d0; padding:0 0 0 50px;}
+.average-performance span{ background:#fff; padding:0 10px;}
+.average-read-contrast .read-map em{ position:absolute; top:-20px; color:#89a; width:120px; margin-left:-35px;}
+/*公众号阅读者性别偏向*/
+.gender{ font-size:16px; font-weight:bold;}
+.gender li{ text-align:center; width:50%; float:left;}
+.gender li span{background:url(../images/diagnose/gender.png) no-repeat; background-size:24px 136px; height:68px; padding: 0 35px; display:inline-block; margin:0 auto; text-align:left;}
+.gender li span.male{ background-position:0 0; color:#24a5f4;}
+.gender li span.female{ background-position:0 -68px; color:#ff456c;}
+
+/*公众号阅读者年龄分布*/
+.mpArticleAge,.mpArticleGender{ padding:0 20px 20px;}
+.mpArticleAge ul{ margin:0; padding: 0;}
+.articleAgeRatio{ height:156px;}
+.articleAgeRatio ul{ list-style:none; padding:0 0 0 6%;}
+.articleAgeRatio li{ height:30px; border-top:1px solid #d9dde2;position:relative;}
+.articleAgeRatio .ratio{position:absolute; color:#a5afb7; font-size:11px; left:-10%; top:-9px;}
+.ageDistribution{ margin-left: 6%; }
+.ageDistribution ul{ list-style:none; width:100%; }
+.ageDistribution li{ float:left; width:20%; text-align:center; padding-top: 5px;}
+.ageRatio{ position: relative; margin-left: 6%; }
+.ageRatio ul{ list-style:none; position:absolute; bottom:0; width:100%; left:0; }
+.ageRatio ul li{ width:20%; float:left; position:relative; z-index:1;}
+
+.columnarDistribution{width:36px; height:156px; margin:0 auto;}
+.columnarDistribution span{ display:block; position:absolute; bottom:0; width:36px;}
+.columnarDistribution i{ height:100%; width:36px; position:absolute; left:0; bottom:0; -webkit-animation:easeHeight 0.8s 0s; -moz-animation:easeHeight 0.8s 0s; animation:easeHeight 0.8s 0s;}
+.columnarDistribution .distributionProportion1{ background:#50d2d0;display:block;}
+.columnarDistribution .distributionProportion2{ background:#46be68;display:block;}
+.columnarDistribution .distributionProportion3{ background:#ffb606;display:block;}
+.columnarDistribution .distributionProportion4{ background:#ff8106; display:block;}
+.columnarDistribution .distributionProportion5{ background:#e74c3c; display:block;}
+.columnarDistribution .distributionProportion6{ background:#3498db; display:block;}
+.columnarDistribution .distributionProportion7{ background:#ff456c; display:block;}
+.columnarDistribution em{ font-style:normal; position:absolute; height:16px; line-height:16px; top:-20px; left:0; width:36px; text-align:center;-webkit-text-size-adjust:none; font-size:10px;}
+
+/*公众号人群画像*/
+.ethnicGroup{ margin-left:6%; font-size:8px;}
+.ethnicGroup ul{ list-style:none; width:100%; }
+.ethnicGroup li{ float:left; width:14%; text-align:center; padding: 5px 1%; line-height:1.2;}
+.groupDistribution{ position: relative; margin-left: 6%; }
+.groupDistribution ul{ list-style:none; position:absolute; bottom:0; width:100%; left:0; }
+.groupDistribution ul li{ width:16%; float:left; position:relative; z-index:1;}
+.groupCollagen{ width:24px !important; margin:0 auto !important;}
+.groupCollagen i{ width:24px !important; margin:0 auto !important;}
+.groupCollagen em{width:24px !important; font-size:10px; -webkit-text-size-adjust:none;}
+
+.btns{ padding-bottom:20px;}
+.btns a{font-size:14px; text-align:center; width:200px; height:50px; line-height:50px; text-align:center; border-radius:25px; margin:0 auto 15px; display:block;}
+.btns-assess{ background:#46be68; color:#fff;}
+.btns-share{ color:#94a1ae; border:1px solid #94a1ae; background:#fff;}
+.copyright{ background:#eef4f7; text-align:center; padding:20px 10px; margin:0 -18px;}
+.copyright span{ background: url(../images/diagnose/logo_copyright.png) no-repeat left 4px; background-size:14px 13px;  font-size:14px; font-weight:bold; padding-left:18px; color:#345;}
+.copyright a{ color:#52a6fb; text-decoration:none;}
+
+/*修订数据*/
+.revised-data{ font-size:14px; line-height:1.8;}
+.revised-data h1{ font-size:18px; font-weight:bold; color:#345; padding:25px 0 30px; text-align:center;}
+.revised-data-list{ margin-bottom:10px; font-size:14px; font-family:Verdana, Geneva, sans-serif;}
+.revised-data-list .point{ background:#46be68; width:14px; height:14px; text-align:center; line-height:14px; color:#fff; border-radius:50%; display:inline-block; margin-right:5px; font-size:8px;}
+.last-list{ margin-bottom:20px;}
+.revised-data-list .c-1{ color:#345;}
+.fill-format{ font-weight:bold; color:#345; margin-bottom:10px; padding-left:19px;}
+.as-picture{ padding-bottom:20px;}
+.as-picture h5{ padding-bottom:10px;}
+.as-picture p img{ max-width:640px; width:100%; margin:0 auto; display:block;}
+
+.code-attention{ border:1px solid #e5e9ed; padding:10px; height:70px; position:relative; line-height:1.5;}
+.code-attention .xiguatui{color:#345; font-size:24px; font-weight:bold; padding-bottom:10px;}
+.code-attention dd{ position:absolute; left:10px; top:3px;}
+.code-attention img{ width:70px; height:70px;}
+
+/*暂无数据*/
+.no-data{ padding:20px; text-align:center; border:1px solid #ececec; background:#fafafa; margin-bottom:20px;}
+/*dialog*/
+.mask{width:100%; height:100%; position:fixed; z-index:11; top:0; left:0; background:rgba(0, 0, 0, 0.9); padding:10px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+.dialog{ background:#fff; border-radius:5px; z-index:100; position:fixed; width:70%; top:20%; left:50%; margin-left:-40%; padding:5%; text-align:center;}
+.code-dialo{ -webkit-animation-fill-mode:forwards; -moz-animation-fill-mode:forwards; animation-fill-mode:forwards;-webkit-animation:bottomToTop 0.5s 0.5s; -moz-animation:bottomToTop 0.5s 0.5s; animation:bottomToTop 0.5s 0.5s; width:200px; min-height:150px; padding:30px; top:50%; left:50%; margin:-180px 0 0 -130px;}
+.dialog .code img{ width:150px; height:150px; display:block; margin:0 auto 20px;}
+.dialog .code-text{ color:#7a8a9a; font-size:18px; margin:0 auto 10px;}
+.text-public{ margin-bottom:15px;color:#345; font-size:24px;}
+.share-guide{ -webkit-animation-fill-mode:forwards; -moz-animation-fill-mode:forwards; animation-fill-mode:forwards;-webkit-animation:bottomToTop 0.5s 0.5s; -moz-animation:bottomToTop 0.5s 0.5s; animation:bottomToTop 0.5s 0.5s; background:url(../images/diagnose/share-guide.png) no-repeat; background-size:233px 194px; width:233px; height:194px; position:fixed; right:15px; top:20px; display:block; z-index:666;}
+@-webkit-keyframes easeHeight{0%{height:0}100%{height:100%;}}
+@-moz-keyframes easeHeight{0%{height:0}100%{height:100%;}}
+@keyframes easeHeight{0%{ height:0}100%{height:100%;}}
+
+@-webkit-keyframes bottomToTop{0%{-webkit-transform:translateY(100%);opacity:0}100%{-webkit-transform:translateY(0);opacity:1}}
+@-moz-keyframes bottomToTop{0%{-moz-transform:translateY(100%);opacity:0}100%{-moz-transform:translateY(0);opacity:1}}
+@keyframes bottomToTop{0%{transform:translateY(100%);opacity:0}100%{transform:translateY(0);opacity:1}}
+
+@media screen and (min-width:800px) {
+	.container{ width:720px; margin:0 auto; }
+}
