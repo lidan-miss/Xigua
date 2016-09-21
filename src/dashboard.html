@@ -13,6 +13,8 @@
     <![endif]-->
     <link href="css/controls.css" rel="stylesheet">
     <link href="css/css.css" rel="stylesheet">
+    <link href="js/malihu-custom-scrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+
     <script src="js/respond.min.js"></script>
 </head>
 <body>
@@ -20,10 +22,10 @@
 <div class="sidebar">
     <div class="brand">
         <img src="images/logo.png" class="navbar-brand-logo">
-        <div class="public-name">
+        <!--<div class="public-name">
             <span class="navbar-brand-text">西瓜公众号助手</span>
             <span class="navbar-brand-url">www.xiguaji.com</span>
-        </div>
+        </div>-->
     </div>
 
         <ul>
@@ -89,24 +91,32 @@
                 <div class="message-panel-head">系统消息</div>
                 <ul>
                     <li>
+                    	<a href="#">
                         <i class="fa fa-circle ico-new-msg"></i>
                         <p class="message-title">新增图文编辑功能</p>
                         <p class="message-content">恭喜您，收到1张11元的优惠券，有效期截止至2015年12月09日。该优惠券可以给任意账户使用。</p>
+                        </a>
                     </li>
                     <li>
+                    	<a href="#">
                         <i class="fa fa-circle ico-new-msg"></i>
                         <p class="message-title">新增图文编辑功能</p>
                         <p class="message-content">恭喜您，收到1张11元的优惠券，有效期截止至2015年12月09日。该优惠券可以给任意账户使用。</p>
+                        </a>
                     </li>
                     <li>
+                    	<a href="#">
                         <i class="fa fa-circle ico-new-msg"></i>
                         <p class="message-title">新增图文编辑功能</p>
                         <p class="message-content">恭喜您，收到1张11元的优惠券，有效期截止至2015年12月09日。该优惠券可以给任意账户使用。</p>
+                        </a>
                     </li>
                     <li>
+                    	<a href="#">
                         <i class="fa fa-circle ico-new-msg"></i>
                         <p class="message-title">新增图文编辑功能</p>
                         <p class="message-content">恭喜您，收到1张11元的优惠券，有效期截止至2015年12月09日。该优惠券可以给任意账户使用。</p>
+                        </a>
                     </li>                 
                 </ul>
                 <div class="message-panel-foot"><a href="javascript:;">查看所有消息&raquo;</a></div>
@@ -322,6 +332,9 @@
 <script src="js/icheck.min.js"></script>
 <script src="js/easypiechart.js"></script>
 <script src="js/site.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/malihu-custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/malihu-custom-scrollbar/jquery.mCustomScrollbar.js"></script>
 <script>
     var chart = window.totalChart = new EasyPieChart(document.querySelector('.totalScore span'), {
         easing: 'easeOutElastic',
@@ -337,6 +350,12 @@
             this.el.children[0].innerHTML = Math.round(percent);
         }
     });
+	
+</script>
+<script>
+	$(".sidebar nav").mCustomScrollbar({
+		theme: "minimal"    //"minimal-dark"
+	});
 </script>
 </body>
 </html>

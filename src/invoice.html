@@ -110,14 +110,20 @@
                     <div class="mp-article-list invoice-table">
                     <table class="table">
                         <colgroup>
-                            <col width="15%">
-                            <col width="60%">
-                            <col width="10%">
-                            <col width="15%">
+                        	<col width="60">
+                            <col width="240">
+                            <col >
+                            <col width="160">
+                            <col width="240">
                         </colgroup>
                         <thead>
                             <tr>
-                                <th>订单号</th>
+                            	<th>
+                                	<div class="bulkManage-checkbox bulkManage-checkbox-left">
+                                        <input class="control-checkbox" data-checkbox id="checkbox1" type="checkbox">
+                                    </div>
+                                </th>
+                                <th class="text-left">订单号</th>
                                 <th class="text-left">产品名称</th>
                                 <th class="text-center">支付金额</th>
                                 <th>支付时间</th>
@@ -125,13 +131,23 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>GF4545412104400</td>
+                            	<td>
+                                	<div class="bulkManage-checkbox bulkManage-checkbox-left">
+                                        <input class="control-checkbox" data-checkbox id="checkbox1" type="checkbox">
+                                    </div>
+                                </td>
+                                <td class="text-left">GF4545412104400</td>
                                 <td class="text-left">ff</td>
                                 <td>222222222</td>
                                 <td>2016-04-06 12:10:25</td>
                             </tr>
                             <tr>
-                                <td>2-21160711103653645</td>
+                            	<td>
+                                	<div class="bulkManage-checkbox bulkManage-checkbox-left">
+                                        <input class="control-checkbox" data-checkbox id="checkbox1" type="checkbox">
+                                    </div>
+                                </td>
+                                <td class="text-left">2-21160711103653645</td>
                                 <td class="text-left">西瓜公众号助手高级版1个月</td>
                                 <td>399.00</td>
                                 <td>2016/7/11 10:37:20</td>
@@ -144,7 +160,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="row">
+                <!--<div class="row">
                 	<div class="col col-md-6 user-invoice-total">
                     	已选总金额：¥ 0
                     	<div class="note">（可开票总金额：¥<span>222</span>）</div>
@@ -152,6 +168,15 @@
                     <div class="col col-md-6 user-invoic-amount">
                     	待开票金额: ¥ 0  
                         &nbsp;<a class="btn btn-success">下一步</a>
+                    </div>
+                </div>-->
+                <div class="row">
+                    <div class="col col-md-4 user-invoice-total">
+                        已选总金额：<span class="selectedInvoice">¥ 0</span>
+                        <div class="note">(可开票总金额：¥ <span id="totoalInvoice"></span>)</div>
+                    </div>
+                    <div class="col col-md-8 user-invoic-amount">
+                        待开票金额:<span id="selectedInvoice" class="txt-color-green selectedInvoice">¥ 0</span>  <a class="btn btn-primary" id="btnInvoiceNext">下一步</a>
                     </div>
                 </div>
                 

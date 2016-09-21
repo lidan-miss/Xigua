@@ -47,17 +47,17 @@ var Xigua = {
 		});
 		$('[data-toggle="tooltip"]').tooltip();
 	},
-	pageFunc: function(){
-		var $popularLeft = $('.page-popular-list .wrapper-col-left'),
-			$popularRight = $('.page-popular-list .wrapper-col-right');
-		if($popularLeft.height() > $popularRight.height()){
-			$popularLeft.css({position: 'fixed'});
-		} else{
-			$popularLeft.height($popularRight.height());
-		}
-		console.log($('.page-popular-list .wrapper-col-left').height(), $('.page-popular-list .wrapper-col-right').height())
-		
-	}
+//	pageFunc: function(){
+//		var $popularLeft = $('.page-popular-list .wrapper-col-left'),
+//			$popularRight = $('.page-popular-list .wrapper-col-right');
+//		if($popularLeft.height() > $popularRight.height()){
+//			$popularLeft.css({position: 'fixed'});
+//		} else{
+//			$popularLeft.height($popularRight.height());
+//		}
+//		console.log($('.page-popular-list .wrapper-col-left').height(), $('.page-popular-list .wrapper-col-right').height())
+//		
+//	}
 }
 
 Xigua.init();
