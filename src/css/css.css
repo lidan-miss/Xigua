@@ -141,7 +141,7 @@ input:-ms-input-placeholder {　color: #7a8a9a !important; }
 .mp-article-title .tooltip-inner { background: #4a4a4a !important; height: 30px; font-size: 14px; line-height: 24px; }
 .mp-article-title .tooltip-arrow { border-top-color: #4a4a4a !important; }
 .mp-public-source { height: 60px; vertical-align: middle !important; line-height: 1.8; padding-top: 4px; font-size:14px !important;}
-.mp-article-source a { width: 32px; height: 32px; background: none; border-radius: 50%; margin: 0 8px; line-height: 32px; text-decoration: none; display: inline-block; color: #fff; }
+.mp-article-source a { width: 32px; height: 32px; background: none; border-radius: 50%; margin: 0 3px; line-height: 32px; text-decoration: none; display: inline-block; color: #fff; }
 .mp-article-source a i { margin: 0  8px; }
 .mp-article-source a:hover { color: #fff; }
 .mp-article-source a.source-collect{ background:#ffb400;}
@@ -611,7 +611,7 @@ input:-ms-input-placeholder {　color: #7a8a9a !important; }
 .add-appmsg-area i { font-size: 18px; }
 .add-appmsg-area a { display: block; color: #89a; }
 .add-appmsg-area:hover { border: 1px dashed #7a8a9a; box-sizing: border-box; }
-.add-appmsg-item-btns { height:66px; line-height:66px; font-size: 16px; color: #89a; border:1px dashed #7a8a9a;}
+.add-appmsg-item-btns { display:none; height:66px; line-height:66px; font-size: 16px; color: #89a; border:1px dashed #7a8a9a;}
 .add-appmsg-item-btns a { margin: 0 24px; }
 .appmsg-list .col { padding: 0; }
 .appmsg-list .row{ margin:0;}
@@ -621,6 +621,8 @@ input:-ms-input-placeholder {　color: #7a8a9a !important; }
 .material-list { padding:10px; background: #fff; border: 1px solid #e5e9ed;}
 .new-add-graphic{}
 .add-appmsg-item { height:86px; padding:10px; text-align: center; max-width:384px; margin:0 0 15px 15px;}
+.add-appmsg-item:hover .add-appmsg-item-btns{ display:block;}
+.add-appmsg-item:hover .add-appmsg-area{ display:none;}
 .appmsg-list-info { height: 36px; border-bottom: 1px solid #e5e9ed; }
 .appmsg-list-info img { width: 28px; height: 28px; border-radius: 50%; margin-right: 10px; }
 .appmsg-top { position: relative; }
@@ -646,7 +648,7 @@ input:-ms-input-placeholder {　color: #7a8a9a !important; }
 .appmsg-no-send { background: #89a; }
 .waiting-mass { background: #f8b209; }
 .appmsg-info { background: #3c9ad9; }
-.editor-wrapper { background: #f8f9fb; top: 88px; height: auto; }
+.editor-wrapper { background: #f8f9fb; top: 88px; height: auto; background:#f8f9fb;}/**/
 .editor-view { max-width: 400px; float: left; }
 .editor-view .editor-appmsg-top { padding: 16px; position: relative; }
 .editor-view .editor-appmsg-top img { max-width: 368px; width: 100%; }
@@ -659,11 +661,11 @@ input:-ms-input-placeholder {　color: #7a8a9a !important; }
 .btn-save-edit{ display:block; padding:16px;}
 .btn-save-edit a{ width:100%;}
 .editor-style { margin-left: 400px; border-left: 1px solid #e5e9ed; position:relative;}
-.editor-heading { height: 50px; line-height: 47px; vertical-align: middle; background: #f8f9fb; border-bottom: 1px solid #e5e9ed; padding: 0 10px; }
+.editor-heading { height: 50px; line-height: 47px; vertical-align: middle; background: #fff; border-bottom: 1px solid #e5e9ed; padding: 0 10px; }
 .editor-heading img { width: 30px; height: 30px; }
 .editor-heading-btn i { margin-right: 10px; }
 .editor-heading-btn a { margin-right: 30px; color: #89a; }
-.editor-area { min-height:50px; border-bottom: 1px solid #e5e9ed; margin: 0 auto; background: #fff; }
+.editor-area { min-height:50px; border-bottom: 1px solid #e5e9ed; margin: 0 auto; background: #edf0f5; }/**/
 .area560 { max-width: 560px; margin: 0 auto; color: #a3a3a3; font-size: 14px; }
 .input-style input, .input-style textarea { border: none; width: 100%; }
 .input-style textarea { height: 260px; }
@@ -673,7 +675,7 @@ input:-ms-input-placeholder {　color: #7a8a9a !important; }
 .enter-footer a { margin: 0 10px; color: #aaa; }
 .enter-footer a:last-child { margin-right: 0; }
 .input-main-body { border: 1px solid #e5e9ed; border-width: 1px 0; padding: 20px 0; }
-.editor-area-footer { background: #f8f9fb; padding: 20px 0; position:absolute; bottom:0; right:0; width:100%; max-width:1279px; }
+.editor-area-footer { background: #f8f9fb; padding: 20px 0; position:fixed; bottom:0; right:0; width:100%; left:640px; border:1px solid #e5e9ed; border-width:1px 0 0 1px; z-index:10;}/**/
 .editor-area-footer a { text-decoration: none; border-radius: 5px; padding: 10px 22px; color: #6d8092; margin: 0 5px 0 0; }
 .editor-area-footer a:link, .editor-area-footer a:visited { background: #fff; display: inline-block; border: 1px solid #e5e9ed; }
 .editor-area-footer a:hover, .editor-area-footer a:active { background: #46be68; color: #fff; }
@@ -712,7 +714,7 @@ input:-ms-input-placeholder {　color: #7a8a9a !important; }
 .cartViewTips a:hover{ color:#3DA042;}
 .articleGuideList{ margin-left:360px;}
 /*图文编辑*/
-.editorView{ float:left; width:400px; height:auto;background:#FAFAFA;}
+.editorView{ float:left; width:400px; height:auto; background:#f8f9fb;}/**/
 .editorViewAdd{ display:block; margin:10px; border:1px dashed #e5e9ed; background:#FFF; text-align:center; height:80px; line-height:80px; font-size:20px; color:#345; overflow:hidden;}
 .editorViewAdd:hover{ border-color:#e5e9ed; color:#345;}
 .editorViewAdd a{ cursor:pointer; margin:0 10px; color:#7a8a9a;}
@@ -726,17 +728,18 @@ input:-ms-input-placeholder {　color: #7a8a9a !important; }
 .editorViewItem .arrow{ display:none; width:20px; height:20px; background:#FFF; border:1px solid #e5e9ed; border-width:0 0 1px 1px; -moz-transform:rotate(45deg); -webkit-transform:rotate(45deg); transform:rotate(45deg); position:absolute; z-index:10; right:-32px; top:50%; margin-top:-15px;}
 .editorViewItem.itemSelected .arrow{ display:block;}
 .editorViewItem .appmsgWrap{ overflow:hidden; position:relative; z-index:1;}
-.editorViewItem .appmsgTitle{ color:#345; float:left; font-size:14px; line-height:21px; overflow:hidden; padding-top:20px; width:68%;}
-.editorViewItem .appmsgCover{ float:right; width:78px; height:78px; overflow:hidden;}
+.editorViewItem h4{ margin:0;}
+.editorViewItem .appmsgTitle{ color:#345; float:left; font-size:14px; height:48px; line-height:1.6; overflow:hidden; width:310px;}
+.editorViewItem .appmsgCover{ float:right; width:48px; height:48px; overflow:hidden;}
 .editorViewItem .appmsgCover img{ display:block; width:100%; height:100%;}
-.editorViewItem .appmsgCover .defaultCover{ display:block; background:#f1f5fc; color:#7a8a9a; font-style:normal; font-size:16px; line-height:78px; height:78px; text-align:center;}
+.editorViewItem .appmsgCover .defaultCover{ display:block; background:#f1f5fc; color:#7a8a9a; font-style:normal; font-size:16px; line-height:48px; height:48px; text-align:center;}
 .editorViewItem .appmsgMark{ display:none; position:absolute; z-index:1; left:0; top:0; width:100%; height:100%; background:rgba(255,255,255,0.75); text-align:center;}
 .editorViewItem:hover .appmsgMark{ display:block;}
 .editorViewItem:active,.editorViewItem:focus{ cursor:move;}
 .editorViewItem.itemSelected:active .arrow{ display:none;}
-.editorViewItem .appmsgBtn{ display:inline-block; margin:30px 6px 0 6px; font-size:20px;}
-.editorViewItem .appmsgTips{ margin-top:10px; color:#999;}
-.editorViewItem a{ color:#999; cursor:pointer;}
+.editorViewItem .appmsgBtn{ display:inline-block; margin:10px 6px 0 6px; font-size:20px;}
+.editorViewItem .appmsgTips{ margin-top:10px; color:#7a8a9a;}
+.editorViewItem a{ color:#7a8a9a; cursor:pointer;}
 .editorViewItem a:hover{ color:#333;}
 .editorViewItem.topItem .appmsgCover{ float:none; width:100%; height:200px;}
 .editorViewItem.topItem .appmsgCover img{ height:200px;}
@@ -745,7 +748,7 @@ input:-ms-input-placeholder {　color: #7a8a9a !important; }
 .editorViewItem.topItem .appmsgBtn{ margin-top:70px; margin-bottom:30px;}
 
 /*.editor-area-box{height:635px; overflow:auto; overflow-x:hidden;}*/
-.editor-area-padding{ padding:20px 0 90px;}
+.editor-area-padding{ padding:20px 0 90px; background:#fff;}/**/
 .editorGroup{ margin-bottom:15px;}
 .editorGroup .editorLabel{ font-size:14px; font-weight:normal; margin-bottom:20px;}
 .editorGroup .btn{ margin-right:15px;}

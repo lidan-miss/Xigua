@@ -89,6 +89,9 @@
         <!--/topbar-->
 		<!--editor-wrapper-->
 		<div class="editor-wrapper">
+        	<div class="editor-heading"><img src="images/avatars/1.jpg"> Alex大叔  
+                <div class="pull-right editor-heading-btn"><a href="#"><i class="fa fa-clone"></i>复制图文</a> <a href="#"><i class="fa fa-cog"></i>配置素材模板</a></div>
+            </div>
             <!--editor-view-->
             <div class="editor-view">
                 <!--editorView-->
@@ -96,7 +99,7 @@
 					<section class="editorViewItem topItem">
 						<i class="arrow"></i>
 						<div class="appmsgWrap">
-							<h4 class="appmsgTitle">标题标题标题标题标题标题标题标题标题标题标题标题标</h4>
+							<h4 class="appmsgTitle">NASA黑历史：他们把阿波罗11好登月计划磁带的内容删了</h4>
 							<div class="appmsgCover">
 								<img src="images/avatars/5.jpg" width="368" height="200">
 								<i class="defaultCover">封面图片</i>
@@ -110,7 +113,7 @@
 					</section>
 					<section class="editorViewItem itemSelected">
 						<div class="appmsgWrap">
-							<h4 class="appmsgTitle">标题</h4>
+							<h4 class="appmsgTitle">NASA黑历史：他们把阿波罗11好登月计划磁带的内容删了</h4>
 							<div class="appmsgCover">
 								<img src="images/avatars/5.jpg" width="368" height="200">
                                 <i class="defaultCover">封面图片</i>
@@ -172,28 +175,58 @@
             
             <!--editor-style-->
             <div class="editor-style">
-                <div class="editor-heading"><img src="images/avatars/1.jpg"> Alex大叔  
-                    <div class="pull-right editor-heading-btn"><a href="#"><i class="fa fa-clone"></i>复制图文</a> <a href="#"><i class="fa fa-cog"></i>配置素材模板</a></div>
-                </div>
-                <div class="editor-area">
+                
+                <!--<div class="editor-area">
                     <div class="area560">
                         <a href="#" class="appmsg-tag appmsg-info">插入关注引导</a>
                         <a href="#" class="appmsg-tag appmsg-info">插入签名</a>
                         <a href="#" class="appmsg-tag appmsg-info">插入阅读原文引导</a>
                         <a href="#" class="appmsg-tag appmsg-info">只保留视频内容</a>
                     </div>
-                </div>
-                <div class="editor-area">
-                    <div class="area560">
-                        <div class="input-style"><input type="text" value="在这里输入标题" class="enter-title"></div>
-                        <div class="input-style"><input type="text" value="请输入作者" class="enter-author"></div>
-                        <div class="input-style input-main-body"><textarea cols="" rows="">从这里开始写正文</textarea></div>
-                        <div class="enter-footer">
-                            <input type="checkbox" class="control-checkbox" id="checkbox1" checked data-checkbox><label class="control-checkbox-label" for="checkbox1">原文链接</label> 
-                            <div class="pull-right"><a href="#" class="">西瓜高级编辑器</a><a href="#" class="">快速编辑</a></div>
-                      </div>
+                </div>-->
+                <!--editor-area-box-->
+                <div class="editor-area-box">
+                
+                    <div class="editor-area">
+                        <div class="area560">
+                            <div class="input-style"><input type="text" value="在这里输入标题" class="enter-title"></div>
+                            <div class="input-style"><input type="text" value="请输入作者" class="enter-author"></div>
+                            <div class="input-style input-main-body"><textarea cols="" rows="">从这里开始写正文</textarea></div>
+                            <div class="enter-footer">
+                                <input type="checkbox" class="control-checkbox" id="checkbox1" checked data-checkbox><input class="control-checkbox-label" for="checkbox1" placeholder="原文链接">
+                                <div class="pull-right"><a href="#" class="">西瓜高级编辑器</a><a href="#" class="">快速编辑</a></div>
+                          </div>
+                        </div>
                     </div>
+                
+                    <div class="editor-area editor-area-padding">
+                        <div class="area560">
+                            <div class="editorGroup">
+                                <label class="editorLabel">封面：<span class="note">(大图片建议尺寸：900像素 * 500像素)</span></label>
+                                <div class="editorInput">
+                                    <div class="uploadCoverBtn"><a class="btn btn-default">本地上传</a>
+                                        <input type="file" class="uploadFile">
+                                    </div>
+                                    <div class="uploadCover">
+                                        <div class="uploadCoverImg"><img src="http://www.sinaimg.cn/qc/2008-03-13/157/U1822P33T157D1668F2738DT20081024194418.jpg"></div>
+                                        <div class="uploadCoverProcess"><span style="height:30%;"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></span></div>
+                                    </div>
+                                </div>
+                                <div class="checkShowCover">
+                                    <label class="checkbox-inline"><input type="checkbox" class="checkbox style-0" id="chkAllTags"><span>正文显示封面图</span></label>
+                                </div>
+                            </div>
+                            <div class="editorGroup">
+                                <label class="editorLabel">摘要：<span class="note">(选填，如果不填写会默认抓取正文前54个字)</span></label>
+                                <div class="editorInput">
+                                    <textarea style="width:700px; height:100px;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
                 </div>
+                <!--/editor-area-box-->
                 <div class="editor-area-footer">
                     <div class="area560">
                         <a href="#" class="">保存</a>
