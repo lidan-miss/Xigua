@@ -20,10 +20,10 @@
 <div class="sidebar">
     <div class="brand">
         <img src="images/logo.png" class="navbar-brand-logo">
-        <div class="public-name">
+       <!-- <div class="public-name">
             <span class="navbar-brand-text">西瓜公众号助手</span>
             <span class="navbar-brand-url">www.xiguaji.com</span>
-        </div>
+        </div>-->
     </div>
 
         <ul>
@@ -88,7 +88,12 @@
         </div>
         <!--/topbar-->
       	
-            
+      <div class="editor-heading">
+        	<div class="editor-heading-content">
+                <img src="images/avatars/1.jpg"> <strong>Alex大叔</strong>
+				<div class="pull-right editor-heading-btn"><a href="#"><i class="fa fa-clone"></i>复制图文</a> <a href="#"><i class="fa fa-cog"></i>配置素材模板</a></div>
+            </div>
+        </div>   
 		<!--editor-wrapper-->
 		<div class="wrapper wrapper-no-gap my-material editor-wrapper">
         	<div class="wrapper-col-left">
@@ -215,34 +220,45 @@
             
             <!--editor-style-->
             <div class="editor-style">
-                <div class="editor-heading"><img src="images/avatars/1.jpg"> Alex大叔  
-                    <div class="pull-right editor-heading-btn"><a href="#"><i class="fa fa-clone"></i>复制图文</a> <a href="#"><i class="fa fa-cog"></i>配置素材模板</a></div>
-                </div>
-                <div class="editor-area">
-                    <div class="area560">
-                        <a href="#" class="appmsg-tag appmsg-info">插入关注引导</a>
-                        <a href="#" class="appmsg-tag appmsg-info">插入签名</a>
-                        <a href="#" class="appmsg-tag appmsg-info">插入阅读原文引导</a>
-                        <a href="#" class="appmsg-tag appmsg-info">只保留视频内容</a>
-                    </div>
-                </div>
+                
                 <!--editor-area-box-->
                 <div class="editor-area-box">
                 
                     <div class="editor-area">
-                        <div class="area560">
-                            <div class="input-style"><input type="text" value="在这里输入标题" class="enter-title"></div>
-                            <div class="input-style"><input type="text" value="请输入作者" class="enter-author"></div>
-                            <div class="input-style input-main-body"><textarea cols="" rows="">从这里开始写正文</textarea></div>
+                        <div class="area660 edit-content-area">
+                        	<div class="appmsg-tag-box">
+                                <a href="#" class="appmsg-tag appmsg-tag1">插入关注引导</a>
+                                <a href="#" class="appmsg-tag appmsg-tag1">插入文末签名</a>
+                                <a href="#" class="appmsg-tag appmsg-tag1">插入阅读原文引导</a>
+                                <a href="#" class="appmsg-tag appmsg-tag2">优化视频播放</a>
+                                <a href="#" class="appmsg-tag appmsg-tag3">快速编辑模式</a>
+                                <a href="#" class="appmsg-tag appmsg-tag3">高级编辑模式</a>
+                                <a href="#" class="appmsg-tag appmsg-tag4">显示所有内容</a>
+                            </div>
+                
+                        	<div class="edit-field">在这里插入编辑栏</div>
+                            <div class="edit-body">
+                            	<div class="edit-main-header">
+                                	<div class="input-style"><input type="text" value="在这里输入标题" class="enter-title"><em>8/64</em></div>
+                                	<div class="input-style"><input type="text" value="请输入作者" class="enter-author"><em>3/8</em></div>
+                                </div>
+                            	
+                                <div class="edit-main-body">
+                                	<div class="input-style "><textarea cols="" rows="" class="edit-main-body">从这里开始写正文</textarea></div>
+                                </div>
+                            </div>
+                            
                             <div class="enter-footer">
-                                <input type="checkbox" class="control-checkbox" id="checkbox1" checked data-checkbox><input class="control-checkbox-label" for="checkbox1" placeholder="原文链接">
+                                <input type="checkbox" class="control-checkbox" id="checkbox1" checked data-checkbox>
+                                <input class="control-checkbox-label" for="checkbox1" placeholder="请输入原文链接">
                                 <div class="pull-right"><a href="#" class="">西瓜高级编辑器</a><a href="#" class="">快速编辑</a></div>
+                                <div class=""></div>
                           </div>
                         </div>
                     </div>
                 
                     <div class="editor-area editor-area-padding">
-                        <div class="area560">
+                        <div class="area660">
                             <div class="editorGroup">
                                 <label class="editorLabel">封面：<span class="note">(大图片建议尺寸：900像素 * 500像素)</span></label>
                                 <div class="editorInput">
@@ -255,14 +271,12 @@
                                     </div>
                                 </div>
                                 <div class="checkShowCover">
-                                    <label class="checkbox-inline"><input type="checkbox" class="checkbox style-0" id="chkAllTags"><span>正文显示封面图</span></label>
+                                    <label class="checkbox-inline"><input type="checkbox" class="control-checkbox" id="checkbox1" checked data-checkbox><span>正文显示封面图</span></label>
                                 </div>
                             </div>
                             <div class="editorGroup">
                                 <label class="editorLabel">摘要：<span class="note">(选填，如果不填写会默认抓取正文前54个字)</span></label>
-                                <div class="editorInput">
-                                    <textarea style="width:700px; height:100px;"></textarea>
-                                </div>
+                                <div class="editorInput"><textarea></textarea></div>
                             </div>
                         </div>
                     </div>
@@ -270,12 +284,10 @@
                 </div>
                 <!--/editor-area-box-->
                 <div class="editor-area-footer">
-                    <div class="area560">
-                        <a href="#" class="">保存</a>
-                        <a href="#" class="">同步到公共号后台</a>
-                        <a href="#" class="">定时群发</a>
-                        <a href="#" class="">预览</a>
-                    </div>
+                    <a href="#" class="save">保存</a>
+                    <a href="#" class="">同步到公共号后台</a>
+                    <a href="#" class="">定时群发</a>
+                    <a href="#" class="">预览</a>
                 </div>
             </div>
             <!--/editor-style-->     	

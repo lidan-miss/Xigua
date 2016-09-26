@@ -648,7 +648,7 @@ input:-ms-input-placeholder {　color: #7a8a9a !important; }
 .appmsg-no-send { background: #89a; }
 .waiting-mass { background: #f8b209; }
 .appmsg-info { background: #3c9ad9; }
-.editor-wrapper { background: #f8f9fb; top: 88px; height: auto; background:#f8f9fb;}/**/
+.editor-wrapper { background: #f8f9fb; top:137px; height: auto; background:#f8f9fb;}/**/
 .editor-view { max-width: 400px; float: left; }
 .editor-view .editor-appmsg-top { padding: 16px; position: relative; }
 .editor-view .editor-appmsg-top img { max-width: 368px; width: 100%; }
@@ -660,32 +660,59 @@ input:-ms-input-placeholder {　color: #7a8a9a !important; }
 
 .btn-save-edit{ display:block; padding:16px;}
 .btn-save-edit a{ width:100%;}
-.editor-style { margin-left: 400px; border-left: 1px solid #e5e9ed; position:relative;}
-.editor-heading { height: 50px; line-height: 47px; vertical-align: middle; background: #fff; border-bottom: 1px solid #e5e9ed; padding: 0 10px; }
+.editor-style { margin-left: 400px; position:relative;}
+.editor-heading { height:49px; line-height: 47px; vertical-align: middle; background: #fff; padding:0 0 0 400px; border-bottom:1px solid #e5e9ed; box-sizing:border-box; position:fixed; left:240px; top:88px; right:0; z-index:88;}/**/
+.editor-heading-content{ max-width:660px; margin:0 auto; }/**/
+.editor-heading-content strong{ font-weight:bold; color:#345;}
 .editor-heading img { width: 30px; height: 30px; }
 .editor-heading-btn i { margin-right: 10px; }
-.editor-heading-btn a { margin-right: 30px; color: #89a; }
-.editor-area { min-height:50px; border-bottom: 1px solid #e5e9ed; margin: 0 auto; background: #edf0f5; }/**/
-.area560 { max-width: 560px; margin: 0 auto; color: #a3a3a3; font-size: 14px; }
-.input-style input, .input-style textarea { border: none; width: 100%; }
-.input-style textarea { height: 260px; }
-.input-style .enter-title { font-size: 24px; padding: 20px 0; }
+.editor-heading-btn a { margin-left: 30px; color: #89a; }/**/
+.editor-area { min-height:50px; border-bottom: 1px solid #e5e9ed; margin: 0 auto; background: #edf0f5; padding:40px 0;}/**/
+.edit-content-area{ border:1px solid #e5e9ed; position:relative;}/**/
+.appmsg-tag-box{ position:absolute; top:92px; right:-134px;}
+.appmsg-tag-box .appmsg-tag{ display:block; margin-bottom:6px; border-radius:0 4px 4px 0; color:#fff;}
+.appmsg-tag-box .appmsg-tag1{ background:#3d9ad9; border:1px solid #3d9ad9; width:134px;}
+.appmsg-tag-box .appmsg-tag2{ background:#b94ff0; border:1px solid #b94ff0; width:106px;}
+.appmsg-tag-box .appmsg-tag3{ background:#47be68; border:1px solid #47be68; width:106px;}
+.appmsg-tag-box .appmsg-tag4{ background:#fff; color:#7a8a9a; border:1px solid #e5e9ed; width:106px;}
+.appmsg-tag-box .appmsg-tag1:hover{ background:#2b83be;}
+.appmsg-tag-box .appmsg-tag2:hover{ background:#a03cd4;}
+.appmsg-tag-box .appmsg-tag3:hover{ background:#28a547;}
+.appmsg-tag-box .appmsg-tag4:hover{ background:#f7f8fa;}
+.appmsg-tag-box .appmsg-tag1:active{ background:#2275ad;}
+.appmsg-tag-box .appmsg-tag2:active{ background:#8f2fc0;}
+.appmsg-tag-box .appmsg-tag3:active{ background:#168b27;}
+.appmsg-tag-box .appmsg-tag4:active{ background:#d9e0e7; border:1px solid #d3d9e0;}
+.edit-field{ background:#f8f9fb; width:100%; height:92px; padding:0 40px; border-bottom:1px solid #e5e9ed;}/**/
+.edit-body{ padding:20px 40px; background:#fff;}/**/
+.area660 {max-width: 660px; margin: 0 auto; color: #a3a3a3; font-size: 14px; }
+.area660 .checkbox-inline{ padding-left:0;}
+.input-style textarea { border: none; width: 100%; }
+.input-style { position:relative; max-width:660px;} 
+.input-style input{ width:90%;border: none;}
+.input-style em{color:#a3a3a3; position:absolute; right:0; top:5px;}
+.input-style textarea { min-height:360px; color:#333;}
+.input-style .enter-title { font-size: 24px; padding:0 0 20px 0; color:#333;}
 .input-style .enter-author { padding-bottom: 20px; }
-.enter-footer { height: 80px; line-height: 80px; }
+.control-checkbox-label{ border:1px solid #e5e9ed; max-width:300px; width:100%; border-radius:3px; padding:0 3px; height:30px; line-height:30px;}
+.edit-main-header{ border-bottom:1px solid #e5e9ed;}
+.edit-main-body{ padding:10px 0; height:auto;}
+.enter-footer { background:#fff; height: 80px; padding:25px 40px; border-top:1px solid #e5e9ed;}/**/
 .enter-footer a { margin: 0 10px; color: #aaa; }
 .enter-footer a:last-child { margin-right: 0; }
-.input-main-body { border: 1px solid #e5e9ed; border-width: 1px 0; padding: 20px 0; }
-.editor-area-footer { background: #f8f9fb; padding: 20px 0; position:fixed; bottom:0; right:0; width:100%; left:640px; border:1px solid #e5e9ed; border-width:1px 0 0 1px; z-index:10;}/**/
-.editor-area-footer a { text-decoration: none; border-radius: 5px; padding: 10px 22px; color: #6d8092; margin: 0 5px 0 0; }
+.editor-area-footer { background: #fff; padding: 18px 0; position:fixed; bottom:0; right:0; left:640px; border:1px solid #e5e9ed; border-width:1px 0 0 0; z-index:10; text-align:center;}/**/
+.editor-area-footer a { text-decoration: none; border-radius: 5px; padding:8px 22px; color: #6d8092; margin: 0 5px 0 0; }
 .editor-area-footer a:link, .editor-area-footer a:visited { background: #fff; display: inline-block; border: 1px solid #e5e9ed; }
-.editor-area-footer a:hover, .editor-area-footer a:active { background: #46be68; color: #fff; }
+.editor-area-footer a:hover, .editor-area-footer a:active { background: #27a547; color: #fff; }
+.editor-area-footer a.save{ background:#46be68; color:#fff;}
+.editor-area-footer a.save:hover, .editor-area-footer a.save:active { background: #27a547; color: #fff; }
 .textarea-area{max-width:700px; width:100%; height:100px;}
 /*图文生成操作模式*/
 .articleGuideCart{}
 .articleGuideCartHeader{ margin:0; border-bottom:1px solid #e5e9ed; padding:0 12px; font-size:16px; height:50px; line-height:50px; font-weight:bold; color:#345;}
 .articleGuideCartHeader .goBack{ float:right; font-size:14px; font-weight:normal; margin-top:2px;}
 .articleGuideCartHeader .goBack:hover{ text-decoration:none;}
-.articleGuideCart .cartView{ position:absolute; overflow:auto; overflow-x:hidden; width:399px; height:100%; top:50px; padding-bottom:140px;}
+.articleGuideCart .cartView{ position:absolute; overflow:auto; overflow-x:hidden; width:399px; height:100%; top:0; padding-bottom:140px;}/**/
 .articleGuideCart .cartItem{ border-bottom:1px solid #e5e9ed; background:#FFF; padding:10px 15px; position:relative; z-index:1;}
 .articleGuideCart .cartItem .appmsgWrap{ overflow:hidden; position:relative; z-index:1;}
 .articleGuideCart .cartItem .appmsgTitle{ color:#345; float:left; font-size:14px; line-height:1.2; overflow:hidden; width:300px; padding-top:5px;}
@@ -747,8 +774,7 @@ input:-ms-input-placeholder {　color: #7a8a9a !important; }
 .editorViewItem.topItem .appmsgTitle{ margin:0; color:#fff; width:100%; position:absolute; z-index:9; left:0; bottom:0; background-color:rgba(0,0,0,0.7); text-overflow:ellipsis; padding:10px; height:40px; white-space:nowrap;}
 .editorViewItem.topItem .appmsgBtn{ margin-top:70px; margin-bottom:30px;}
 
-/*.editor-area-box{height:635px; overflow:auto; overflow-x:hidden;}*/
-.editor-area-padding{ padding:20px 0 90px; background:#fff;}/**/
+.editor-area-padding{ padding:30px 0 90px; background:#f8f9fb;}/**/
 .editorGroup{ margin-bottom:15px;}
 .editorGroup .editorLabel{ font-size:14px; font-weight:normal; margin-bottom:20px;}
 .editorGroup .btn{ margin-right:15px;}
@@ -762,7 +788,8 @@ input:-ms-input-placeholder {　color: #7a8a9a !important; }
 .editorGroup .uploadCoverProcess span{ display:block; width:100%; background:rgba(0,0,0,0.3); font-size:0; line-height:0; overflow:hidden; position:absolute; left:0; bottom:0;}
 .editorGroup .uploadCoverProcess span i{ width:18px; height:18px; font-size:18px; color:#fff; margin:0 auto; z-index:88; display:block; margin-top:10px;}
 .editorGroup .uploadCoverProcess span a{ text-decoration:none;}
-.editorGroup .checkShowCover{ padding:20px 0;}
+.editorGroup .checkShowCover{ padding:20px 0 0;}
+.editorInput textarea{ max-width:660px; width:100%; min-height:126px; border:1px solid #e5e9ed; background:#fff; padding:10px;}
 /*我的素材库*/
 .import-clip a{ margin-left:10px !important;}
 .my-material{ background:#f8f9fb;}
