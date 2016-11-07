@@ -28,8 +28,6 @@
 .control-search-2-submit:link, .control-search-2-submit:visited { color: #fff; text-decoration: none; }
 .control-search-2-submit:hover { text-decoration: none; background: #27a547; }
 .control-search-2-submit:active { background: #159328; }
-.control-search-3-submit{ background:#e74c3c;}
-.control-search-3-submit:hover,.control-search-3-submit:active{ background:#d64637;}
 
 /* 选择框 */
 .control-checkbox { }
